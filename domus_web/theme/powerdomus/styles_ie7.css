@@ -1,0 +1,44 @@
+/*
+ * These styles are ONLY included for IE 7 (via meta.php)
+ */
+ 
+ 
+#header div.topmenu ul {          
+   /*top: 88px;*/	  
+}
+ 
+input[type="submit"] {
+  padding: 0 2px;
+}
+div.sideblock div.content input[type="submit"] {
+  text-align: center;
+  width: auto;
+}
+.tabrow0 {
+  padding-top: 0px;
+}
+.tabrow0 li {
+  margin-left: 0;
+}
+.tabrow0 li.first {
+  margin-right: 0;
+}
+.tabrow0 li.onerow {
+  margin-right: 0;
+}
+.tabrow0 a {
+  display: inline-block;
+  padding: 0 5px 5px;
+  line-height: 1.5em;
+}
+.tabrow0 a span {
+  padding: 0;
+}
+.tabrow0 div,
+.tabrow0 ul {
+  top: 0px/*2.6em*/;
+  padding: 0 0 3px 0;
+}
+.tabrow0 div.empty {
+  margin-right: 0;
+}

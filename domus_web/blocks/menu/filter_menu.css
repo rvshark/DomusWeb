@@ -1,0 +1,136 @@
+#ancre_menu{
+	/*position:absolute;*/
+	/*padding:0 0 0 0;
+	margin:0;*/ 
+	border:1px outset #0B3B8D;
+	background:#FFFFFF;	
+	z-index:9;
+	/*width:100%;*/
+	width:723px;
+}
+
+#ancre_menu, #menu, #menu ul {
+	height: 20px;
+}
+
+#menu, #menu ul {
+	width:180px;
+}
+   
+#menu{
+    left:-271px;
+    text-align:left;
+    Position:relative;
+    top:0em; 
+    /* solve a Opera7/IE display bug */    
+    border-right: 1px #0B3B8D solid;
+    margin:0;
+    padding:0;
+    background-color:#FFFFFF;
+}
+
+#menu ul{       
+    border-left: 1px #0B3B8D solid;
+    border-right: 1px #0B3B8D solid;
+    margin:1px 0 0 0;
+    padding:0;
+    position:absolute;
+    background-color:#FFFFFF;   
+}
+
+#menu li{
+    width:180px;
+    display:block;    
+    float:left;  
+    margin:0;
+    padding:3px 0 3px 0;
+}
+    
+#menu a{
+    left:1px;
+    display:inline;
+    margin:0;
+    font-size:10pt;
+    padding:3px 0 3px 0; /* em units can creat little graphic bug in mozilla */
+}
+    
+#menu li ul{
+    visibility:hidden;
+    top:-1px;
+    left:180px;
+    display:inline;    
+    background-color:#FFFFFF;
+        
+}
+   
+/* IE PC selector */
+ html .menu li {
+    Display:block; /* solve a IE PC list bug */
+    float:none; /* solve a IE5 clav nav bug */
+}
+
+.droite{
+	left: 160px;
+	position:absolute;
+}
+
+.droite_status{
+	left: 148px;
+	position:absolute;
+}
+
+.droite_info{
+	left: 164px;
+	position:absolute;
+}
+     
+
+.suivi {background-color:#CCCCCC;color:#0B3B8D;text-decoration:none;}
+.suivi a:hover, .suivi a:active, .suivi a:focus{color: #FFFFFF; background-color:#0B3B8D;display:block;text-decoration:none;}
+
+
+.categoryvisible,
+.categoryhidden {
+	color			:#0B3B8D;
+	background-color	:#ffffff;
+	display			:block;
+	font-weight		:normal;
+	text-decoration	:none;
+}
+
+
+.categoryvisible a {
+	color			:#0B3B8D;
+}
+
+.categoryhidden a {
+	color			:#999999;
+}
+
+.switch {
+	text-align 		: right;
+}
+
+.coursevisible,
+.coursehidden {
+	color			: #0B3B8D;
+	background-color	: #CDD4F0;
+	display			: block;
+	text-decoration	: none;
+	font-style		: italic;
+}
+
+.coursevisible a:hover,
+.coursehidden a:hover {
+	display			: block;
+	text-decoration	: none;
+}
+
+.coursevisible a {
+	color			: #0B3B8D;
+}
+
+.coursehidden a {
+	color			: #999999;
+}
+

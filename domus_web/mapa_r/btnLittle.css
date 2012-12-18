@@ -1,0 +1,13 @@
+/* CSS file */
+
+Button
+{
+	cornerRadius: 2;
+	fontFamily: Arial;
+	fontSize: 8;
+	paddingBottom: 0;
+	paddingLeft: 0;
+	paddingRight: 0;
+	paddingTop: 0;
+	width:70px;
+}

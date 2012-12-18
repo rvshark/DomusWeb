@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" backgroundColor="#000000" backgroundGradientAlphas="[1.0, 1.0]" backgroundGradientColors="[#000000,#000000]"
+		creationComplete="init();" >
+	
+	
+	<!-- INCLUI FUNÇÕES GERAIS -->	
+	<mx:Script source="Functions.as"/>
+     
+    <mx:Script>
+        <![CDATA[
+ 		
+		private function init() : void
+		{
+			box_1.visible = false;
+			box_2.visible = false;
+			box_3.visible = false;
+			box_4.visible = false;
+			box_5.visible = false;
+		}
+            
+        ]]>
+        
+    </mx:Script>
+	<mx:Panel width="1107" height="2300" layout="absolute" backgroundColor="#000000" top="0" fontSize="10" borderStyle="none" cornerRadius="4" id="panelGERAL" visible="true" horizontalCenter="0">
+		<mx:Image x="-5" y="0" source="img/backGroundTotal_novalogo.jpg"/>
+			<mx:Panel width="1037.9" height="2026" layout="absolute" horizontalCenter="-9" borderColor="#FFFFFF" backgroundColor="#F8F3ED" top="167" fontSize="10" borderStyle="none" cornerRadius="8" visible="true">
+				<mx:VBox id="myBox1" x="401.65" y="0" styleName="boxTituloPrincipal">
+					<mx:Button label="DOMUS" width="120" height="35" selected="false" alpha="1.0" styleName="btnTiuloPrincipal" fontSize="22" fontWeight="normal"/>
+				</mx:VBox>				
+				<mx:Button x="349.9" y="110.75" label="Física das Edificações" width="229.5" selected="false" alpha="1.0" height="30.3" styleName="btnSubtituloPrincipal" themeColor="#A3CBD3" fontWeight="normal"/>
+				
+				
+				<mx:VBox id="myBox2" x="5" y="366.85" styleName="boxTituloPrincipal" width="251">
+					<mx:Button label="DADOS DE ENTRADA" width="245" paddingTop="-10"  selected="false" alpha="1.0" height="40" styleName="btnTiuloPrincipal" fontWeight="normal" fontSize="16" fillAlphas="[1.0, 1.0]" fillColors="[#E6DCEF, #EFE9F5, #E6DCEF, #E6DCEF]" y="366.85"/>
+				</mx:VBox>
+				
+				<mx:VBox id="myBox3" x="387.4" y="366.85" styleName="boxTituloPrincipal">
+					<mx:Button x="458.25" y="366.85" paddingTop="-10" label="PARÂMETROS" width="245" fontWeight="normal" selected="false" alpha="1.0" height="40" styleName="btnTiuloPrincipal" fontFamily="BankGothic" fontSize="16" color="#0E506A"/>
+				</mx:VBox>
+				
+				
+				<mx:VBox id="myBox4" x="753.7" y="366.85" styleName="boxTituloPrincipal">
+					<mx:Button x="809.9" y="366.85" paddingTop="2" label="RELATÓRIOS DE SAÍDA" width="245" fontWeight="normal" selected="false" alpha="1.0" height="40" styleName="btnTiuloPrincipal" fontSize="16"/>
+				</mx:VBox>
+				<mx:Label x="445.95" y="54.45" text="É um" fontSize="12" color="#000000" textAlign="center"/>
+				<mx:Label x="452.9" y="81.45" text="Da" fontSize="12" color="#000000" textAlign="center"/>
+				<mx:Label x="369.45" y="152.05" text="Para avaliar o desenpenho" fontSize="12" color="#000000" fontWeight="normal"/>
+				<mx:Label x="338.4" y="167.05" text="HIGROTÉRMICO e ENERGÉTICO" fontSize="14" color="#012B91" fontWeight="normal" textAlign="center"/>
+				<mx:Label x="437.05" y="305.95" text="Simulados" fontSize="10" color="#000000"/>
+				<mx:Label x="439.8" y="316.3" text="Segundo" fontSize="10" color="#000000" width="60.25" height="19.5"/>
+				<mx:Label x="350.95" y="67.45" text="SOFTWARE DE SIMULAÇÃO" fontSize="14" color="#012B91" width="228.45" height="17.400002" textAlign="center"/>
+				<mx:Label x="393.4" y="183.05" text="em EDIFICAÇÕES" fontSize="14" color="#012B91" fontWeight="normal" textAlign="center"/>
+				<mx:VRule x="16.65" y="411.4" width="14" height="130.05" strokeColor="#000000"/>
+				<mx:VRule x="16.65" y="412.4" width="14" height="592" strokeColor="#000000"/>
+				<mx:VRule x="763.15" y="411.85" width="14" height="1109" strokeColor="#000000"/>
+				<mx:VRule x="397.45" y="411.7" width="14" height="360" strokeColor="#000000"/>
+				<mx:VRule x="50" y="489.05" width="14" height="160" strokeColor="#000000"/>
+				<mx:VRule x="457.45" y="100.05" width="14" height="8" strokeColor="#000000"/>
+				<mx:VRule x="457.45" y="144.05" width="14" height="10" strokeColor="#000000"/>
+				<mx:VRule x="456.45" y="205.05" width="14" height="101.25" strokeColor="#000000"/>
+				<mx:VRule x="456.05" y="331.8" width="14" height="16" strokeColor="#000000" strokeWidth="1"/>
+				<mx:VRule x="458.4" y="239.95" width="34" height="232.5" strokeColor="#000000" rotation="75"/>
+				<mx:VRule x="167.35" y="307.3" width="61.45" height="70.15" strokeColor="#000000" rotation="70"/>
+				<mx:VRule x="790.2" y="355.65" width="34" height="77.200005" strokeColor="#000000" rotation="-75"/>
+				<mx:VRule x="459.5" y="271.95" width="32.9" height="245.4" strokeColor="#000000" rotation="-75"/>
+				
+				
+				<mx:Label x="179.8" y="310.3" text="Definidos" fontSize="10" color="#000000" width="61.15" height="21.5"/>
+				<mx:Label x="175.2" y="319.65" text="A Partir De" fontSize="10" color="#000000" width="78.15" height="22.3"/>
+				<mx:Label x="77.45" y="390.45" text="( O que simular )" fontSize="11" color="#13506D" width="115.899994" height="19.466667" textAlign="center"/>
+				<mx:Label x="700.85" y="314.95" text="Com resultados" fontSize="10" color="#000000" height="16"/>
+				<mx:Label x="703.85" y="323.75" text="visualizados em" fontSize="10" color="#000000" width="112.4" height="19.5"/>
+				<mx:VRule x="457.45" y="45.95" width="14" height="9.5" strokeColor="#000000"/>
+				<mx:Button x="260" y="391.3" fontFamily="Arial" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_DadosEntradaV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=720'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="445" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_EdificacaoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="255" y="503.3" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_VisualizacaoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#visualizacao'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="192.3" y="526.2" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_VistaPrincipalT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#vista%20principal'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="148" y="544.2" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_VisualizacaoZonasT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#zonas'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="148" y="562.2" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_VisualizacaoParedesT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#paredes'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Label x="83.45" y="560.45" text="Paredes" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="61" height="19"/>
+				<mx:Button x="242" y="578.2" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_VisualizacaoEnvoltorioT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#envoltorio'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="148" y="596.55" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_GridT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#grid'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="192.3" y="614.55" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_SombreamentoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#sombreamento'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="255" y="641.7" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_EdicaoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#edicao'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="148" y="662.35" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_EdicaoZonasT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#edicao_zonas'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="242" y="680.4" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_EdicaoEnvoltorioT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=210#edicao_envoltorio'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="711.2" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_HorariosDeUsoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=223'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="726.2" fontFamily="Arial" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_HorariosDeUsoV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=456'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="741.2" fontFamily="Arial" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_HorariosDeUsoS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=703'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="776.9" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_GanhosInternosT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=224'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="791.9" fontFamily="Arial" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_GanhosInternosV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=453'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="806.9" fontFamily="Arial" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_GanhosInternosS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=704'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="255" y="835.4" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_EquipamentosT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=224#equipamentos'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="255" y="862.85" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_GeracaoDeVaporT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=224#geracao%20de%20vapor'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="255" y="891.15" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_IluminacaoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=224#iluminacao'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="255" y="918.2" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_PessoasT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=224#pessoas'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="255" y="945.65" fontFamily="Arial" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_MobiliarioT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=224#mobiliario'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="460" fontFamily="Arial" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_EdificacaoV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=468'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="475" fontFamily="Arial" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_EdificacaoS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=445'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="374.3" fontFamily="Arial" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" id="i_DadosEntradaS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=718'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Label x="829.6" y="1113.2" text="Controlador" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="94.75"/>
+				<mx:Label x="829.6" y="1134.05" text="Sistemas Indiretos" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="134.75"/>
+				<mx:Label x="884.15" y="1169.1" text="Secundários" fontSize="10" fontWeight="normal" color="#000000" fontStyle="normal" width="86.200005" height="15.961537"/>
+				<mx:Label x="884.15" y="1152.25" text="Primários" fontSize="10" fontWeight="normal" color="#000000" fontStyle="normal" width="76.291214" height="16.016483"/>
+				<mx:Label x="90.3" y="1057.2" text="Janela Split" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="132.35"/>
+				<mx:Label x="83.45" y="524.45" text="Vista Principal" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="107" height="19"/>
+				<mx:Label x="83.45" y="542.45" text="Zonas" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="46" height="19"/>
+				<mx:Label x="83.45" y="576.5" text="Envoltório/Elementos" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="156"/>
+				<mx:Label x="90.25" y="1075.8" text="Central" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="149.95"/>
+				<mx:Button x="641.4" fontFamily="Arial" y="377" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ParametrosV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=458'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="641.4" fontFamily="Arial" y="392" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ParametrosS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=721'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="640" fontFamily="Arial" y="445" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ParametrosGeraisT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=244'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="640" fontFamily="Arial" y="460" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ParametrosGeraisV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=707'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="640" fontFamily="Arial" y="475" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ParametrosGeraisS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=708'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="503.1" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_LocalizacaoDaEdificacaoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=244#localizacao%20da%20edificacao'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="531.55" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ClimaT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=244#clima'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="558.95" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_SoloT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=244#solo'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="585.9" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_VentilacaoNaturalT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=244#ventilacao%20natural'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="652" fontFamily="Arial" y="585.9" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_VentilacaoNaturalS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=724l'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="613.35" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_InfiltracaoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=244#infiltracao'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="640.6" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_IntervaloDeSimulacaoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=244#intervalo%20simulacao'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="668.2" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_IntervaloDeRelatoriosT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=244#intervalo%20relatorios'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="697.05" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_FeriasT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=244#ferias'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="640" fontFamily="Arial" y="756" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ParametrosDasZonasV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=460'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="640" fontFamily="Arial" y="771" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ParametrosDasZonasS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=709'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="805.05" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_CondicoesIniciaisT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=253'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="835.5" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ModelosDeUmidadeT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=253#modelos%20de%20umidade'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="637" fontFamily="Arial" y="868.85" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_CoeficientesDeConveccaoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=253#coeficientes%20de%20conveccao'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="43.6" y="443.55" label="Edificação" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontWeight="normal"/>
+				<mx:Button x="424.6" y="443.55" paddingTop="0"  label="Parâmetros Gerais" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontWeight="normal"/>
+				<mx:Button x="425.25" y="746.9" label="Parâmetros da Zonas" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontWeight="normal"/>
+				<mx:HRule x="405.05" y="767.9" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="43.5" y="774.9" label="Ganhos Internos" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontWeight="normal"/>
+				<mx:Button x="43.65" y="711.4" label="Horários de Uso" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontWeight="normal"/>
+				<mx:Button x="813" y="1549.5" label="Comercial" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2" fontWeight="normal"/>
+				<mx:Button id="residencial" x="813" y="1652" label="Residencial" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2" fontWeight="normal"/>
+				<mx:Button x="43.45" label="Climatização (HVAC)" paddingTop="0" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" labelPlacement="top" top="980.25" fontWeight="normal"/>
+				<mx:Button x="790.2" label="Climatização (HVAC)" paddingTop="0" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" labelPlacement="top" top="995.15" fontWeight="normal"/>
+				<mx:HRule x="23.65" y="462.4" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="405.05" y="462.45" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="23.65" y="796.8" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="23.65" y="729.4" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="23.65" y="1000.6" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="56" y="506.1" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="56" y="643.8" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="74" y="499.05" label="Visualização" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="74" y="636.7" label="Edição" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:VRule x="793" y="489" width="14" height="223" strokeColor="#000000"/>
+				<mx:Button x="790.2" y="443.55" label="Conforto Térmico" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontWeight="normal"/>
+				<mx:HRule x="799" y="509.05" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="799" y="566" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="799" y="631.55" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="799" y="597.25" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="818" y="588.95" label="Sensação Térmica" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:HRule x="799" y="707.55" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="818" y="699.25" label="Estatística Gerais" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:VRule x="793" y="1240.8" width="14" height="193" strokeColor="#000000"/>
+				<mx:Button x="790.25" y="1196.25" label="Paredes" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontWeight="normal"/>
+				<mx:HRule x="799" y="1265.85" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="799" y="1349.2" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="799" y="1390" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="799" y="1430.05" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="799" y="1308.75" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="770" y="1216.4" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="770.15" y="1517.85" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="638" y="844.95" width="67.7" strokeColor="#466DB4" id="rlModelo1" visible="false" />
+				<mx:VRule x="703.85" y="844.95" height="383.9" strokeColor="#466DB4" width="2.85" id="rlModelo2" visible="false"/>
+				<mx:HRule x="704.85" y="1227.85" width="86.35" strokeColor="#466DB4" id="rlModelo4" visible="false"/>
+				<mx:HRule x="704.85" y="1026.15" width="86.35" strokeColor="#466DB4" id="rlModelo3" visible="false"/>
+				<mx:HRule x="799" y="671.35" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="818" y="501.3" label="Temperatura" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="818" y="530.45" label="Umidade Relativa" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:VRule x="793" y="794.35" width="14" height="58" strokeColor="#000000"/>
+				<mx:Button x="791.15" y="749.25" label="Energia" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontWeight="normal"/>
+				<mx:HRule x="799" y="819.4" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="818" y="811.65" label="Ganhos Térmicos" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:VRule x="793" y="930.1" width="14" height="29" strokeColor="#000000"/>
+				<mx:Button x="790.2" y="885.4" label="Mofo" width="213.75" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontWeight="normal"/>
+				<mx:HRule x="799" y="955.15" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="818" y="946.75" label="Risco de Crescimento" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:HRule x="770" y="899.5" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="818" y="840.95" label="Demanda e Consumo" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:VRule x="793" y="1040.2" width="14" height="58" strokeColor="#000000"/>
+				<mx:HRule x="799" y="1065.25" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="818" y="1057.5" label="Carga Térmica" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="818" y="1086.8" label="Monitoramento" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:HRule x="799" y="1094.15" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="770" y="1016.4" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="799" y="848.3" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="818" y="558.55" label="PMV e PDD" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:HRule x="799" y="537.95" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="56" y="837.45" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="56" y="893.4" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="56" y="920.25" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:VRule x="50" y="820.4" width="14" height="132" strokeColor="#000000"/>
+				<mx:VRule x="427" y="489.1" width="14" height="217" strokeColor="#000000"/>
+				<mx:VRule x="427" y="791.5" width="14" height="85.95001" strokeColor="#000000"/>
+				<mx:HRule x="434.25" y="507.15" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="434.25" y="563.1" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="434.25" y="589.95" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="434.25" y="644.9" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="434.25" y="617.85" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="434.25" y="536.05" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="434.25" y="644.9" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="56" y="948.15" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="56" y="865.35" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="74" y="913.2" label="Pessoas" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="74" y="1128.3" label="Ventilação Mecânica" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:VRule x="50" y="1025.75" width="14" height="115" strokeColor="#000000"/>
+				<mx:HRule x="56" y="1041.8" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="56" y="1104.75" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="74" y="1097.4" label="Aquecimento" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:Button x="74" y="1033.6" label="Condicionamento de Ar" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:Button x="74" y="940.65" label="Mobiliário" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="454" y="582.95" label="Ventilação Natural" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:Button x="454" y="610.4" label="Infiltração" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:HRule x="434.25" y="678.05" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="434.25" y="701.4" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="454" y="665.25" paddingTop="0" label="Intervalo de Relatórios" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:Button x="454" y="694.05" label="Férias" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:Button x="454" y="637.6" label="Intervalo de Simulação" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:HRule x="434.25" y="807.4" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="434.25" y="838.55" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="434.25" y="873.6" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="454" y="858.85" paddingTop="-10" label="Coeficientes de " width="180" selected="false" alpha="1.0" height="33.4" styleName="btnTxt2"/>
+				<mx:Button x="818" y="1253.15" paddingTop="-10" label="Perfil de " width="180" selected="false" alpha="1.0" height="33.4" styleName="btnTxt"/>
+				<mx:Button x="818" y="1294.5" paddingTop="-10" label="Perfil de " width="180" selected="false" alpha="1.0" height="33.4" styleName="btnTxt"/>
+				<mx:Label x="884.25" y="1308.75" text="Umidade" fontSize="11" fontWeight="normal" color="#000000" fontStyle="normal" width="58.1" height="20.906593"/>
+				<mx:Button x="818" y="1335.6" paddingTop="-10" label="Perfil de " width="180" selected="false" alpha="1.0" height="33.4" styleName="btnTxt"/>
+				<mx:Label x="853.55" y="1349.35" text="Precisão de Vapor" fontSize="11" fontWeight="normal" color="#000000" fontStyle="normal" width="126.05" height="20.906593"/>
+				<mx:Button x="818" y="1377.05" paddingTop="-10" label="Fluxos de " width="180" selected="false" alpha="1.0" height="33.4" styleName="btnTxt"/>
+				<mx:Label x="855.75" y="1391" text="Calor e de Vapor" fontSize="11" fontWeight="normal" color="#000000" fontStyle="normal" width="123.85" height="20.906593"/>
+				<mx:Button x="818" y="657.9" paddingTop="-10" label="Graus-horas de " width="180" selected="false" alpha="1.0" height="33.4" styleName="btnTxt2"/>
+				<mx:Label x="866.25" y="671.35" text="Desconforto" fontSize="11" fontWeight="normal" color="#000000" fontStyle="normal" width="99.6" height="20.906593" textAlign="center"/>
+				<mx:Button x="818" y="617.55" paddingTop="-10" label="Percentual de" width="180" selected="false" alpha="1.0" height="33.4" styleName="btnTxt2"/>
+				<mx:Label x="859.55" y="630.6" text="Conforto (POC)" fontSize="11" fontWeight="normal" color="#000000" fontStyle="normal" width="115.2" height="20.906593" textAlign="center"/>
+				<mx:Label x="869.25" y="1267.85" text="Temperatura" fontSize="11" fontWeight="normal" color="#000000" fontStyle="normal" width="88.21428" height="20.906593"/>
+				<mx:Button x="454" y="830.55" label="Modelos de Umidade" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:Button x="454" y="800.1" label="Condições Iniciais" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="454" y="500.15" label="Localização da Edificação" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="454" y="528.6" label="Clima" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt2"/>
+				<mx:Button x="454" y="555.95" label="Solo" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="74" y="830.4" label="Equipamentos" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="74" y="857.85" label="Geração de Vapor" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:Button x="74" y="886.2" label="Iluminação" width="180" selected="false" alpha="1.0" height="22.45" styleName="btnTxt"/>
+				<mx:HRule x="56" y="1135.95" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Label x="507" y="873.6" text="Convecção" fontSize="11" fontWeight="normal" color="#000000" fontStyle="normal" width="82.4" height="20.9" textAlign="center"/>
+				<mx:HRule x="770" y="462.45" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:HRule x="770" y="771.45" width="19.8" strokeColor="#000000" height="8"/>
+				<mx:Button x="818" y="1418.1" paddingTop="2" label="Radiação" width="180" selected="false" alpha="1.0" height="33.4" styleName="btnTxt"/>
+				<mx:Button x="845.35" y="1611.5" label="Método de Simulação" width="146" fontWeight="normal" selected="false" height="22.45" id="com_Simul" styleName="btnTxt"/>
+				<mx:Button x="846.4" y="1579.05" label="Método Prescritivo" width="146" fontWeight="normal" selected="false" height="22.45" id="com_Presc" styleName="btnTxt"/>
+				<mx:Button x="846.1" y="1714.55" label="Método de Simulação" width="146" fontWeight="normal" selected="false" height="22.45" id="res_Simul" styleName="btnTxt"/>
+				<mx:Button x="846.1" y="1681" label="Método Prescritivo" width="146" fontWeight="normal" selected="false" height="22.45" id="res_Presc" styleName="btnTxt"/>
+				<mx:Button x="996.55" y="1583.05" label="+" paddingBottom="1.5" paddingLeft="0" paddingRight="0" paddingTop="0" width="11.359999" height="13" fontFamily="Time News ROma" fontSize="8" textAlign="center" id="btn_comPresc">
+					<mx:click>MoveDown(this.btn_comPresc)</mx:click>
+				</mx:Button>
+				<mx:Button x="996.55" y="1616.5" label="+" paddingBottom="1.5" paddingLeft="0" paddingRight="0" paddingTop="0" width="11.359999" height="13" fontFamily="Time News ROma" fontSize="8" textAlign="center" id="btn_comSimul" click="MoveDown(this.btn_comSimul)">
+				</mx:Button>
+				<mx:Button x="996.55" y="1685.55" label="+" paddingBottom="1.5" paddingLeft="0" paddingRight="0" paddingTop="0" width="11.359999" height="13" fontFamily="Time News ROma" fontSize="8" textAlign="center" id="btn_resPresc" click="MoveDown(this.btn_resPresc)">
+				</mx:Button>
+				<mx:Button x="996.55" y="1719.1" label="+" paddingBottom="1.5" paddingLeft="0" paddingRight="0" paddingTop="0" width="11.359999" height="13" fontFamily="Time News ROma" fontSize="8" textAlign="center" id="btn_resSimul" click="MoveDown(this.btn_resSimul)">
+				</mx:Button>
+				
+				<mx:Label x="471.1" y="1545.4" text="Envoltório" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="82" id="box_1"/>
+				<mx:Label x="471.1" y="1562.25" text="Iluminação" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="80" id="box_2"/>
+				<mx:Label x="471.1" y="1579.4" text="Condic. de Ar" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="98" height="20.989012" id="box_3"/>
+				<mx:Label x="471.1" y="1596.4" text="Bonificação" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="86" height="21.016483" id="box_4"/>
+				<mx:Label x="471.1" y="1613.25" text="Classif. Geral" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="105" height="20.989012" id="box_5"/>
+				
+				
+				<mx:VRule x="792.25"    y="1537.4" width="14" height="128" strokeColor="#000000" id="vRuleVertical1"/>
+				<mx:VRule x="820.2" y="1673.3" width="14" height="53" strokeColor="#000000" id="vRuleVertical2"/>
+				<mx:VRule x="820.05" y="1570.95" width="14" height="53" strokeColor="#000000" id="vRuleVertical3"/>
+				<mx:HRule x="826.15" y="1619.5" width="19.8" strokeColor="#000000" height="8" id="hRuleHorizontal1"/>
+				<mx:HRule x="797.75" y="1660.15" width="15" strokeColor="#000000" height="8" id="hRuleHorizontal2"/>
+				<mx:HRule x="826.85" y="1688.95" width="19.8" strokeColor="#000000" height="8" id="hRuleHorizontal3"/>
+				<mx:HRule x="827.1" y="1587.25" width="19.8" strokeColor="#000000" height="8" id="hRuleHorizontal4"/>
+				<mx:HRule x="826.85" y="1722.35" width="19.8" strokeColor="#000000" height="8" id="hRuleHorizontal5"/>
+				<mx:HRule x="797.75" y="1557.85" width="15" strokeColor="#000000" height="8"/>
+				<mx:Button x="260" y="982" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="i_EntradaClimatizacaoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=235'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="997" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="i_EntradaClimatizacaoV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=457'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="260" y="1012" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="i_EntradaClimatizacaoS" fontWeight="bold">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=466'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" y="1195" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="i_ParedesT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=278'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" y="1512" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="i_RtqT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=193'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="571.4" y="1547.1" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="ComPrescEnvT" visible="false">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=748'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="571.4" y="1562.1" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="ComPrescIlumT" visible="false">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=749'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="571.4" y="1581.1" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="ComPrescCondicT" visible="false">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=750'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" y="1210" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="i_ParedesV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=459'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" y="1225" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13" fontFamily="Arial" fontSize="8" textAlign="center" id="i_ParedesS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=715'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Label x="83.45" y="612.8" text="Sobreamento" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="95"/>
+				<mx:Label x="83.45" y="594.8" text="Grid" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="35"/>
+				<mx:Label x="83.45" y="678.6" text="Envoltório/Elementos" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="156"/>
+				<mx:Label x="83.45" y="660.6" text="Zonas" fontSize="12" fontWeight="normal" color="#000000" fontStyle="normal" width="46"/>
+				<mx:Label text="( Como simular )" fontSize="11" color="#13506D" width="110.7" height="19.466667" textAlign="center" x="459.15" y="390.15"/>
+				<mx:Button paddingTop="2" label="RTQ" width="213.75" fontWeight="normal" selected="false" alpha="1.0" height="45" styleName="btnTemas" fontSize="14" x="790" y="1495.4"/>
+				<mx:Button x="1001" fontFamily="Arial" y="504.2" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_TemperaturaT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=259#temperatura'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="533.4" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_UmidadeRelativaT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=259#umidade%20relativa'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="561.5" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_PmvPddT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=259#pmv%20e%20pdd'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="591.9" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_SensacaoTermica">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=259#sensacao%20termica'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="621.5" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_PercentualDeConfortoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=259#percentual%20de%20conforto'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="661.85" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_GrausHorasDesconfortoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=259#graus%20horas%20desconforto'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="702.2" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_EstatisticasGeraisT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=259#estatisticas%20gerais'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" fontFamily="Arial" y="750" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_EnergiaT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=266'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" fontFamily="Arial" y="765" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_EnergiaV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=710'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" fontFamily="Arial" y="780" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_EnergiaS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=711'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="814.65" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_GanhosTermicosT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=266#ganhos%20termicos'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="844.65" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_DemandaEConsumoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=266#demanda%20e%20consumo'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1005" fontFamily="Arial" y="888" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_MofoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=269'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1005" fontFamily="Arial" y="903" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_MofoV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=455'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1005" fontFamily="Arial" y="918" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_MofoS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=712'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="949.7" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_RiscoDeCrescimentoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=270'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1005.9" fontFamily="Arial" y="1004.1" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_SaidaClimatizacaoV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=713'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1005.9" fontFamily="Arial" y="1019.1" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_SaidaClimatizacaoS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=714'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="1060.45" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_CargaTermicaT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=271#carga%20termica'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1001" fontFamily="Arial" y="1089.75" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_MonitoramentoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=271#monitoramento'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" fontFamily="Arial" y="445" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ConfortoTermicoT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=259#conforto%20termico'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" fontFamily="Arial" y="460" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ConfortoTermicoV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=452'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1004" fontFamily="Arial" y="475" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_ConfortoTermicoS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=451'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1005.9" fontFamily="Arial" y="384" label="V" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_RelatoriosDeSaidaV">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=723'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="1005.9" fontFamily="Arial" y="369" label="T" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_RelatoriosDeSaidaT">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=259'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Button x="944.7" fontFamily="Arial" y="7.1054274E-15" label="Imprimir" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="60" height="30"  fontSize="12" textAlign="center" id="i_Imprimir">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mapa_branco'), '_blank');</mx:click>
+				</mx:Button>
+				<mx:Button x="1005.9" fontFamily="Arial" y="399" label="S" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0" width="12" height="13"  fontSize="8" textAlign="center" id="i_RelatoriosDeSaidaS">
+					<mx:click>navigateToURL(new URLRequest('http://domus.pucpr.br/mod/resource/view.php?id=722'), '_self');</mx:click>
+				</mx:Button>
+				<mx:Image x="588" y="1547" id="ComPrescEnvCmap" source="img/Cmap.gif" width="13" height="13" visible="false">
+					<mx:click>navigateToURL(new URLRequest('http://200.192.112.161:81/rid=1J2RWBKBS-1CY4WD3-47M/SubMapa%20-%20Envoltoria%20(30.09).cmap'), '_self');</mx:click>
+				</mx:Image>
+				<mx:Image x="588" y="1563" id="ComPrescIlumCmap" source="img/Cmap.gif" width="13" height="13" visible="false">
+					<mx:click>navigateToURL(new URLRequest('http://200.192.112.161:81/rid=1J2RWL9H2-1YSNRP-4LP/SubMapa%20-%20Iluminacao%20(30.09).cmap'), '_self');</mx:click>
+				</mx:Image>
+				<mx:Image x="588" y="1581" id="ComPrescCondicCmap" source="img/Cmap.gif" width="13" height="13" visible="false">
+					<mx:click>navigateToURL(new URLRequest('http://200.192.112.161:81/rid=1J2RWXJ6S-DWFBH9-5MW/SubMapa%20-%20Condicionamento%20de%20Ar%20_Final.cmap'), '_self');</mx:click>
+				</mx:Image>
+				<mx:Image x="588" y="1598" id="ComPrescBonifCmap" source="img/Cmap.gif" width="13" height="13" visible="false">
+					<mx:click>navigateToURL(new URLRequest('http://200.192.112.161:81/rid=1J2RWXJ6S-DWFBH9-5MW/SubMapa%20-%20Condicionamento%20de%20Ar%20_Final.cmap'), '_self');</mx:click>
+				</mx:Image>
+				
+			</mx:Panel>
+		</mx:Panel>
+	<mx:Style source="style.css"/>
+	
+	
+</mx:Application>

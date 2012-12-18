@@ -1,0 +1,70 @@
+#fTitulo{
+
+ border: solid 1px; 
+ border-color: #333333; 
+ background-color: #CCCCCC;	
+
+}
+
+#fConceito{
+
+ border: solid 1px; 
+ border-color: #333333; 
+ background-color: #CCCCCC;	
+
+}
+
+#fPergunta{
+
+ border: solid 1px; 
+ border-color: #333333; 
+ background-color: #CCCCCC;	
+
+}
+
+#fResposta{
+
+ border: solid 1px; 
+ border-color: #c0C0C0; 
+ background-color: #FFFFFF;	
+
+}
+#fRTitulo{
+
+ border: solid 1px; 
+ border-color: #333333; 
+ background-color: #CCCCCC;	
+
+}
+a:link {
+	color: #0066FF;
+	text-decoration:none;
+	font-size:13px;
+
+}
+a:visited {
+	color: #0066FF;
+	text-decoration:none;
+	font-size:13px;
+
+}
+a:hover {
+	color: #0099FF;
+	text-decoration:none;
+	font-size:13px;
+
+}
+a:active {
+	color: #0099FF;
+	text-decoration:none;
+	font-size:13px;
+
+}
+#cor_adm {
+    position:absolute;
+	left:584px;
+	top:220px;
+	width:85px;
+	height:1px;
+	z-index:10;
+}

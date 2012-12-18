@@ -1,0 +1,2 @@
+//baixar o pacote subversion
+ > wget "http://kojipkgs.fedoraproject.org/packages/subversion/1.6.9/2.fc13/src/subversion-1.6.9-2.fc13.src.rpm"

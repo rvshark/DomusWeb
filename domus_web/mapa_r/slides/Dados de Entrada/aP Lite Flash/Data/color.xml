@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Silver Color -->
+<color>
+	<!-- red color value for the base  -->
+	<redVal>209</redVal>
+
+	<!-- green color value for the base  -->
+	<greenVal>209</greenVal>
+
+	<!-- blue color value for the base  -->
+	<blueVal>209</blueVal>
+
+	<!-- alpha value for the base  -->
+	<alphaVal>0</alphaVal>
+
+	<!-- color of shadow text in the tool tip  -->
+	<first>0xAB959F</first>
+
+	<!-- color of border of the text in tool tip  473E43-->
+	<second>0x363645</second>
+
+	<!-- color of text in the textbox in tool tip  605460-->
+	<strokeColor>0x4C4F62</strokeColor>
+
+	<!-- background color of list  BABACD  9EA4B4  666E83-->
+	<lstbgColor>0xCACCD7</lstbgColor>
+	
+	<!-- color of border of the list box, (not used)  -->
+	<lstBorderColor>0x566587</lstBorderColor>
+
+	<!-- color of text on normal list -->
+	<lstTextColor>0x000000</lstTextColor>
+
+	<!-- color of item that has seen by user in list -->
+	<lstDisRowColor>0xC1C4D5</lstDisRowColor>
+
+	<!-- color of item  seen by over mouse over  B79FAA-->
+	<lstRollOverColor>0xD4D4E1</lstRollOverColor>
+
+	<!-- color of text in the list row as seen by on mouse over  -->
+	<lstTextRollOverColor>0x000000</lstTextRollOverColor>
+
+	<!-- item selected by user in list 484A5D-->
+	<lstSelectedColor>0x9EA4B6</lstSelectedColor>
+	
+	<!-- text color of item selected by user in list -->
+	<lstSelectedTextColor>0xFFFFFF</lstSelectedTextColor>
+</color>

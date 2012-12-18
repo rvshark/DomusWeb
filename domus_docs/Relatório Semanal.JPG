@@ -1,0 +1,21 @@
+
+
+
+Semana [28/02 - 04/02]
+Configuração Do DragMath no servidor fonte:http://docs.moodle.org/en/DragMath_equation_editor
+
+Após a instalação foi ativado a Notação Tex no moodle
+1º) No menu Administração do site entrar em /Módulos/Filtros/Gerenciar Filtros
+2º) Ativar a Anotação Tex
+3º) Configurar o diretório dos binários do Latex
+
+Instalação dos binários TexLive no servidor
+1º) Baixado o arquivo zip install-tl-unx.tar.gz  da URL http://ctan.tche.br/systems/texlive/tlnet/
+2º) Descompactar o arquivo no servidor 
+3º) Navegar dentro do diretório aonde se encontra o arquivo install-tl
+4º) Dar o comando "perl install-tl"
+
+
+Importante Instalação do ld-linux.so.2
+O Tex Filer precisa deste binário para funcionar. Para instalar apenas dar o comando: yum install ld-linux.so.2, que será instalado no diretório /lib
+

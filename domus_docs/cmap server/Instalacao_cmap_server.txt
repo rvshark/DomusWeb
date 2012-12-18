@@ -1,0 +1,22 @@
+Install CMapServer
+
+How to run a CmapServer as a service in Linux 
+As root user, then go to /etc/rc.d (directory), open the rc.local file with a text editor (i.e. vi, pico) and add this line:
+nohup /Applications/IHMC_CmapServer/CmapServer &
+
+Note: modify the path to your current settings.
+
+After those changes you have to restart your CmapServer machine. 
+
+Notice that a silent installation requires a graphical desktop environment such as KDE or Gnome. 
+If you don't have it, then we recommend you to use the console mode (./LinuxCmapServer.bin -i console). 
+   1. Create in the same folder where you have the installer a text file called "InstallCmapServer.properties".  
+	  An "InstallCmapServer.properties" file example can be download it from here.
+   2. Modify the permissions of the installer with this command:
+      chmod 755 LinuxCmapServer.bin
+
+      chmod 755 InstallCmapServer.properties
+
+   3. Run the installer with the "InstallCmapServer.properties" file as a parameter
+
+      ./LinuxCmapServer.bin -f InstallCmapServer.properties

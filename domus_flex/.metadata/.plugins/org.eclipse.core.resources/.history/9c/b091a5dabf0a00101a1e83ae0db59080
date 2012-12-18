@@ -1,0 +1,326 @@
+       	import mx.controls.Button;
+       	import mx.managers.PopUpManager;
+		
+		
+		public function AddPopUp(x, y, info):void{
+			
+			var panel : Dialog = PopUpManager.createPopUp(this, Dialog, false) as Dialog;
+			
+			panel.info = info;
+			panel.title = "Teste"; 
+			
+			if(x == 0 || y == 0){
+				PopUpManager.centerPopUp(panel);	
+			}
+			else
+			{
+				panel.move(x,y);
+			}
+						
+		}
+		
+		public function MostrarLigacao(): void
+		{
+			rlModelo1.visible = true;
+			rlModelo2.visible = true;
+			rlModelo3.visible = true;
+			rlModelo4.visible = true;
+		}
+		
+		
+		public function MoveDown(button: Button): void
+		{
+			var box_x : Number = 840;
+			
+			if(button.id == 'btn_comPresc'){
+				if(button.label == '+') {
+					button.label = '-';
+					
+					var box_Envoltorio_1 : Number = 1470;				
+					
+					//Componentes Gráficos
+					com_Simul.move(com_Simul.x, com_Simul.y + 108);	
+					residencial.move(residencial.x, residencial.y + 108);
+					res_Presc.move(res_Presc.x, res_Presc.y + 108);
+					res_Simul.move(res_Simul.x, res_Simul.y + 108);
+					//linha_Res.move(linha_Res.x, linha_Res.y + 108);
+					
+					//Botão Simulacao Comercial
+					btn_comSimul.move(btn_comSimul.x, btn_comSimul.y + 108);
+					btn_comSimul.enabled = false;
+					
+					//Botao Pres Residencial
+					btn_resPresc.move(btn_resPresc.x, btn_resPresc.y + 108);
+					btn_resPresc.enabled = false;
+
+					//Botao Simul Residencial
+					btn_resSimul.move(btn_resSimul.x, btn_resSimul.y + 108);
+					btn_resSimul.enabled = false;
+										
+					//Componentes do Box
+					box_1.move(box_x, box_Envoltorio_1);
+					box_2.move(box_x, box_Envoltorio_1 + 16.85);
+					box_3.move(box_x, box_Envoltorio_1 + 33.7);
+					box_4.move(box_x, box_Envoltorio_1 + 50.55);
+					box_5.move(box_x, box_Envoltorio_1 + 67.4);
+					
+					box_1.visible = true;
+					box_2.visible = true;
+					box_3.visible = true;
+					box_4.visible = true;
+					box_5.visible = true;
+					
+					//Move Linhas
+					vRuleVertical3.height = vRuleVertical3.height + 107;	
+					vRuleVertical1.height = vRuleVertical1.height + 107;
+					hRuleHorizontal1.move(hRuleHorizontal1.x,hRuleHorizontal1.y + 108);	
+					hRuleHorizontal2.move(hRuleHorizontal2.x,hRuleHorizontal2.y + 108);
+					hRuleHorizontal3.move(hRuleHorizontal3.x,hRuleHorizontal3.y + 108);
+					hRuleHorizontal5.move(hRuleHorizontal5.x,hRuleHorizontal5.y + 108);
+					vRuleVertical2.move(vRuleVertical2.x,vRuleVertical2.y + 108);
+									
+				}
+				else
+				{
+					button.label = '+';
+					com_Simul.move(com_Simul.x, com_Simul.y - 108);	
+					residencial.move(residencial.x, residencial.y - 108);
+					res_Presc.move(res_Presc.x, res_Presc.y - 108);
+					res_Simul.move(res_Simul.x, res_Simul.y - 108);
+					//linha_Res.move(linha_Res.x, linha_Res.y - 108);
+					
+					//Botão Simulacao Comercial
+					btn_comSimul.move(btn_comSimul.x, btn_comSimul.y - 108);
+					btn_comSimul.enabled = true;
+					
+					//Botao Pres Residencial
+					btn_resPresc.move(btn_resPresc.x, btn_resPresc.y - 108);
+					btn_resPresc.enabled = true;
+
+					//Botao Simul Residencial
+					btn_resSimul.move(btn_resSimul.x, btn_resSimul.y - 108);
+					btn_resSimul.enabled = true;					
+					
+					//Componentes do Box
+					box_1.visible = false;
+					box_2.visible = false;
+					box_3.visible = false;
+					box_4.visible = false;
+					box_5.visible = false;
+					
+					//Move Linhas
+					vRuleVertical3.height = vRuleVertical3.height - 107;	
+					vRuleVertical1.height = vRuleVertical1.height - 107
+					hRuleHorizontal1.move(hRuleHorizontal1.x,hRuleHorizontal1.y - 108);	
+					hRuleHorizontal2.move(hRuleHorizontal2.x,hRuleHorizontal2.y - 108);
+					hRuleHorizontal3.move(hRuleHorizontal3.x,hRuleHorizontal3.y - 108);
+					hRuleHorizontal5.move(hRuleHorizontal5.x,hRuleHorizontal5.y - 108);
+					vRuleVertical2.move(vRuleVertical2.x,vRuleVertical2.y - 108);					
+				}
+			}
+			
+			//SEGUNDO BOTÃO
+			else if(button.id == "btn_comSimul") 
+			{
+				if(button.label == "+"){
+					
+					var box_Envoltorio_1 : Number = 1500;
+					
+					button.label = "-";					
+					//Componentes Gráficos
+					residencial.move(residencial.x, residencial.y + 108);
+					res_Presc.move(res_Presc.x, res_Presc.y + 108);
+					res_Simul.move(res_Simul.x, res_Simul.y + 108);
+					//linha_Res.move(linha_Res.x, linha_Res.y + 108);
+					
+					//Botao Prescritivo Comercial
+					btn_comPresc.enabled = false;
+					
+					//Botao Pres Residencial
+					btn_resPresc.move(btn_resPresc.x, btn_resPresc.y + 108);
+					btn_resPresc.enabled = false;
+					
+					//Botao Simul Residencial
+					btn_resSimul.move(btn_resSimul.x, btn_resSimul.y + 108);
+					btn_resSimul.enabled = false;
+										
+					//Componentes do Box
+					box_1.move(box_x, box_Envoltorio_1);
+					box_2.move(box_x, box_Envoltorio_1 + 16.85);
+					box_3.move(box_x, box_Envoltorio_1 + 33.7);
+					box_4.move(box_x, box_Envoltorio_1 + 50.55);
+					box_5.move(box_x, box_Envoltorio_1 + 67.4);
+					
+					box_1.visible = true;
+					box_2.visible = true;
+					box_3.visible = true;
+					box_4.visible = true;
+					box_5.visible = true;	
+					
+					//Move Linhas
+					vRuleVertical1.height = vRuleVertical1.height + 107;
+					hRuleHorizontal2.move(hRuleHorizontal2.x,hRuleHorizontal2.y + 108);
+					hRuleHorizontal3.move(hRuleHorizontal3.x,hRuleHorizontal3.y + 108);
+					hRuleHorizontal5.move(hRuleHorizontal5.x,hRuleHorizontal5.y + 108);
+					vRuleVertical2.move(vRuleVertical2.x,vRuleVertical2.y + 108);				
+					
+						
+				}	
+				else{
+					
+					button.label = "+";
+					residencial.move(residencial.x, residencial.y - 108);
+					res_Presc.move(res_Presc.x, res_Presc.y - 108);
+					res_Simul.move(res_Simul.x, res_Simul.y - 108);
+					//linha_Res.move(linha_Res.x, linha_Res.y - 108);
+					
+					//Botao Prescritivo Comercial
+					btn_comPresc.enabled = true;
+					
+					//Botao Pres Residencial
+					btn_resPresc.move(btn_resPresc.x, btn_resPresc.y - 108);
+					btn_resPresc.enabled = true;
+					
+					//Botao Simul Residencial
+					btn_resSimul.move(btn_resSimul.x, btn_resSimul.y - 108);
+					btn_resSimul.enabled = true;
+										
+					//Componentes do Box
+					box_1.visible = false;
+					box_2.visible = false;
+					box_3.visible = false;
+					box_4.visible = false;
+					box_5.visible = false;
+					
+					//Move Linhas
+					vRuleVertical1.height = vRuleVertical1.height - 107;	
+					hRuleHorizontal2.move(hRuleHorizontal2.x,hRuleHorizontal2.y - 108);
+					hRuleHorizontal3.move(hRuleHorizontal3.x,hRuleHorizontal3.y - 108);
+					hRuleHorizontal5.move(hRuleHorizontal5.x,hRuleHorizontal5.y - 108);
+					vRuleVertical2.move(vRuleVertical2.x,vRuleVertical2.y - 108);						
+				}			
+			}
+			else if(button.id == "btn_resPresc")
+			{
+				if(button.label == "+"){
+					
+					var box_Envoltorio_1 : Number = 1570;
+					
+					button.label = "-";					
+					//Componentes Gráficos
+					res_Simul.move(res_Simul.x, res_Simul.y + 108);
+
+
+					//Botao Simul Residencial
+					btn_resSimul.move(btn_resSimul.x, btn_resSimul.y + 108);
+					btn_resSimul.enabled = false;
+					
+					//Botão Simulacao Comercial
+					btn_comSimul.enabled = false;
+					
+					//Botao Prescritivo Comercial
+					btn_comPresc.enabled = false;
+					
+					//Componentes do Box
+					box_1.move(box_x, box_Envoltorio_1);
+					box_2.move(box_x, box_Envoltorio_1 + 16.85);
+					box_3.move(box_x, box_Envoltorio_1 + 33.7);
+					box_4.move(box_x, box_Envoltorio_1 + 50.55);
+					box_5.move(box_x, box_Envoltorio_1 + 67.4);
+					
+					box_1.visible = true;
+					box_2.visible = true;
+					box_3.visible = true;
+					box_4.visible = true;
+					box_5.visible = true;
+					
+					//Move Linhas
+					vRuleVertical2.height = vRuleVertical2.height + 107;
+					hRuleHorizontal5.move(hRuleHorizontal5.x,hRuleHorizontal5.y + 108);
+				}
+				else
+				{
+					button.label = "+";					
+					//Componentes Gráficos
+					res_Simul.move(res_Simul.x, res_Simul.y - 108);
+					
+					
+					//Botao Simul Residencial
+					btn_resSimul.move(btn_resSimul.x, btn_resSimul.y - 108);
+					btn_resSimul.enabled = true;
+					
+					//Botão Simulacao Comercial
+					btn_comSimul.enabled = true;
+					
+					//Botao Prescritivo Comercial
+					btn_comPresc.enabled = true;
+					
+					
+					box_1.visible = false;
+					box_2.visible = false;
+					box_3.visible = false;
+					box_4.visible = false;
+					box_5.visible = false;	
+					
+					//Move Linhas
+					vRuleVertical2.height = vRuleVertical2.height - 107;
+					hRuleHorizontal5.move(hRuleHorizontal5.x,hRuleHorizontal5.y - 108);				
+				}
+			}
+			else if(button.id == "btn_resSimul")
+			{
+				if(button.label == "+"){
+					button.label = "-";
+					
+					//Botao Prescritivo Comercial
+					btn_comPresc.enabled = false;
+					
+					//Botao Simul Comercial
+					btn_comSimul.enabled = false;
+					
+					//Botao Prescritivo Residencial
+					btn_resPresc.enabled = false;
+					
+										
+					var box_Envoltorio_1 : Number = 1605;
+				
+					//Componentes do Box
+					box_1.move(box_x, box_Envoltorio_1);
+					box_2.move(box_x, box_Envoltorio_1 + 16.85);
+					box_3.move(box_x, box_Envoltorio_1 + 33.7);
+					box_4.move(box_x, box_Envoltorio_1 + 50.55);
+					box_5.move(box_x, box_Envoltorio_1 + 67.4);
+					
+					box_1.visible = true;
+					box_2.visible = true;
+					box_3.visible = true;
+					box_4.visible = true;
+					box_5.visible = true;
+					
+						
+				}
+				else{
+					button.label = "+";
+					
+					//Botao Prescritivo Comercial
+					btn_comPresc.enabled = true;
+					
+					//Botao Simul Comercial
+					btn_comSimul.enabled = true;
+					
+					//Botao Prescritivo Residencial
+					btn_resPresc.enabled = true;
+					
+										
+					box_1.visible = false;
+					box_2.visible = false;
+					box_3.visible = false;
+					box_4.visible = false;
+					box_5.visible = false;	
+				}
+				
+			}
+			
+
+		}
+			

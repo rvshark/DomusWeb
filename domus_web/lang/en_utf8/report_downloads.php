@@ -1,0 +1,4 @@
+<?php
+$string["downloads"] = 'Downloads';
+
+?>

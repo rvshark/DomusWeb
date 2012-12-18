@@ -1,0 +1,26 @@
+	/*fieldset {
+
+		  width: 500px;
+		  margin: 15px 0px 25px 0px;
+		  padding: 15px;
+
+	}*/
+
+	legend {
+
+		font-weight: bold;
+        
+	}
+
+	.button {
+
+		text-align: right;
+
+	}
+
+	.button input {
+
+		font-weight: bold;
+
+	}
+

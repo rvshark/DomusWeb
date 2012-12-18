@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentation>
+  <properties>
+    <title><![CDATA[]]></title>
+    <creationdate>7/12/2011 16:22:34</creationdate>
+    <audio>off</audio>
+    <navigationonclick>true</navigationonclick>
+    <animations>false</animations>
+    <transitions>false</transitions>
+    <sdkversion>
+    </sdkversion>
+    <release>
+    </release>
+    <soundacrossslides>
+    </soundacrossslides>
+    <defaulturl>Slides/</defaulturl>
+    <video>
+    </video>
+    <templatecolor>Silver</templatecolor>
+    <layout>Trade Show</layout>
+    <presentertitle><![CDATA[]]></presentertitle>
+    <presentername><![CDATA[]]></presentername>
+    <presentercompany><![CDATA[]]></presentercompany>
+    <presenteremail><![CDATA[]]></presenteremail>
+    <presentationtitle>Parâmetros r02 Encac</presentationtitle>
+    <powerpointfile>Parâmetros r02 Encac.pps</powerpointfile>
+    <presentationdescription><![CDATA[]]></presentationdescription>
+    <presentationkeywords>
+    </presentationkeywords>
+    <audioquality>Medium</audioquality>
+    <imagequality>9</imagequality>
+    <showslidenotesinoutput>True</showslidenotesinoutput>
+    <usenarrations>True</usenarrations>
+  </properties>
+  <slides>
+    <slide id="1">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide1.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide1_200,150.jpg</slideimage>
+      <title><![CDATA[Slide1]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[    4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  Introdução 1 O software Domus fornece um grande número de opções em relação aos parâmetros de simulação, que podem ser 
+
+a) parâmetros gerais
+
+b) Parâmetros da zona. 
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="2">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide2.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide2_200,150.jpg</slideimage>
+      <title><![CDATA[Slide2]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[    4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  Introdução 2 O software Domus fornece um grande número de opções em relação aos parâmetros de simulação, que podem ser 
+
+a) parâmetros gerais
+
+b) Parâmetros da zona. 
+  Definem-se, primeiramente, pelo intervalo de simulação. A informação sobre o ano é importante para cálculos dos anos bissextos e para prover maior precisão do algoritmo solar. Alguns elementos da edificação – principalmente os de alta capacidade higroscópica – podem exigir um período de simulação repetido de vários anos de forma que as condições iniciais não acarretem erros nos resultados. ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="3">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide3.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide3_200,150.jpg</slideimage>
+      <title><![CDATA[Slide3]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  Introdução 3 O software Domus fornece um grande número de opções em relação aos parâmetros de simulação, que podem ser 
+
+a) parâmetros gerais
+
+b) Parâmetros da zona. 
+   Após definir os parâmetros gerais, estabelecem-se os parâmetros das zonas, aracterizados por variáveis tais como as condições iniciais para cada ambiente, em termos de temperatura e de umidade relativa. O usuário possui a opção de definir temperaturas e umidades livres ou até mesmo impor condições ambientais fixas, assumindo que houvesse um sistema de climatização perfeito, de forma que a temperatura e umidade não variasse ao longo do tempo, ou ainda, habilitar a variação senoidal ou a leitura de um arquivo de dados obtidos, por exemplo, a partir de um determinado experimento. 
+ ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="4">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide4.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide4_200,150.jpg</slideimage>
+      <title><![CDATA[Slide4]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  4   No campo localização da edificação a ventilação natural é configurável se, e somente se, houver janelas abertas. Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="5">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide5.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide5_200,150.jpg</slideimage>
+      <title><![CDATA[Slide5]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  5   No campo localização da edificação a ventilação natural é configurável se, e somente se, houver janelas abertas.   Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="6">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide6.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide6_200,150.jpg</slideimage>
+      <title><![CDATA[Slide6]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  6   No campo localização da edificação a ventilação natural é configurável se, e somente se, houver janelas abertas. Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência    ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="7">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide7.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide7_200,150.jpg</slideimage>
+      <title><![CDATA[Slide7]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  7   Esta opção de configuração torna possível selecionar o clima de uma das cidades disponíveis na base de dados do programa. Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="8">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide8.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide8_200,150.jpg</slideimage>
+      <title><![CDATA[Slide8]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  8  Esta opção de configuração torna possível selecionar o clima de uma das cidades disponíveis na base de dados do programa. Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência  Nesta janela seleciona-se o arquivo climático, defini-se a ZB,  que serão utilizados na simulação ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="9">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide9.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide9_200,150.jpg</slideimage>
+      <title><![CDATA[Slide9]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  9  Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência  A opção "Visualizar..."  foi criada para que o usuário possa verificar alguns parâmetros climáticos de cada cidade mais detalhadamente.  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="10">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide10.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide10_200,150.jpg</slideimage>
+      <title><![CDATA[Slide10]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  10 Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência  Há ainda uma forma de visualização gráfica de todos os dados climáticos em uma carta psicrométrica  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="11">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide11.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide11_200,150.jpg</slideimage>
+      <title><![CDATA[Slide11]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  11   Define-se algumas variáveis em relação ao solo que está diretamente em contato com a edificação: o coeficiente de reflexão solar (albedo). 
+O contato entre o solo e a edificação pode ser tratado de duas maneiras:
+- com temperatura e umidade da superfície do solo impostas através da leitura de um
+arquivo
+- com a interface entre o solo e o piso, assumindo que a uma determinada profundidade as condições de contorno são de fluxo de calor nulo (adiabático) e fluxo de umidade nulo (impermeável).
+  Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="12">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide12.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide12_200,150.jpg</slideimage>
+      <title><![CDATA[Slide12]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  12   O programa habilita o cálculo de infiltração de ar para aplicar o modelo da ASHRAE que depende das condições de diferença de temperatura, velocidade do ar e acabamento de janelas e portas (presença de frestas). Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="13">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide13.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide13_200,150.jpg</slideimage>
+      <title><![CDATA[Slide13]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência 13   É um período de simulação para o acerto das condições iniciais. Ele é composto pelo número de dias escolhidos pelo usuário precedentes ao período de simulação, podendo-se utilizar passo de tempo diferente do utilizado na simulação. 
+
+Para facilitar o uso dessa versão o período de pré-simulação já é configurado internamente como um período de uma semana.
+
+O usuário pode executar pré-simulações, para definir passos de tempo diferentes do que definiria na simulação propriamente dita. Assim, podendo configurar um passo de tempo grosseiro de 2h, 12h, por exemplo, após o término, pode fazer um ajuste fino para se adequar e melhorar a precisão no final desta pré-simulação, o que ajustaria as condições iniciais.
+
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="14">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide14.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide14_200,150.jpg</slideimage>
+      <title><![CDATA[Slide14]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  14   O intervalo desejado refere-se ao tempo total de simulação. No Domus o maior intervalo de tempo desejado para simulação é de 1 ano e o menor é de 1 hora. No entanto, pode-se repetir a simulação por um período de até 6 anos.
+ Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="15">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide15.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide15_200,150.jpg</slideimage>
+      <title><![CDATA[Slide15]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  15   O intervalo de Relatórios refere-se ao intervalo de tempo onde os dados são amostrados e apresentados nos relatórios.
+O botão "Sincronizar" permite impor os valores do intervalo de Simulação. Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="16">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide16.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide16_200,150.jpg</slideimage>
+      <title><![CDATA[Slide16]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  16   A configuração do período de férias será utilizada na janela de "Configuração de Horários" para equipamentos, ganhos, janelas e portas inseridas na zona a ser simulada. O período de férias-padrão do software é de 1 mês (janeiro), podendo ser alterado de acordo com as necessidades do usuário. Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="17">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide17.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide17_200,150.jpg</slideimage>
+      <title><![CDATA[Slide17]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  17   O passo de tempo com que se deseja simular pode variar desde 24h até o passo de tempo de 1 segundo. O valor-padrão é de uma hora, e quanto menor o passo de tempo maior a precisão.  Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="18">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide18.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide18_200,150.jpg</slideimage>
+      <title><![CDATA[Slide18]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  18   Engloba 3 parâmetros de grande importância para a simulação:
+
+Critério de Convergência para Temperatura (T)
+
+Critério de Convergência para Umidade (W)
+
+Número Máximo de Iterações Localização da edificação
+
+Clima
+
+Solo
+
+Infiltração
+
+Pré-simulação
+
+Intervalo de simulação
+
+Intervalo de relatórios
+
+Período de férias
+
+Passo de tempo
+
+Critérios de convergência]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="19">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide19.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide19_200,150.jpg</slideimage>
+      <title><![CDATA[Slide19]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  19   Estabelecem-se os parâmetros das zonas, os quais são caracterizados por variáveis tais como:
+
+condições iniciais para cada ambiente (em temperatura e de umidade relativa)
+
+O usuário possui a opção de definir temperaturas e umidades livres ou até mesmo impor condições ambientais fixas, assumindo que houvesse um sistema de climatização perfeito, de forma que a temperatura e umidade não variasse ao longo do tempo, ou ainda, habilitar a variação senoidal ou a leitura de um arquivo de dados obtidos, por exemplo, a partir de um determinado experimento.  Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="20">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide20.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide20_200,150.jpg</slideimage>
+      <title><![CDATA[Slide20]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  20   Estabelecem-se os parâmetros das zonas, os quais são caracterizados por variáveis tais como:
+
+condições iniciais para cada ambiente (em temperatura e de umidade relativa)
+
+O usuário possui a opção de definir temperaturas e umidades livres ou até mesmo impor condições ambientais fixas, assumindo que houvesse um sistema de climatização perfeito, de forma que a temperatura e umidade não variasse ao longo do tempo, ou ainda, habilitar a variação senoidal ou a leitura de um arquivo de dados obtidos, por exemplo, a partir de um determinado experimento.  Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="21">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide21.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide21_200,150.jpg</slideimage>
+      <title><![CDATA[Slide21]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  21   Para utilização de uma variação climática senoidal, deve-se selecionar a opção “Função Senoidal”, onde o botão “Configurar” será então habilitado. A partir deste ponto, pode-se configurar todos os parâmetros das senóides para a temperatura, umidade e radiação solar. Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="22">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide22.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide22_200,150.jpg</slideimage>
+      <title><![CDATA[Slide22]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  22  Para utilização de uma variação climática senoidal, deve-se selecionar a opção “Função Senoidal”, onde o botão “Configurar” será então habilitado. A partir deste ponto, pode-se configurar todos os parâmetros das senóides para a temperatura, umidade e radiação solar. Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="23">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide23.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide23_200,150.jpg</slideimage>
+      <title><![CDATA[Slide23]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  23  Escolhe-se o modelo de umidade, ou seja, o modelo de transferência de calor, ar e umidade através dos elementos porosos das edificações. 
+
+Os modelos de 0 a 5 são todos derivados do modelo de Philip e DeVries, com simplificações sucessivas, de forma que o mais complexo é o nível 0 (com umidade no envoltório) e o mais simples 5 (condução pura no envoltório) é um modelo que despreza completamente o efeito da umidade. 
+ 
+Os modelos de transferência de calor e de umidade através de paredes podem ser selecionados antes ou durante o período de simulação. Esses modelos são referentes a algumas simplificações em relação aos cálculos executados pelo software.
+ Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="24">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide24.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide24_200,150.jpg</slideimage>
+      <title><![CDATA[Slide24]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  24   Os valores dos coeficientes de transferência de calor e de massa por convecção nas zonas (internos) e externos podem ser impostos constantes ou calculados de acordo com as variações das propriedades do ar (temperatura, umidade, velocidade) na região vizinha das paredes. Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="25">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide25.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide25_200,150.jpg</slideimage>
+      <title><![CDATA[Slide25]]></title>
+      <notes><![CDATA[25]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  25  Os valores dos coeficientes de transferência de calor e de massa por convecção nas zonas (internos) e externos podem ser impostos constantes ou calculados de acordo com as variações das propriedades do ar (temperatura, umidade, velocidade) na região vizinha das paredes. Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="26">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide26.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide26_200,150.jpg</slideimage>
+      <title><![CDATA[Slide26]]></title>
+      <notes><![CDATA[26]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  26  Os valores dos coeficientes de transferência de calor e de massa por convecção nas zonas (internos) e externos podem ser impostos constantes ou calculados de acordo com as variações das propriedades do ar (temperatura, umidade, velocidade) na região vizinha das paredes. Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="27">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide27.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide27_200,150.jpg</slideimage>
+      <title><![CDATA[Slide27]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma  27   O tratamento da transferência de calor por onda longa entre as superfícies internas das zonas requer o cálculo dos fatores de forma. O programa já integra um tratamento simplificado baseado nas áreas das superfícies que, na maioridade dos casos, é suficiente.
+
+Em outros casos, como aqueles apresentando geométricas complexas com várias janelas e obstruções internas, é preciso um cálculo numérico que apresenta um custo computacional importante.
+O algoritmo View Factor-LST desenvolvido por Augusto et al.4 (2007) é usado neste objetivo. O usuário tem a possibilidade de escolher o grau de precisão do cálculo através o grau de refinamento da malha. A execução do cálculo é acessada pelo botão "Definir". No final da execução, os resultados serão apresentados. Nota-se que este cálculo é necessário uma única vez para uma dada geometria.]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="28">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide28.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide28_200,150.jpg</slideimage>
+      <title><![CDATA[Slide28]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   4. PARÂMETROS Parâmetros Gerais   Parâmetros da Zona  Condições iniciais
+
+Modelos de umidade
+
+Coeficientes de convecção
+
+Fator de forma  28  O tratamento da transferência de calor por onda longa entre as superfícies internas das zonas requer o cálculo dos fatores de forma. O programa já integra um tratamento simplificado baseado nas áreas das superfícies que, na maioridade dos casos, é suficiente.
+
+Em outros casos, como aqueles apresentando geométricas complexas com várias janelas e obstruções internas, é preciso um cálculo numérico que apresenta um custo computacional importante.
+O algoritmo View Factor-LST desenvolvido por Augusto et al.4 (2007) é usado neste objetivo. O usuário tem a possibilidade de escolher o grau de precisão do cálculo através o grau de refinamento da malha. A execução do cálculo é acessada pelo botão "Definir". No final da execução, os resultados serão apresentados. Nota-se que este cálculo é necessário uma única vez para uma dada geometria.  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+  </slides>
+</presentation>

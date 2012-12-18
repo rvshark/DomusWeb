@@ -1,0 +1,481 @@
+
+div.mylink {
+float: right;
+font-size: 9px;
+color:#4C4C4C;
+width: 15%;
+margin-top: 3px;
+}
+
+div.mylink a:link, div.mylink a:visited {
+float: left;
+font-size: 9px;
+color:#ccc;
+text-decoration: none;
+padding-left: 3px;
+}
+div.mylink a:hover {
+
+color: #A6A6A6;
+}
+
+ul.section li {
+  margin: 0.2em 0;
+}
+div.sideblock div.content input[type="submit"] {
+  width: auto;
+}
+button#searchform_button {
+  width: auto;
+}
+div.sideblock div.content div.btn input {
+  width: auto;
+}
+.block_login .loginform .fld {
+  text-align: right;
+}
+div.sideblock div.calendar-controls a.next {
+  text-align: right;
+}
+div.sideblock ul.list span.c1 {
+  padding-left: 0;
+}
+
+
+div.sideblock table.minicalendar td.day {
+  text-align: center;
+  font-size: 0.9em;
+}
+div.sideblock table.minicalendar {
+  border-style: none;
+}
+
+
+.sideblock .content .message {
+  text-align: left;
+}
+
+.sideblock .header .hide-show-image {
+  margin-top: 0;
+}
+.sideblock.hidden .header .hide-show-image {
+  margin-top: 2px;
+}
+
+div.sideblock div.commands a.roles img {
+  width: 11px;
+  height: 11px;
+}
+div.sideblock span.icon {
+  display: block;
+  float: left;
+  margin-right: 0.3em;
+}
+div.sideblock ul.list li {
+  clear: left;
+}
+div.sideblock div.header div.commands {
+  height: 16px;
+}
+
+#calendar .event_global {
+  background-color: #D6F8CD;
+  border-color: #D6F8CD;
+}
+.minicalendar .event_global {
+  background-color: #D6F8CD;
+  border-color: #D6F8CD;
+}
+.block_calendar_month .event_global {
+  background-color: #D6F8CD;
+  border-color: #D6F8CD;
+}
+#calendar .event_course {
+  background-color: #FFD3BD;
+  border-color: #FFD3BD;
+}
+.minicalendar .event_course {
+  background-color: #FFD3BD;
+  border-color: #FFD3BD;
+}
+.block_calendar_month .event_course {
+  background-color: #FFD3BD;
+  border-color: #FFD3BD;
+}
+#calendar .event_group {
+  background-color: #FEE7AE;
+  border-color: #FEE7AE;
+}
+.minicalendar .event_group {
+  background-color: #FEE7AE;
+  border-color: #FEE7AE;
+}
+.block_calendar_month .event_group {
+  background-color: #FEE7AE;
+  border-color: #FEE7AE;
+}
+#calendar .event_user {
+  background-color: #DCE7EC;
+  border-color: #DCE7EC;
+}
+.minicalendar .event_user {
+  background-color: #DCE7EC;
+  border-color: #DCE7EC;
+}
+.block_calendar_month .event_user {
+  background-color: #DCE7EC;
+  border-color: #DCE7EC;
+}
+table.cal_popup_bg {
+  background-color: #DEDEDE; /*//TODO F8F8F8*/
+  color: #333333;
+  border-color: #EEFFDD;
+}
+div.sideblock div.calendar-controls span.current {
+  text-align: center;
+}
+
+body#admin-lang h2.main {
+  font-size: 1em;
+  text-align: left;
+}
+body#course-index table.generalbox {
+  background-color: #DEDEDE;/*//TODO #EEEEEE;*/
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+}
+
+
+div.clearer {
+  clear: both;
+}
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+h3 {
+  font-size: 1.1em;
+}
+h4 {
+  font-size: 1.0em;
+}
+a:link {
+  color: #116699;
+}
+a:visited {
+  color: #AA2200;
+}
+a:hover {
+  color: #0099FF;
+}
+a.dimmed:link {
+  color: #0099FF;
+}
+a.dimmed:visited {
+  color: #0099FF; /*TODO altera a cor do link visitado*/
+}
+table.generaltable {
+  background-color: #DEDEDE;/*#EEEEEE;*/
+  width: auto;
+  border: none;
+}
+
+span.arrow {
+  font-family: Arial, Helvetica, Courier, sans-serif; 
+}
+p.arrow_button input {
+  font-family: Arial, Helvetica, Courier, sans-serif; 
+}
+img.resize {
+  width: 1em;
+  height: 1em;
+}
+p.helplink {
+  margin: 0.5em 0;  
+}
+h1.headermain {
+  color: #449900;
+}
+
+.loginbox {
+  border-width: 0px; 
+}
+
+.loginbox.twocolumns .loginpanel {
+  /*border-right-color: #DDDDDD; //TODO comentado para colocar linha no meio.*/
+  position: static;  
+}
+
+div.noticebox {
+  background-color: #DEDEDE; /*TODO*/
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+}
+
+table.generaltable td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+}
+table.generalbox {
+  border-top-width: 1px;
+  border-style: solid none none;
+  border-top-color: #DDDDDD;
+}
+table.generaltable th.header {
+  background-color: #DDDDDD;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+}
+table.forumheaderlist th.header {
+  background-color: #DDDDDD;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #DEDEDE/*#EEEEEE;*/ #CCCCCC #CCCCCC #DEDEDE;/*#EEEEEE;*/;
+}
+.forumheaderlist,
+.forumpost {
+  width:580px;
+  background-color: #DEDEDE; /*//TODO*/
+  border-color: #ffffff;
+}
+.forumheaderlist td {
+  border-color: #FFFFFF;
+}
+.forumpost .topic {
+  border-bottom-color: #FFFFFF;
+}
+div.informationbox {
+  background-color: #DEDEDE; /*TODO #EEEEEE*/
+  border: none;
+  /* TODO retirada a borda da caixa de informa��es
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  */
+}
+table.userinfobox {
+  border: 1px solid #DDDDDD;
+}
+p.copyright {
+  text-align: center;
+}
+.errorbox {
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+  background-color: #e15215;
+  color: #fff;
+}
+table.minicalendar td.today {
+  line-height: 1.4em;
+  border: 2px solid #88DD55;
+}
+div.sideblock table.minicalendar tr.weekdays {
+  font-size: 0.8em;
+}
+div.courseboxcontent {
+  background-color: #DEDEDE;/*#EEEEEE;*/
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+}
+td.courseboxcontent {
+  background-color: #DEDEDE;/*#EEEEEE;*/
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+}
+table.generaltable td.cell {
+  white-space: normal;
+}
+body.admin table.generaltable {
+  width: 100%;
+}
+body#course-view tr.section td.side {
+  border-style: none;
+}
+body#course-view tr.section td.content {
+  border-style: none;
+}
+body#course-user .section {
+  background-color: #DEDEDE;/*#EEEEEE;*/
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+}
+div.que {
+  border-style: none;
+}
+td.sitetopiccontent {
+  border-style: none;
+}
+body#site-index td.categoryboxcontent {
+  border-style: none;
+}
+.categorylist {
+  background-color: #DEDEDE;/*#EEEEEE;*/;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+  padding: 4px;
+}
+body#admin-roles-manage td.generalboxcontent table td {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+body#admin-roles-override td.capcurrent {
+  background-color:#FFFFFF;
+  border: 1px solid #cecece;
+}
+div.breadcrumb span.sep {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #449900;
+}
+div.calendar-controls span.previous {
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+div.calendar-controls span.next {
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-align: right;
+}
+table#calendar td.maincalendar {
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+}
+table#calendar td.sidecalendar {
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+  background-color: #DEDEDE/*#efd;*/
+}
+#calendar .event_global,
+#calendar .event_course,
+#calendar .event_group,
+#calendar .event_user,
+.minicalendar .event_global,
+.minicalendar .event_course,
+.minicalendar .event_group,
+.minicalendar .event_user {
+  border: 1px solid !important;
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+}
+table.minicalendar {
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;
+  background-color: #DEDEDE/*#f8f8f8;*/
+}
+table#calendar td.today,
+div.minicalendar td.today {
+  border-color: #8d5;
+}
+#adminsettings fieldset span.form-shortname {
+  font-size: 50%;
+}
+#adminsettings fieldset {
+  border: none;
+  /*
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  */
+}
+form.mform fieldset {
+  background-color: #DEDEDE;/*#EEEEEE;*/
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+}
+form.mform div.textarea textarea {
+  width: 35em;
+}
+body#grade-index table.grades {
+  background-color: #DEDEDE;/*#EEEEEE;*/
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFFFFF #DDDDDD #DDDDDD #FFFFFF;  
+}
+body#grade-index .grades td {
+  border-color: #FFFFFF;
+}
+table.glossarypost {
+  border-color: #FFFFFF ;
+}
+table.glossarypost div.concept h3 {
+  display: inline;
+}
+table.glossarypost.continuous div.concept {
+  display: inline;
+}
+div.entrybox {
+  border: 1px solid #FFFFFF;
+}
+
+.tabrow0 {
+  font-size: 100%;
+  padding: 0;
+}
+.tabtree {
+  margin-bottom: 3%;
+}
+.tabrow0 li {
+  border: 1px solid #000;
+  margin: 0;
+  padding: 4px;
+  font-size:10px;
+}
+.tabrow0 li.first {
+  margin-right: 0;
+}
+.tabrow0 li.selected,
+.tabrow0 li.here {
+  /*background-color: #efd; tirado verde claro da primeira linha da tabela.*/
+}
+.tabrow0 a span {
+  background-image: none;
+  padding: 0;
+}
+.tabrow0 a {
+  background-image: none;
+  padding: 5px;
+}
+.tabrow0 a:hover {
+  background-image: none;
+}
+.tabrow0 .here a:hover {
+  background-image: none;
+}
+.tabrow0 a:hover span {
+  background-image: none;
+}
+.tabrow0 .here a:hover span {
+  background-image: none;
+}
+.tabrow0 div,
+.tabrow0 ul {
+  background-image: none;
+  top: 100%;
+  padding: 0 0 0.25em;
+  line-height: 200%;
+  border-top-color: #808080;
+}
+.tabrow0 ul {
+  /*background-color: #efd; tirado verde claro da primeira linha da tabela.*/
+  padding: 0;
+}
+.tabrow0 ul li.selected,
+.tabrow0 ul li.here {
+  /*background-color: #efd; tirado verde claro da primeira linha da tabela.*/
+}
+.tabrow0 ul li {
+  background-color: #DEDEDE;/* //TODO #f8f8f8;*/
+}
+
+#middle-column table ul li 
+{
+list-style: none;
+}
+
+#middle-column h2
+{
+}
+
+

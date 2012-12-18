@@ -1,0 +1,136 @@
+/* CSS file */
+
+
+@font-face
+{
+	fontFamily: Arial;
+	fontWeight: bold;
+	fontStyle: normal;
+	src: local("Arial");
+}
+/*
+@font-face {
+        src: url("BankGothic.ttf");
+        fontFamily: BankGothic;        
+}
+*/
+
+Panel{fontFamily:Arial;}
+Button{fontFamily:Arial;}
+Label{fontFamily:Arial;}
+
+Button.btnTiuloPrincipal
+{
+	color: #0E506A;
+	cornerRadius: 8;
+	fillAlphas: 1.0, 1.0;
+	fillColors: #f2fafc, #f2fafc;
+	themeColor: #FFFCFC;
+	border-style:solid;
+	font-size:20;
+	
+}
+
+VBox.boxTituloPrincipal
+{
+	borderStyle: solid;
+	border-color: #000000;
+	padding-top:2;
+	padding-bottom:2;
+	padding-left:2;
+	padding-right:2;
+	cornerRadius: 12;
+	background-color: #FFFFFF;
+}
+
+	Button.btnSubtituloPrincipal
+	{
+		border-style:solid;
+		border-color:#A3CBD3;
+		color: #000000;
+		cornerRadius: 8;
+		fontSize: 12;
+		background-color:#DFDDDE;
+	}
+
+VBox.boxSubtitulo
+{
+	borderStyle: solid;
+	border-color: #000000;
+	padding-top:4;
+	padding-bottom:4;
+	padding-left:4;
+	padding-right:4;
+	cornerRadius: 12;
+	background-color: #FFFFFF;	
+}
+
+	Button.btnSubtitulo
+	{
+		borderColor: #ECEAF5;
+		fillAlphas: 0.86, 0.86, 0.86, 0.86;
+		fillColors: #ECEAF5, #ECEAF5;
+		color: #13506D;
+		cornerRadius: 8;
+		fontSize: 11;
+		fontFamily:Arial;
+		paddingBottom: 1;
+		paddingLeft: 0;
+		paddingRight: 0;
+		paddingTop: -8;
+		themeColor: #FFFFFF;
+	}
+		
+Button.btnTemas
+{
+	borderColor: #FFFFFF;
+	color: #FFFFFF;
+	cornerRadius: 6;
+	fillAlphas: 1.0, 1.0, 1.0, 1.0;
+	fillColors: #466db4, #466db4;
+	fontSize: 14;
+	fontFamily:Arial;
+	fontStyle: normal;
+	paddingBottom: 0;
+	paddingLeft: 0;
+	paddingRight: 0;
+	paddingTop: 0;
+	textAlign: center;
+	themeColor: #FFFFFF;
+}
+
+Button.btnTxt
+{
+
+	color: #000000;
+	cornerRadius: 6;
+	fillAlphas: 1.0, 1.0, 1.0, 1.0;
+	fillColors: #FFFFFF, #FFFFFF;
+	fontSize: 12;
+	fontStyle: normal;
+	fontWeight: normal;
+	paddingBottom: 0;
+	paddingLeft: 0;
+	paddingRight: 0;
+	paddingTop: 0;
+	textAlign: center;
+}
+
+
+Button.btnTxt2
+{
+	
+	color: #000000;
+	cornerRadius: 6;
+	fillAlphas: 1.0, 1.0, 1.0, 1.0;
+	fillColors: #E6E6E6, #E6E6E6;
+	fontSize: 12;
+	fontStyle: normal;
+	fontWeight: normal;
+	paddingBottom: 0;
+	paddingLeft: 0;
+	paddingRight: 0;
+	paddingTop: 0;
+	textAlign: center;
+}
+

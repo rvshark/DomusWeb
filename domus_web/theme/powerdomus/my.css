@@ -1,0 +1,426 @@
+html, body, div, span, h2, h3, h4, h5, h6, ul  { 
+	border: 0; margin: 0; outline: 0; padding: 0; 
+}
+
+.left-column ol, ul { 
+	list-style: none; 
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  font-size:13px;
+}
+
+html {  
+  margin-bottom: 0px;  
+  background: #000 url('./images/rodape.jpg') no-repeat -9999px -9999px;
+  background: #000 url('./images/fundo_principal.jpg') no-repeat -9999px -9999px;    
+}
+
+body {
+  height: 100%;
+  line-height: 0;  
+  overflow-x: hidden;
+  color:#000000;
+  font: 100.1%/1.3 "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", "Microsoft YaHei", sans-serif;
+  padding : 0px;
+  margin : 0px;	  
+  text-align: center;
+}
+
+#header,
+#main,
+#main_carregando,
+#footer
+{
+  text-align: left;
+  margin-top: -5px; 
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 985px;   
+}
+
+#header { 
+  font-size: 0.7em; 
+  height: 175px; /*define o tamanho do cabe�alho*/ 
+  margin-top: 0px; /* esta linha define o espa�amento superior do cabe�alho*/ 
+  position: relative; 
+  background: url('./images/fundo_principal.jpg') top center no-repeat;
+  width: 985px;
+}
+
+#footer { 
+  background: url('./images/rodape.jpg') no-repeat;
+  width: 985px;height: 80px;
+}
+
+#container { 
+  margin-left:23px;
+  margin-right:30px;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#content {
+  border-right: 0px solid #D5DADD;
+  margin: 0 350px 0 0;
+  overflow: hidden;
+  padding: 0px 0 0;
+}
+
+#main_carregando {  
+  background: url('./images/fundo_principal.jpg') no-repeat;
+  background-position: 0 -198px;
+  height: 669px;
+  text-align: center!important;
+  position: relative;
+}
+
+#main_carregando .rodape_carregando {  
+  background: url('./images/rodape.jpg') no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  bottom: 0;
+  left:0;
+  padding-bottom: 5px;
+}
+
+#main {
+  font-size: 1em;
+  position: static;
+  background: url('./images/fundo.jpg') repeat;
+}
+
+#header-content div.logininfo { /*altera as configura��es da informa��o de login*/
+	position: absolute;
+	right: 40px;
+	top: 28px;
+	color: #000000;	
+}
+
+#header div.logininfo a { /*altera as configura��es do nome de login*/
+	color: #000000; /*Altera a cor do nome de login*/
+	font-size:1.1em;
+	color:#2A3FAA;
+}
+
+#header form div { /*altera as configura��es do combobox de idioma.*/
+	position: absolute;
+	top: 100px; 
+	right: 23px;
+}
+
+#header div.logo {	/*altera as informa��es do logotipo*/
+	 position: absolute;cursor:pointer;
+	 width: 180px;height: 125px;left: 20px;top: 20px;
+}
+
+
+.navbar {
+  text-align: left;
+  margin: 0 auto;
+  width: 985px;
+  height: 20px;
+  position: static; 
+}
+
+div.sideblock div.header{ /*altera as configura��es do titulo de cada bloco (ex. Usu�rios online)*/
+  background-color: #dededc;
+  color: #000 ;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;  
+  letter-spacing: 2px;  
+  text-align:center!important;  
+  border: none;
+  background: url('./images/titulo_novo.jpg') no-repeat;
+  background-position: bottom right;
+  padding-bottom: 8px; 
+}
+
+div.sideblock div.title h2 {
+  font-family:url('./fonts/MyriadPro-Regular.eot');
+  font-size: 16px;   
+  /*text-transform:uppercase;*/
+  text-shadow: 1px -1px 5px #FFF;
+  color:#535554;
+  font-weight:lighter;
+}
+
+div.sideblock div.content { /*altera o conteudo de texto de cada bloco*/
+  padding: 0.4em 0.3em;
+  color: black; /*cor do texto de cada bloco*/
+  border: none;  
+  font-size: 0.9em;
+  background-position:center;
+}  
+div.sideblock div.content div.title
+{
+	text-align: center;
+}
+
+/**
+ * 	INICIO MENU PRINCIPAL
+ */
+
+div.block_menu_curso div.header
+{
+	background: url('') no-repeat;
+}
+
+div.block_menu_curso div.content
+{
+	padding:0;	
+	margin-top:-1px;
+}
+
+div.coperacao div.header
+{
+  background-color: #dededc;
+  color: #000 ;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;  
+  letter-spacing: 2px;  
+  text-align:center!important;  
+  border: none;
+  background: url('./images/titulo_novo.jpg') no-repeat;
+  background-position: bottom right;
+  padding-bottom: 8px; 
+  margin-left:0px!important;
+}
+
+div.coperacao div.contentCoperacao
+{
+	padding: 0.2em 0.3em!important;
+}
+
+div.coperacao div.contentCoperacao ul
+{
+	display:inline;
+	top:5px; 
+	background-color: rgb(222, 222, 222);
+}
+
+.PLVFOLink{
+	border-left: 1px solid #ffffff!important; 
+	border-right: 2px solid #808080 !important; 
+	border-bottom: 2px solid #c0c0c0 !important;
+}
+
+.PLVFOLink a{
+	/*TEXT*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif!important;
+	font-weight:bolder!important;
+	display:table-cell!important;	
+	vertical-align:middle!important;
+	text-align:center!important;
+	font-size:13px;
+	width:140px;
+	height:50px;
+	*top:8px;
+	*position: relative
+	
+}	
+/**
+ * 	FIM MENU PRINCIPAL
+ */
+
+
+
+div.buttons div{
+	margin-top:5px;
+	float:left;	
+}
+
+.singlebutton{	
+	margin-left:3px!important;
+}
+
+
+div.navbar {
+  border:none;
+  font-size: 0.8em;  
+  background: url('./images/fundo_principal.jpg') no-repeat;
+  background-position:0 -180px;  
+  width: 985px;
+  height: 30px;
+}
+
+div.navbar div.navbutton {
+ float: right;
+ padding-right:30px; /*muda a margem entre o bot�o "desativar edi��o" e o canto*/    
+}
+
+div.breadcrumb {	
+  font-size: 1em;
+  padding-left: 30px;
+}
+
+div.langmenu  select {
+  margin: 0px 30px;
+}
+
+h2.headingblock {
+  border: none;
+  font-size: 1.1em;
+  color: #84B9BA;
+}
+
+div.generalbox {
+   font-size: 1em;   
+   background-repeat:no-repeat;
+   border: none;
+   margin-left: 10px;
+   width: auto; TODO edita a largura da coluna central da pagina*/
+}
+
+
+div.coursebox { /*altera as configura��es da caixa de curso*/
+   border: none;
+   border-top: 1px  #C1E0E1 dotted;
+   padding: 0px 0px;
+}
+   
+div.coursebox div.name {
+   font-size: 0.8em;
+}
+   
+div.coursebox div.name a { /*altera a configura��o do nome do curso*/ 
+   text-decoration: none;
+}
+
+div.coursebox div.summary { /*altera as configura��es do sum�rio do curso*/
+   font-size: 0.8em;
+}
+
+#footer div.logininfo { /*altera as configura��es da informa��o de login do rodap�*/
+	 margin-left:180px;
+	 width: 100%;
+	 padding-top: 5px;
+	 font-size:10px;
+}
+
+#footer p.helplink {
+	 float: right;
+	 padding-right: 35px;
+}
+
+#footer div.sitelink {
+}
+
+#add_block_jump{
+	width:135px;
+}
+
+#navmenupopup_jump{
+	margin-right: 8px;
+	width: 200px;
+}
+
+#layout-table #left-column
+{
+	border: 2px solid #dededc;
+}
+
+#layout-table #right-column
+{
+	text-align:center;
+	background: url('./images/fundo_principal.jpg') no-repeat;
+	background-position: -797px -201px;
+}
+
+div.modified{
+	margin:  10px 0 0 158px;
+}
+
+.lastedit
+{
+	text-align:center;
+		
+}
+
+/**
+ * 	Galeria dos cursos
+ */ 
+**/
+.treeMenuDefault {
+				font-style: normal;
+			}
+.treeMenuBold {
+	font-style: italic;
+	font-weight: bold;
+}
+
+#modalFiles .modalOptions {
+	text-align: left;
+	height: 25px;
+}
+#modalFiles .modalOptions input {
+	margin: 3px 0 0 7px;
+	cursor: pointer;
+	border: 0;
+}
+#modalFiles .modalOptions .act {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	-moz-box-shadow: 3px 7px 8px #cdcdcd;
+	-webkit-box-shadow: 3px 7px 8px #cdcdcd;	
+}
+#modalFiles .modalOptions #btnTexto {
+	background: url('images/btnDoc.png') no-repeat;
+	width: 52px;
+	height: 16px;
+}
+#modalFiles .modalOptions #btnImagem {
+	background: url('images/btnImg.png') no-repeat;
+	width: 60px;
+	height: 16px;
+}
+#modalFiles .modalOptions #btnPdf {
+	background: url('images/btnPdf.png') no-repeat;
+	width: 37px;
+	height: 16px;
+}
+#modalFiles .modalOptions #btnVideo {
+	background: url('images/btnVideo.png') no-repeat;
+	width: 52px;
+	height: 16px;
+}
+#modalFiles .modalOptions #btnSlide {
+	background: url('images/btnSlide.png') no-repeat;
+	width: 50px;
+	height: 16px;
+}
+#modalFiles .modalOptions #btnAtividade {
+	background: url('images/btnAtividade.png') no-repeat;
+	width: 66px;
+	height: 16px;
+}
+#modalFiles .modalOptions #btnForum {
+	background: url('images/btnForum.png') no-repeat;
+	width: 54px;
+	height: 16px;
+}
+#modalFiles .modalOptions #btnTarefa {
+	background: url('images/btnTarefa.png') no-repeat;
+	width: 72px;
+	height: 16px;
+}
+
+
+.error{
+		font-size: 11px;
+	}
+
+input.error,
+select.error {
+	border: 2px solid red;
+	border-image: initial;
+	}
+label.error {
+	color: red;
+	font-style: italic;
+	font-weight: normal;
+	}

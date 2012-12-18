@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentation>
+  <properties>
+    <title><![CDATA[]]></title>
+    <creationdate>7/12/2011 16:16:51</creationdate>
+    <audio>off</audio>
+    <navigationonclick>true</navigationonclick>
+    <animations>true</animations>
+    <transitions>false</transitions>
+    <sdkversion>
+    </sdkversion>
+    <release>
+    </release>
+    <soundacrossslides>
+    </soundacrossslides>
+    <defaulturl>Slides/</defaulturl>
+    <video>
+    </video>
+    <templatecolor>Silver</templatecolor>
+    <layout>Trade Show</layout>
+    <presentertitle><![CDATA[]]></presentertitle>
+    <presentername><![CDATA[]]></presentername>
+    <presentercompany><![CDATA[]]></presentercompany>
+    <presenteremail><![CDATA[]]></presenteremail>
+    <presentationtitle>Dados de Entrada</presentationtitle>
+    <powerpointfile>Dados de Entrada.pps</powerpointfile>
+    <presentationdescription><![CDATA[]]></presentationdescription>
+    <presentationkeywords>
+    </presentationkeywords>
+    <audioquality>Medium</audioquality>
+    <imagequality>9</imagequality>
+    <showslidenotesinoutput>True</showslidenotesinoutput>
+    <usenarrations>True</usenarrations>
+  </properties>
+  <slides>
+    <slide id="1">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide1.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide1_200,150.jpg</slideimage>
+      <title><![CDATA[Slide1]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[ 1  Organizador do Domus ORGANIZADOR DO DOMUS]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="2">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide2.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide2_200,150.jpg</slideimage>
+      <title><![CDATA[Slide2]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[ 2  Organizador do Domus ORGANIZADOR DO DOMUS]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="3">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide3.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide3_200,150.jpg</slideimage>
+      <title><![CDATA[Slide3]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   3. DADOS DE ENTRADA Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  Introdução 3]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="4">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide4.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide4_200,150.jpg</slideimage>
+      <title><![CDATA[Slide4]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  4 3. DADOS DE ENTRADA Área de trabalho do software Domus que permite criar uma edificação comercial, onde pode ser definido a principio as dimensões básicas de um paralelepípedo, tendo como suporte constante os eixos x, y e z. Introdução]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="5">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide5.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide5_200,150.jpg</slideimage>
+      <title><![CDATA[Slide5]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos 5 3. DADOS DE ENTRADA]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="6">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide6.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide6_200,150.jpg</slideimage>
+      <title><![CDATA[Slide6]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[ 6     Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Visualização
+
+Vista principal
+
+Zonas                    
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos  Permite ao usuário perceber a cinemática solar e as projeções de sombra para uma dada localização e um determinado dia, sendo que os ângulos solares são atualizados de acordo com a animação do sombreamento em torno da edificação. 
+]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+        <animation frame="22" id="3" />
+        <animation frame="32" id="4" />
+        <animation frame="42" id="5" />
+        <animation frame="52" id="6" />
+        <animation frame="62" id="7" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>74</totalframes>
+      <time>00:00:03</time>
+    </slide>
+    <slide id="7">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide7.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide7_200,150.jpg</slideimage>
+      <title><![CDATA[Slide7]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Zona (térmica)  definida como um cômodo, um grupo de cômodos ou, até mesmo, um andar ou uma edificação, com características térmicas semelhantes, podendo ser agrupados para fins de simplificação da simulação   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  7 3. DADOS DE ENTRADA Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos  O envoltório da edificação é formado por elementos que definem os limites da edificação com o meio externo, como: as superfícies opacas (paredes, portas, piso, teto e telhado) e superfícies vítreas tais como janelas.  Através do botão     , no menu principal, é possível inserir uma zona  e definir suas  dimensões .]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+        <animation frame="22" id="3" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>34</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="8">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide8.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide8_200,150.jpg</slideimage>
+      <title><![CDATA[Slide8]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  8 3. DADOS DE ENTRADA   Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos
+
+Camadas
+
+Portas
+
+Janelas]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="9">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide9.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide9_200,150.jpg</slideimage>
+      <title><![CDATA[Slide9]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  9 3. DADOS DE ENTRADA   Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos
+
+Camadas
+
+Portas
+
+Janelas   ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="10">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide10.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide10_200,150.jpg</slideimage>
+      <title><![CDATA[Slide10]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  10 3. DADOS DE ENTRADA   Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos
+
+Camadas
+
+Portas
+
+Janelas   ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>14</totalframes>
+      <time>00:00:00</time>
+    </slide>
+    <slide id="11">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide11.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide11_200,150.jpg</slideimage>
+      <title><![CDATA[Slide11]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  11 3. DADOS DE ENTRADA Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos
+
+Camadas
+
+Portas
+
+Janelas]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+        <animation frame="22" id="3" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>34</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="12">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide12.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide12_200,150.jpg</slideimage>
+      <title><![CDATA[Slide12]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  12 3. DADOS DE ENTRADA Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos
+
+Camadas
+
+Portas
+
+Janelas]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+        <animation frame="22" id="3" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>34</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="13">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide13.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide13_200,150.jpg</slideimage>
+      <title><![CDATA[Slide13]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  13 3. DADOS DE ENTRADA Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos
+
+Camadas
+
+Portas
+
+Janelas     Os modelos para janelas podem ser resistivos ou detalhados a partir do método das diferenças finitas]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="14">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide14.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide14_200,150.jpg</slideimage>
+      <title><![CDATA[Slide14]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  14 3. DADOS DE ENTRADA Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos
+
+Camadas
+
+Portas
+
+Janelas     ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="15">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide15.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide15_200,150.jpg</slideimage>
+      <title><![CDATA[Slide15]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  15 3. DADOS DE ENTRADA As janelas são inseridas por meio do ícone    Para janelas e portas o programa permite a configuração de horários de aberturas que são úteis  para uso da ventilação natural Visualização
+
+Vista principal
+
+Zonas
+
+Envoltório/Elementos
+
+Grid
+
+Sombreamento
+
+Edição
+
+Zonas
+
+Envoltório/Elementos
+
+Camadas
+
+Portas
+
+Janelas]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="16">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide16.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide16_200,150.jpg</slideimage>
+      <title><![CDATA[Slide16]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  16 3. DADOS DE ENTRADA]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+        <animation frame="22" id="3" />
+        <animation frame="32" id="4" />
+        <animation frame="42" id="5" />
+        <animation frame="52" id="6" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>64</totalframes>
+      <time>00:00:03</time>
+    </slide>
+    <slide id="17">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide17.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide17_200,150.jpg</slideimage>
+      <title><![CDATA[Slide17]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  Equipamentos
+
+Geração de vapor
+
+Iluminação
+
+Pessoas
+
+Mobiliário
+ 17 3. DADOS DE ENTRADA  Os ganhos internos referem-se ao calor tanto na forma sensível, que ocorre devido à mudança de fase líquido/vapor, como também à geração de vapor dentro de uma determinada zona da edificação. Lembrando que é preciso considerar a presença de mobiliário que afeta tanto na inercia térmica como a inércia higroscópica.]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="18">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide18.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide18_200,150.jpg</slideimage>
+      <title><![CDATA[Slide18]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  Equipamentos
+
+Geração de vapor
+
+Iluminação
+
+Pessoas
+
+Mobiliário
+ 18 3. DADOS DE ENTRADA  Em Ganhos Internos  o usuário seleciona a opção desejada e  através do Adicionar, deve indicar as características dos itens a serem  inseridos e sua configuração. ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+        <animation frame="22" id="3" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>34</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="19">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide19.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide19_200,150.jpg</slideimage>
+      <title><![CDATA[Slide19]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  19 3. DADOS DE ENTRADA  Em Ganhos Internos  o usuário seleciona a opção desejada e  através do Adicionar, deve indicar as características dos itens a serem  inseridos e sua configuração.  Equipamentos
+
+Geração de vapor
+
+Iluminação
+
+Pessoas
+
+Mobiliário
+ ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="20">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide20.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide20_200,150.jpg</slideimage>
+      <title><![CDATA[Slide20]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  20 3. DADOS DE ENTRADA  Em Ganhos Internos  o usuário seleciona a opção desejada e  através do Adicionar, deve indicar as características dos itens a serem  inseridos e sua configuração.  Equipamentos
+
+Geração de vapor
+
+Iluminação
+
+Pessoas
+
+Mobiliário
+ ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="21">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide21.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide21_200,150.jpg</slideimage>
+      <title><![CDATA[Slide21]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  21 3. DADOS DE ENTRADA  Em Ganhos Internos  o usuário seleciona a opção desejada e  através do Adicionar, deve indicar as características dos itens a serem  inseridos e sua configuração.  Equipamentos
+
+Geração de vapor
+
+Iluminação
+
+Pessoas
+
+Mobiliário
+ ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="22">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide22.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide22_200,150.jpg</slideimage>
+      <title><![CDATA[Slide22]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  22 3. DADOS DE ENTRADA  Em Ganhos Internos  o usuário seleciona a opção desejada e  através do Adicionar, deve indicar as características dos itens a serem  inseridos e sua configuração.  Equipamentos
+
+Geração de vapor
+
+Iluminação
+
+Pessoas
+
+Mobiliário
+  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="23">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide23.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide23_200,150.jpg</slideimage>
+      <title><![CDATA[Slide23]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  23 3. DADOS DE ENTRADA  Em Ganhos Internos  o usuário seleciona a opção desejada e  através do Adicionar, deve indicar as características dos itens a serem  inseridos e sua configuração.  Equipamentos
+
+Geração de vapor
+
+Iluminação
+
+Pessoas
+
+Mobiliário
+  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="24">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide24.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide24_200,150.jpg</slideimage>
+      <title><![CDATA[Slide24]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  24 3. DADOS DE ENTRADA  Apresentam-se os sistemas de climatização ou sistemas HVAC (Heating, Ventilation and Air-Conditioning) que são responsáveis pelo tratamento do ar do ponto de vista higrotérmico, ou seja, pelo controle de temperatura e, mais raramente, o de umidade.  Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="25">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide25.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide25_200,150.jpg</slideimage>
+      <title><![CDATA[Slide25]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  25 3. DADOS DE ENTRADA  Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+  Apresentam-se os sistemas de climatização ou sistemas HVAC (Heating, Ventilation and Air-Conditioning) que são responsáveis pelo tratamento do ar do ponto de vista higrotérmico, ou seja, pelo controle de temperatura e, mais raramente, o de umidade. ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="26">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide26.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide26_200,150.jpg</slideimage>
+      <title><![CDATA[Slide26]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  26 3. DADOS DE ENTRADA  Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+   Apresentam-se os sistemas de climatização ou sistemas HVAC (Heating, Ventilation and Air-Conditioning) que são responsáveis pelo tratamento do ar do ponto de vista higrotérmico, ou seja, pelo controle de temperatura e, mais raramente, o de umidade. ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="27">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide27.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide27_200,150.jpg</slideimage>
+      <title><![CDATA[Slide27]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  27 3. DADOS DE ENTRADA  Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+   Apresentam-se os sistemas de climatização ou sistemas HVAC (Heating, Ventilation and Air-Conditioning) que são responsáveis pelo tratamento do ar do ponto de vista higrotérmico, ou seja, pelo controle de temperatura e, mais raramente, o de umidade. ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>14</totalframes>
+      <time>00:00:00</time>
+    </slide>
+    <slide id="28">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide28.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide28_200,150.jpg</slideimage>
+      <title><![CDATA[Slide28]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  28 3. DADOS DE ENTRADA  Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+   Apresentam-se os sistemas de climatização ou sistemas HVAC (Heating, Ventilation and Air-Conditioning) que são responsáveis pelo tratamento do ar do ponto de vista higrotérmico, ou seja, pelo controle de temperatura e, mais raramente, o de umidade. ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="29">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide29.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide29_200,150.jpg</slideimage>
+      <title><![CDATA[Slide29]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  29 3. DADOS DE ENTRADA  Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+   Apresentam-se os sistemas de climatização ou sistemas HVAC (Heating, Ventilation and Air-Conditioning) que são responsáveis pelo tratamento do ar do ponto de vista higrotérmico, ou seja, pelo controle de temperatura e, mais raramente, o de umidade.   ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="30">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide30.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide30_200,150.jpg</slideimage>
+      <title><![CDATA[Slide30]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  30 3. DADOS DE ENTRADA    Apresentam-se os sistemas de climatização ou sistemas HVAC (Heating, Ventilation and Air-Conditioning) que são responsáveis pelo tratamento do ar do ponto de vista higrotérmico, ou seja, pelo controle de temperatura e, mais raramente, o de umidade.   Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="31">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide31.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide31_200,150.jpg</slideimage>
+      <title><![CDATA[Slide31]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  31 3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+    ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="32">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide32.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide32_200,150.jpg</slideimage>
+      <title><![CDATA[Slide32]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  32 3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+     ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="33">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide33.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide33_200,150.jpg</slideimage>
+      <title><![CDATA[Slide33]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="34">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide34.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide34_200,150.jpg</slideimage>
+      <title><![CDATA[Slide34]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+        <animation frame="22" id="3" />
+        <animation frame="32" id="4" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>44</totalframes>
+      <time>00:00:02</time>
+    </slide>
+    <slide id="35">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide35.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide35_200,150.jpg</slideimage>
+      <title><![CDATA[Slide35]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+  Torre de resfriamento]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="36">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide36.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide36_200,150.jpg</slideimage>
+      <title><![CDATA[Slide36]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[    Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Chiller com condensação a água ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="37">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide37.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide37_200,150.jpg</slideimage>
+      <title><![CDATA[Slide37]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Chiller com condensação a água ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="38">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide38.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide38_200,150.jpg</slideimage>
+      <title><![CDATA[Slide38]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Chiller com condensação a água ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="39">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide39.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide39_200,150.jpg</slideimage>
+      <title><![CDATA[Slide39]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ SISTEMA SECUNDÁRIO “CIRCUITO SECUNDÁRIO” ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="40">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide40.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide40_200,150.jpg</slideimage>
+      <title><![CDATA[Slide40]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[    Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Fan-coil Adicionado um fan-coil, a tela ao lado será apresentada onde usuário deverá selecionar em que zona o equipamento será inserido.   Nesta tela também são mostrados os equipamentos de climatização que já foram inseridos em cada zona. Após selecionar a zona deve-se clicar no botão “Adicionar”.]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+        <animation frame="22" id="3" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>34</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="41">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide41.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide41_200,150.jpg</slideimage>
+      <title><![CDATA[Slide41]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+  Para inserir um climatizador fan-coil deve-se clicar sobre a figura  do equipamento na planta do sistema e selecionar o botão “inserir equipamento” na barra lateral esquerda do módulo HVAC.  Fan-coil  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="42">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide42.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide42_200,150.jpg</slideimage>
+      <title><![CDATA[Slide42]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Fan-coil  ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>14</totalframes>
+      <time>00:00:00</time>
+    </slide>
+    <slide id="43">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide43.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide43_200,150.jpg</slideimage>
+      <title><![CDATA[Slide43]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  43 3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Na aba “Resfriamento” o usuário define o sistema de controle que atuará controle da temperatura do ambiente visando o resfriamento do ar. O sinal de controle atua diretamente no fluxo de água gelada da serpentina de resfriamento.]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="44">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide44.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide44_200,150.jpg</slideimage>
+      <title><![CDATA[Slide44]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  44 3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Na aba “Resfriamento” o usuário define o sistema de controle que atuará controle da temperatura do ambiente visando o resfriamento do ar. O sinal de controle atua diretamente no fluxo de água gelada da serpentina de resfriamento.
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="45">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide45.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide45_200,150.jpg</slideimage>
+      <title><![CDATA[Slide45]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  45 3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Na aba “Resfriamento” o usuário define o sistema de controle que atuará controle da temperatura do ambiente visando o resfriamento do ar. O sinal de controle atua diretamente no fluxo de água gelada da serpentina de resfriamento.
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="46">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide46.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide46_200,150.jpg</slideimage>
+      <title><![CDATA[Slide46]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  46 3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Na aba “Resfriamento” o usuário define o sistema de controle que atuará controle da temperatura do ambiente visando o resfriamento do ar. O sinal de controle atua diretamente no fluxo de água gelada da serpentina de resfriamento.
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="47">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide47.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide47_200,150.jpg</slideimage>
+      <title><![CDATA[Slide47]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+ Fan-coil   ]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="48">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide48.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide48_200,150.jpg</slideimage>
+      <title><![CDATA[Slide48]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+  Bomba de circulação de água]]></slidetext>
+      <animations>
+        <animation frame="2" id="1" />
+        <animation frame="12" id="2" />
+      </animations>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="49">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide49.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide49_200,150.jpg</slideimage>
+      <title><![CDATA[Slide49]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  49 3. DADOS DE ENTRADA Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="50">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide50.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide50_200,150.jpg</slideimage>
+      <title><![CDATA[Slide50]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  50 3. DADOS DE ENTRADA  Para aquecimento, pode-se utilizar o próprio sistema de condicionamento de ar que contém uma serpentina de aquecimento por meio de caldeira ou de aquecimento elétrico. Aquecedores também estão disponíveis no programa a partir de um modelo com trocadores de calor contendo óleo como fluido circundante. Abaixo, apresentam-se telas para configuração desse processo de climatização.
+
+ Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+  Ainda é possível definir quais são as características do aquecedor, que podem ser alteradas através do botão “Propriedades”, como apresentadas na figura abaixo.
+
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="51">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide51.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide51_200,150.jpg</slideimage>
+      <title><![CDATA[Slide51]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  51 3. DADOS DE ENTRADA  A ventilação pode ser:
+ Natural: dependente da abertura de janelas;
+ Mecânica: a partir do uso de ventiladores, exaustores;
+ Híbrida: composição de ambas.
+Para configuração da ventilação forçada, deve-se acessar a opção “Climatização” do menu Dados de Entrada, em seguida “Ventilação Mecânica” e, logo após, selecionar a opção “Direta”.
+
+ Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+   ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="52">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide52.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide52_200,150.jpg</slideimage>
+      <title><![CDATA[Slide52]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  52 3. DADOS DE ENTRADA  Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+   A ventilação pode ser:
+ Natural: dependente da abertura de janelas;
+ Mecânica: a partir do uso de ventiladores, exaustores;
+ Híbrida: composição de ambas.
+Para configuração da ventilação forçada, deve-se acessar a opção “Climatização” do menu Dados de Entrada, em seguida “Ventilação Mecânica” e, logo após, selecionar a opção “Direta”.
+
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="53">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide53.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide53_200,150.jpg</slideimage>
+      <title><![CDATA[Slide53]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  53 3. DADOS DE ENTRADA  Existem duas maneiras de definir a ventilação forçada em um ambiente. A primeira é de acordo com o número de pessoas no ambiente (define o número de pessoas e a ração de ar por hora). No botão “Consultar” está disponível a Tabela de Exemplos da Ração de Ar por pessoa. Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+  ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="54">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide54.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide54_200,150.jpg</slideimage>
+      <title><![CDATA[Slide54]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  54 3. DADOS DE ENTRADA  A segunda maneira de definir a ventilação forçada em um ambiente é de acordo com o número de trocas de ar por hora do volume do ambiente, utilizado caso o número de pessoas no interior do ambiente não esteja definido. No botão “Consultar”, está disponível a Tabela de Exemplos de Trocas de Ar por Hora. Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+  O horário de atuação do sistema de ventilação forçada deve ser configurado no botão “Configurar Horários” na tela padrão de configuração de horários do software.
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="55">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide55.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide55_200,150.jpg</slideimage>
+      <title><![CDATA[Slide55]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  55 3. DADOS DE ENTRADA  Para a configuração do resfriamento evaporativo, deve-se acessar a opção “climatização” do menu dados de entrada, em seguida “Resf. evaporativo”.
+
+ Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+   Ao adicionar um climatizador de resfriamento evaporativo, o usuário deverá selecionar em que zona o equipamento será inserido e clicar no botão “Adicionar”. Nesta tela também são mostrados os equipamentos de climatização que já foram inseridos em cada zona.
+
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="56">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide56.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide56_200,150.jpg</slideimage>
+      <title><![CDATA[Slide56]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  56 3. DADOS DE ENTRADA  Após clicar no botão adicionar será aberta a tela mostrada abaixo. Nessa tela é possível fazer a configuração do sistema de controle, do horário de funcionamento e também editar as propriedades do equipamento.
+
+ Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+   Existem duas opções de controladores:
+ Controlador PID: define os ganhos proporcional, integral e derivativo;
+ Controlador ON-OFF: é um controle termostático, definido apenas por um valor de referência e uma histerese.
+]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="57">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide57.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide57_200,150.jpg</slideimage>
+      <title><![CDATA[Slide57]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  57 3. DADOS DE ENTRADA  Após clicar no botão adicionar será aberta a tela mostrada abaixo. Nessa tela é possível fazer a configuração do sistema de controle, do horário de funcionamento e também editar as propriedades do equipamento.
+
+ Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+  Ao acessar o botão “propriedades” abre-se a janela indicativa das características do sistema por aspersão.
+ ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="58">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <fileurl>Slides/slide58.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide58_200,150.jpg</slideimage>
+      <title><![CDATA[Slide58]]></title>
+      <notes><![CDATA[]]></notes>
+      <slidetext><![CDATA[   Edificação  Horários de Uso  Ganhos Internos  Energia Renovável  Climatização (HVAC)  58 3. DADOS DE ENTRADA  Após clicar no botão adicionar será aberta a tela mostrada abaixo. Nessa tela é possível fazer a configuração do sistema de controle, do horário de funcionamento e também editar as propriedades do equipamento.
+
+ Condicionamento de ar
+
+Janela Split
+
+Central
+
+Aquecimento
+
+Ventilação Mecânica
+
+Resfriamento evaporativo
+
+
+   Nessa janela, o usuário poderá configurar o horário de funcionamento do resfriamento evaporativo através do botão “Horários”.
+
+ ]]></slidetext>
+      <waitforuser>false</waitforuser>
+      <totalframes>24</totalframes>
+      <time>00:00:01</time>
+    </slide>
+  </slides>
+</presentation>

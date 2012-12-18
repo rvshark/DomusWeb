@@ -1,0 +1,103 @@
+<?php 
+header("Content-type: text/html; charset=utf-8");
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html <?php echo $direction ?> >
+    <head>
+        <?php echo $meta ?>
+        <meta name="keywords" content="<?php echo $title ?> domus eficiência energética edificações edificação software análise términa pucpr pesquisa eletrobras lst cnpq fundação araucária procel energia" />
+        <title><?php echo $title ?></title>
+        <link rel="shortcut icon" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/favicon.ico" />
+        <?php include("$CFG->javascript"); ?>        
+        <!-- CSS do menu horizontal -->        
+        <link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot ?>/include/css/menuNovo.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot ?>/include/css/conteudoNovo.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot ?>/include/css/windows.css" media="all" />
+        
+        <!-- CSS JQuery -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot ?>/include/css/jquery/smoothness/jquery-ui-1.8.16.custom.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot ?>/include/css/jquery/smoothness/jquery.ui.resizable.css" />
+		
+        
+        <script type="text/javascript" src="<?php echo $CFG->wwwroot ?>/include/js/browserdetect.js"></script>
+        <script type="text/javascript" src="<?php echo $CFG->wwwroot ?>/include/js/windows.js"></script>
+		<!-- Inclusão para garantir compatibilidade com editor CKeditor -- jhonatan -->
+		<script type="text/javascript" src="<?php echo $CFG->wwwroot ?>/include/ckeditor/ckeditor.js"></script>
+        <script type="text/javascript" src="<?php echo $CFG->wwwroot ?>/include/ckeditor/config.js"></script>
+        
+        <script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-27676049-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+    </head>
+    <body>
+    	
+        <?php 
+	$id = $_GET["id"];
+	if($id != 35)
+	{ ?>
+		
+        <!--<script type="text/javascript">$.loader({content:"<div>Carregando ...</div>"});</script>
+        <div id="contentGeral" style="visibility:hidden;"> -->
+        <div id="contentGeral">
+            <?php } ?>
+            <?php if ($home) {  // This is what gets printed on the home page only
+            ?>
+            <div id="header" class="clearfix">
+                <div id="header-content">
+                    <?php echo $menu ?>
+                    <div class="clear:both">
+                    </div>
+                </div>
+                <div id="topmenu">
+                    <?php include ('menu.php'); ?>
+                    <script type="text/javascript">
+                        //initMenu_t();
+                    </script>
+                </div>
+            </div>
+            <?php } 
+			else if ($heading) {  // This is what gets printed on any other page with a heading
+            ?>
+            <div id="header" class="clearfix">
+                <div id="header-content">
+                    <?php echo $menu ?>
+                </div>
+                <div id="topmenu">
+                    <?php include ('menu.php'); ?>
+                    <script type="text/javascript">
+                        //initMenu_t();
+                    </script>
+                </div>
+            </div>
+            <div class="navbar">
+                <?php 
+					if ($navigation) { // This is the navigation table with breadcrumbs
+   				 ?>
+                <div class="breadcrumb">
+                    <?php print_navigation($navigation); ?>
+                </div>
+                <?php } ?>
+                <div class="navbutton">
+                    <?php echo $button; ?>
+                </div>
+            </div>
+            <?php } ?>
+            <div id="main_carregando" style="<?php if (!$navigation) echo "background-position: 0 -168px!important"; 
+            									 			else echo "background-position: 0 -198px!important"; ?>">
+            
+            <div class="rodape_carregando"></div>    
+            </div>
+            <!-- END OF HEADER -->
+            <div id="main" style="display: none; ">
+                <div id="container">

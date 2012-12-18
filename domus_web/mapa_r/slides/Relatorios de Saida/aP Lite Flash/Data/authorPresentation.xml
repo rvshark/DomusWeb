@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentation>
+  <properties>
+    <title><![CDATA[]]></title>
+    <creationdate>7/12/2011 16:24:50</creationdate>
+    <audio>off</audio>
+    <navigationonclick>true</navigationonclick>
+    <animations>false</animations>
+    <transitions>false</transitions>
+    <sdkversion>
+    </sdkversion>
+    <release>
+    </release>
+    <soundacrossslides>
+    </soundacrossslides>
+    <defaulturl>Slides/</defaulturl>
+    <video>
+    </video>
+    <templatecolor>Silver</templatecolor>
+    <layout>Trade Show</layout>
+    <presentertitle>
+    </presentertitle>
+    <presentername>
+    </presentername>
+    <presentercompany>
+    </presentercompany>
+    <presenteremail>
+    </presenteremail>
+    <presentationtitle>Relatorios de Saída r01 Encac R02</presentationtitle>
+    <powerpointfile>Relatorios de Saída r01 Encac R02.pps</powerpointfile>
+    <presentationdescription>
+    </presentationdescription>
+    <presentationkeywords>
+    </presentationkeywords>
+    <audioquality>exclude</audioquality>
+    <imagequality>10</imagequality>
+    <showslidenotesinoutput>False</showslidenotesinoutput>
+    <usenarrations>False</usenarrations>
+    <profile>
+    </profile>
+    <presenterphoto>
+    </presenterphoto>
+    <presenterphotoheight>
+    </presenterphotoheight>
+    <presenterphotowidth>
+    </presenterphotowidth>
+    <presentationlogo>
+    </presentationlogo>
+    <presentationlogoheight>
+    </presentationlogoheight>
+    <presentationlogowidth>
+    </presentationlogowidth>
+    <createipod />
+  </properties>
+  <slides>
+    <slide id="1">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide1.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide1_200,150.jpg</slideimage>
+      <title>Slide1</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>    5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Introdução 1 O software Domus fornece um grande número de parâmetros para dados de saída. Tais informações devem ser solicitadas antes da execução da simulação.
+
+ACESSO: menu principal Dados de Saída pela opção Configuração. Dentro de uma zona específica pode ser realizado o monitoramento de
+
+	Para habilitar o acesso aos parâmetros desejados o usuário deverá marcar a opção Monitorar na janela de configuração dos relatórios.
+	</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="2">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide2.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide2_200,150.jpg</slideimage>
+      <title>Slide2</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Introdução 2 O software Domus fornece um grande número de parâmetros para dados de saída. Tais informações devem ser solicitadas antes da execução da simulação.
+
+ACESSO: menu principal Dados de Saída pela opção Configuração. Dentro de uma zona específica pode ser realizado o monitoramento de
+
+	Para habilitar o acesso aos parâmetros desejados o usuário deverá marcar a opção Monitorar na janela de configuração dos relatórios.
+	  </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="3">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide3.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide3_200,150.jpg</slideimage>
+      <title>Slide3</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Introdução 3 O software Domus fornece um grande número de parâmetros para dados de saída. Tais informações devem ser solicitadas antes da execução da simulação.
+
+ACESSO: menu principal Dados de Saída pela opção Configuração. Dentro de uma zona específica pode ser realizado o monitoramento de
+
+	Para habilitar o acesso aos parâmetros desejados o usuário deverá marcar a opção Monitorar na janela de configuração dos relatórios.
+
+
+
+Em projetos com mais de uma zona, o usuário deverá selecionar os parâmetros desejados para cada zona, através da seleção na combo-box em questão. Quando se trata de paredes, deve-se proceder da mesma forma que a zona selecionada. 	  </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="4">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide4.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide4_200,150.jpg</slideimage>
+      <title>Slide4</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Temperatura
+
+Umidade relativa
+
+PMV e PDD
+
+Sensação térmica
+
+Percentual de Conforto
+
+Graus-horas de desconforto
+
+Estatísticas gerais
+
+ 4 Nesta opção conforto térmico serão selecionados os parâmetros relativos ao conforto térmico. 
+
+Uma vez solicitado o relatório de conforto térmico, o usuário poderá fechar a janela de configuração de relatórios e executar a simulação para posteriormente visualizar os resultados.   </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="5">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide5.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide5_200,150.jpg</slideimage>
+      <title>Slide5</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Ganhos térmicos
+
+Demanda e consumo
+
+
+ 5  A opção energia refere-se ao monitoramento de todo equipamento consumidor de energia elétrica no interior do ambiente que será simulado.  </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="6">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide6.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide6_200,150.jpg</slideimage>
+      <title>Slide6</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Risco de crescimento
+
+ 6  O usuário poderá configurar os relatórios para monitorar o risco de crescimento de mofo. Deve-se, inicialmente, configurar um parâmetro de modelo de umidade, níveis 0 a 4 ou nível 6. O módelo nível 5 não gera relatório de monitoramento do mofo, desta forma, a opção estará desabilitada na janela de configuração de relatórios. </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="7">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide7.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide7_200,150.jpg</slideimage>
+      <title>Slide7</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Risco de crescimento
+
+ 7  Para cada região ou porção da parede, o risco de crescimento de mofo varia de 0 a 6, ou seja: </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="8">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide8.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide8_200,150.jpg</slideimage>
+      <title>Slide8</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Carga térmica
+
+Monitoramento
+
+Controlador
+
+Sistemas indiretos
+
+ 8  O usuário deverá informar a) temperaturas e b) umidades de referência tanto para a estação de verão quanto para o inverno para o cálculo da carga térmica da zona. 
+
+Para cada estação, deve-se adicionar um horário (botão " “Configurar Horários") para precisar o intervalo de tempo a ser levado em conta para cada dia.  </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="9">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide9.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide9_200,150.jpg</slideimage>
+      <title>Slide9</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Carga térmica
+
+Monitoramento
+
+Controlador
+
+Sistemas indiretos
+
+ 9  O usuário deverá informar a) temperaturas e b) umidades de referência tanto para a estação de verão quanto para o inverno para o cálculo da carga térmica da zona. 
+
+Para cada estação, deve-se adicionar um horário (botão " “Configurar Horários") para precisar o intervalo de tempo a ser levado em conta para cada dia.    A determinação da carga térmica é necessária para o dimensionamento de um dado sistema de climatização, seja para aquecimento ou para resfriamento.</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="10">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide10.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide10_200,150.jpg</slideimage>
+      <title>Slide10</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Carga térmica
+
+Monitoramento
+
+Controlador
+
+Sistemas indiretos
+
+ 10  A opção permite o monitoramento de cada componente do sistema de climatização central. Em particular, o consumo energético de cada componente poderá ser selecionado.  </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="11">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide11.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide11_200,150.jpg</slideimage>
+      <title>Slide11</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  Perfil de temperatura
+
+Perfil de umidade
+
+Perfil de pressão de vapor
+
+Fluxos de calor e de vapor
+
+Radiação 11  Esta opção permite ao usuário o monitoramento de perfis de a) temperatura, b) umidade, c) pressão de vapor, d) fluxo de calor, e) fluxo de vapor e f) radiaçoes direta, difusa e refletida, em cada uma das superfícies de determinada zona.  
+
+Para obtenção de perfis de umidade deve-se selecionar os modelos de umidade. O monitoramento no modelo nível 5, que considera apenas tranferência pura de calor, é incapaz de  obter um perfil de umidade no interior da parede. </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="12">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide12.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide12_200,150.jpg</slideimage>
+      <title>Slide12</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  12 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="13">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide13.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide13_200,150.jpg</slideimage>
+      <title>Slide13</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  13 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC Indica a ZB </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="14">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide14.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide14_200,150.jpg</slideimage>
+      <title>Slide14</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  14 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC Dados da edificação </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="15">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide15.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide15_200,150.jpg</slideimage>
+      <title>Slide15</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  15 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC Dados das aberturas </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="16">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide16.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide16_200,150.jpg</slideimage>
+      <title>Slide16</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  16 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC Pré Requisitos </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="17">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide17.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide17_200,150.jpg</slideimage>
+      <title>Slide17</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  17 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC ENCE da envoltória </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="18">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide18.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide18_200,150.jpg</slideimage>
+      <title>Slide18</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  18 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC  Utiliza-se o método da área do edifício para a avaliação do sistema de iluminação</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="19">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide19.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide19_200,150.jpg</slideimage>
+      <title>Slide19</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  19 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC  Pré Requisitos</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="20">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide20.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide20_200,150.jpg</slideimage>
+      <title>Slide20</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  20 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC  ENCE da envoltória</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="21">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide21.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide21_200,150.jpg</slideimage>
+      <title>Slide21</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  21 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="22">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide22.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide22_200,150.jpg</slideimage>
+      <title>Slide22</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  22 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="23">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide23.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide23_200,150.jpg</slideimage>
+      <title>Slide23</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  23 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC  Modelos de referencia gerado de acordo com o nível de eficiência pretendido</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="24">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide24.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide24_200,150.jpg</slideimage>
+      <title>Slide24</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  24 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="25">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide25.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide25_200,150.jpg</slideimage>
+      <title>Slide25</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  25 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="26">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide26.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide26_200,150.jpg</slideimage>
+      <title>Slide26</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  26 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC ENCE apresentada de acordo com o método de avaliação adotado</slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+    <slide id="27">
+      <transition>
+      </transition>
+      <width>720</width>
+      <height>540</height>
+      <transitionurl />
+      <transitionmediaurl />
+      <slidenavigation />
+      <fileurl>Slides/slide27.swf</fileurl>
+      <slideimage height="150" width="200">Images/slide27_200,150.jpg</slideimage>
+      <title>Slide27</title>
+      <notes><![CDATA[]]></notes>
+      <slidetext>   5. RELATÓRIOS DE SAÍDA Conforto   Térmico   Energia   Mofo   Climatização   Paredes   RTQ-C  27 Método prescritivo
+
+Envoltória
+
+Iluminação
+
+Cond. de  ar
+
+Método simulação
+
+Bonificações
+
+Etiqueta
+
+POC POC – Percentual de horas ocupadas em conforto </slidetext>
+      <totalframes>24</totalframes>
+      <waitforuser>false</waitforuser>
+      <time>00:00:01</time>
+    </slide>
+  </slides>
+</presentation>
