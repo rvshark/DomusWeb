@@ -167,7 +167,16 @@
 		
 	}
 	
+	
+	
 	//Ações do menu horizontal
+	function historico(){  //17-12-2012 13:00 -- Guilherme Trevisan de Oliveira
+			window.open("<?php echo $CFG->wwwroot."/download/"; ?>historico.txt","_blank");
+	}
+	
+	function avaliacao(){  //07-01-2012 16:00 -- Guilherme Trevisan de Oliveira
+			window.open("<?php echo $CFG->wwwroot."/download/"; ?>Primeira Avaliação do Domus-Procel Edifica.pdf","_blank");
+	}
 	function Acao(name, arquivo)
 	{
 		if(name == 'download')
@@ -254,11 +263,21 @@
 </div>
 <div id="divVideo"></div>
 <ul id="nav-one" class="nav">
+
 	<li><a href="<?php echo $CFG->wwwroot .'/' ?>" target="_self">Apresentação</a>
 
 	</li>
 	<li><a href="#menu3_t">Download</a>
+	
 	<ul class="navSub">
+			<li>
+	<a href="javascript:void(0)" onclick="historico();">
+					Histórico de versões</a>
+			</li>
+					<li>
+			<a href="javascript:void(0)" onclick="avaliacao();">
+							Avaliação Domus</a>
+					</li>
 		<li><a href="javascript:void(0)" onclick="Acao('download','domus.exe');">
 			<?php echo $CFG->versao_domus ?></a></li>
 		<li>
