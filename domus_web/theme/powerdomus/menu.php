@@ -175,7 +175,7 @@
 	}
 	
 	function avaliacao(){  //07-01-2012 16:00 -- Guilherme Trevisan de Oliveira
-			window.open("<?php echo $CFG->wwwroot."/download/"; ?>Primeira Avaliação do Domus-Procel Edifica.pdf","_blank");
+			window.open("<?php echo $CFG->wwwroot."/download/"; ?>primeira_avaliacao_do_domus-procel_edifica.pdf","_blank");
 	}
 	function Acao(name, arquivo)
 	{
