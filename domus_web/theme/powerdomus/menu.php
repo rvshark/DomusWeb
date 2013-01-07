@@ -271,13 +271,14 @@
 	
 	<ul class="navSub">
 			<li>
+	<a href="javascript:void(0)" onclick="avaliacao();">
+					Avaliação Domus</a>
+			</li>
+			<li>
 	<a href="javascript:void(0)" onclick="historico();">
 					Histórico de versões</a>
 			</li>
-					<li>
-			<a href="javascript:void(0)" onclick="avaliacao();">
-							Avaliação Domus</a>
-					</li>
+				
 		<li><a href="javascript:void(0)" onclick="Acao('download','domus.exe');">
 			<?php echo $CFG->versao_domus ?></a></li>
 		<li>
