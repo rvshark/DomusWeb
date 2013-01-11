@@ -279,12 +279,13 @@
 					Histórico de versões</a>
 			</li>
 				
-		<li><a href="javascript:void(0)" onclick="Acao('download','domus.exe');">
-			<?php echo $CFG->versao_domus ?></a></li>
+
 		<li>
-			<a href="javascript:void(0)" onclick="Acao('download','domus-release.exe');">
+			<a href="javascript:void(0)" onclick="Acao('download','domus.exe');">
 			<?php echo $CFG->versao_domus_teste ?></a>
 		</li>
+		<li><a href="javascript:void(0)" onclick="Acao('download','domus-release.exe');">
+			<?php echo $CFG->versao_domus ?></a></li>
 		<li>
 			<a href="javascript:void(0)" onclick="Acao('pdf','TUTORIAL_FINAL-9_7_2012-mod.pdf');">Tutorial Domus (pdf interativo)</a>
 		</li>
