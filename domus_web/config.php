@@ -47,8 +47,8 @@ $CFG->dataroot  = 'D:\Projetos\php\Moodledata';
 require_once("$CFG->dirroot/util/dBug.php");  */
 
 
-$CFG->versao_domus = 'Domus Procel Edifica v1.0.1.0';
-$CFG->versao_domus_teste = 'Domus Beta Teste'; 
+$CFG->versao_domus = 'Domus - Procel Edifica 2012';
+$CFG->versao_domus_teste = 'Domus - Procel Edifica 2013 (Beta)'; 
 
 $CFG->admin     = 'admin';
 $CFG->maxbytes  = 500097152;
