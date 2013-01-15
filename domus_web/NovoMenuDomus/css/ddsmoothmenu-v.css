@@ -1,0 +1,86 @@
+.ddsmoothmenu-v ul{
+margin: 0;
+padding: 0;
+/*width: 170px; commented by jhonatan*/ /* Main Menu Item widths */ 
+width:151px;
+list-style-type: none;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif!important;
+font: bold 12px;
+background-color: rgb(222, 222, 222); /*add by jhonatan*/
+cursor: pointer; /*add by jhonatan*/
+}
+ 
+.ddsmoothmenu-v ul li{
+position: relative;
+width: 148px; height: 50px;/* add by jhonatan*/
+border: 1px solid rgb(192, 192, 192); /*add by jhonatan*/
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif!important;
+font-weight: bolder!important;
+
+text-align: center!important;
+font-size: 13px;
+
+
+
+margin-top:1px; /*add by jhonatan*/
+padding-top: 5px; /*add by jhonatan*/
+}
+
+.tituloMenu { /*add by jhonatan*/
+/*background-image:url("http://domus.pucpr.br/homo/theme/powerdomus/images/titulo_novo.jpg");*/
+background-image:url("../titulo_novo.jpg");
+background-repeat: no-repeat;
+background-position: 0px 17px ;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 2px;
+text-align: center!important;
+background-color: rgb(222, 222, 222); /*add by jhonatan*/
+border:none;
+vertical-align: middle!important;	
+width: 151px; height: 30px; 
+padding-top: 3px; /*add by jhonatan*/
+
+}
+
+/* Top level menu links style */
+.ddsmoothmenu-v ul li a{
+/*display: block; commented by jhonatan*/
+overflow: auto; /*force hasLayout in IE7 */
+/*color: white; commented by jhonatan*/
+text-decoration: none;
+vertical-align: middle!important;
+padding: 0px;
+/*border-bottom: 1px solid #778;
+border-right: 1px solid #778;*/ /*commented by jhonatan*/
+}
+
+.ddsmoothmenu-v ul li a:link, .ddsmoothmenu-v ul li a:visited, .ddsmoothmenu-v ul li a:active{
+/*background: #414141; commented by jhonatan*/ /*background of menu items (default state)*/
+color: rgb(64, 157, 181);
+}
+
+
+.ddsmoothmenu-v ul li a.selected{ /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+/*background: black; commented by jhonatan*/
+/*color: white; commented by jhonatan*/
+}
+
+.ddsmoothmenu-v ul li a:hover{
+/*background: black; commented by jhonatan*/ /*background of menu items during onmouseover (hover state)*/
+/*color: white; commented by jhonatan*/
+}
+
+/*Sub level menu items */
+.ddsmoothmenu-v ul li ul{
+position: absolute;
+/*width: 170px; commented by jhonatan*/ /*Sub Menu Items width */
+top: 0;
+font-weight: bold;
+visibility: hidden;
+}
+
+ 
+/* Holly Hack for IE \
+* html .ddsmoothmenu-v ul li { float: left; height: 1%; }
+* html .ddsmoothmenu-v ul li a { height: 1%; }*/
+/* End */

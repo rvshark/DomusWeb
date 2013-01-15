@@ -1,0 +1,32 @@
+Passos para incluir NovoMenuDomus
+
+1º Adicone o diretório "NovoMenuDomus" na raiz do projeto
+2º No arquivo "block/menu_curso/block_menu_curso.php" comente o trecho de codigo: "$this->content->text = $this->cursos_domus->ImprimirMenu();", proximo a linha 27 (esta ação desativa a configuração do antigo menu.)
+3º No arquivo "mod/resource/type/html/resource.class.php" na linha 170 E ANTES do metodo "blocks_print_group($PAGE, $pageblocks, BLOCK_POS_LEFT);" adicione este trecho de codigo:
+	include_once $CFG->dirroot."/NovoMenuDomus/classes/MenuTree.php";
+	$novomenudomus = new TreeMenu2();
+	echo $novomenudomus->show();
+	(esta chamada imprime o menu para todas as opções dos cursos)
+4º No arquivo "index.php" na linha 145 E ANTES do metodo "blocks_print_group($PAGE, $pageblocks, BLOCK_POS_LEFT);" adicione este trecho de codigo:
+	include_once 'NovoMenuDomus/classes/MenuTree.php';
+	$novoMenuDomus = new TreeMenu2();
+	echo $novoMenuDomus->show();
+	(Esta chama imprie o menu apenas para a tela inicial do domus)
+5º No arquivo 	"theme/powerdomus/header.html" na linha 29 adicione este thecho de codigo.
+	<!-- INICIO Inclusão de css e js para funcionamento do menu vertical principa. (folder: NovoMenuDomus) -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot ?>/NovoMenuDomus/css/ddsmoothmenu.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot ?>/NovoMenuDomus/css/ddsmoothmenu-v.css" />
+		<script	type="text/javascript" src="<?php echo $CFG->wwwroot ?>/NovoMenuDomus/js/ddsmoothmenu.js"></script>
+
+		<script type="text/javascript">
+			ddsmoothmenu.init({
+				mainmenuid : "smoothmenu2", //Menu DIV id
+				orientation : 'v', //Horizontal or vertical menu: Set to "h" or "v"
+				classname : 'ddsmoothmenu-v', //class added to menu's outer DIV
+				//customtheme: ["#804000", "#482400"],
+				contentsource : "markup" //"markup" or ["container_id", "path_to_menu_file"]
+			})
+		</script>
+       <!--  FIM Inclusão de css e js para funcionamento do menu vertical principa. (folder: NovoMenuDomus) -->
+	(NOTA: este trecho de codigo interfere na apresentação do antigo menu, ou seja, caso deseje reativar o antigo menu todo o conteudo desta tag script deve ser toda comentado.)
+	
