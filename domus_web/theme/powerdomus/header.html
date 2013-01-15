@@ -3,8 +3,9 @@ header("Content-type: text/html; charset=utf-8");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html <?php echo $direction ?> >
-    <head>
+<html
+<?php echo $direction ?> >
+<head>
         <?php echo $meta ?>
         <meta name="keywords" content="<?php echo $title ?> domus eficiência energética edificações edificação software análise términa pucpr pesquisa eletrobras lst cnpq fundação araucária procel energia" />
         <title><?php echo $title ?></title>
@@ -25,20 +26,50 @@ header("Content-type: text/html; charset=utf-8");
 		<!-- Inclusão para garantir compatibilidade com editor CKeditor -- jhonatan -->
 		<script type="text/javascript" src="<?php echo $CFG->wwwroot ?>/include/ckeditor/ckeditor.js"></script>
         <script type="text/javascript" src="<?php echo $CFG->wwwroot ?>/include/ckeditor/config.js"></script>
+        <!-- INICIO Inclusão de css e js para funcionamento do menu vertical principa. (folder: NovoMenuDomus) -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot ?>/NovoMenuDomus/css/ddsmoothmenu.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot ?>/NovoMenuDomus/css/ddsmoothmenu-v.css" />
+		<script	type="text/javascript" src="<?php echo $CFG->wwwroot ?>/NovoMenuDomus/js/ddsmoothmenu.js"></script>
+
+		<script type="text/javascript">
+			ddsmoothmenu.init({
+				mainmenuid : "smoothmenu2", //Menu DIV id
+				orientation : 'v', //Horizontal or vertical menu: Set to "h" or "v"
+				classname : 'ddsmoothmenu-v', //class added to menu's outer DIV
+				//customtheme: ["#804000", "#482400"],
+				contentsource : "markup" //"markup" or ["container_id", "path_to_menu_file"]
+			})
+		</script>
+       <!--  FIM Inclusão de css e js para funcionamento do menu vertical principa. (folder: NovoMenuDomus) -->
+        
+        
+        
+        
+        
+        
+        
+        
         
         <script type="text/javascript">
+									var _gaq = _gaq || [];
+									_gaq
+											.push([ '_setAccount',
+													'UA-27676049-1' ]);
+									_gaq.push([ '_trackPageview' ]);
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-27676049-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
+									(function() {
+										var ga = document
+												.createElement('script');
+										ga.type = 'text/javascript';
+										ga.async = true;
+										ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+												: 'http://www')
+												+ '.google-analytics.com/ga.js';
+										var s = document
+												.getElementsByTagName('script')[0];
+										s.parentNode.insertBefore(ga, s);
+									})();
+								</script>
     </head>
     <body>
     	
@@ -62,8 +93,8 @@ header("Content-type: text/html; charset=utf-8");
                 <div id="topmenu">
                     <?php include ('menu.php'); ?>
                     <script type="text/javascript">
-                        //initMenu_t();
-                    </script>
+																					//initMenu_t();
+																				</script>
                 </div>
             </div>
             <?php } 
@@ -76,8 +107,8 @@ header("Content-type: text/html; charset=utf-8");
                 <div id="topmenu">
                     <?php include ('menu.php'); ?>
                     <script type="text/javascript">
-                        //initMenu_t();
-                    </script>
+																					//initMenu_t();
+																				</script>
                 </div>
             </div>
             <div class="navbar">
