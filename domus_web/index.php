@@ -104,12 +104,13 @@ if (empty($CFG->langmenu)) {
 }
 
 $PAGE       = page_create_object(PAGE_COURSE_VIEW, SITEID);
+
 $pageblocks = blocks_setup($PAGE);
  
- 
+
 $editing    = $PAGE->user_is_editing();
  
- 
+
 $preferred_width_left  = bounded_number(BLOCK_L_MIN_WIDTH, blocks_preferred_width($pageblocks[BLOCK_POS_LEFT]),
 BLOCK_L_MAX_WIDTH);
 $preferred_width_right = bounded_number(BLOCK_R_MIN_WIDTH, blocks_preferred_width($pageblocks[BLOCK_POS_RIGHT]),
@@ -128,19 +129,31 @@ if ($PAGE->user_allowed_editing()) {
 else
 	{
 		//echo '<div style="width: 985px;height: 30px"></div>';
+		
 	}
 ?>
 <table id="layout-table" summary="layout">
 	<tr>
 	<?php
 	$lt = (empty($THEME->layouttable)) ? array('left', 'middle', 'right') : $THEME->layouttable; //TODO LINHA COMENTADA PARA RETIRAR A COLUNA DA DIREITA
+	
 	foreach ($lt as $column) {
 		switch ($column) {
 			case 'left':
-				if (blocks_have_content($pageblocks, BLOCK_POS_LEFT) || $editing || $PAGE->user_allowed_editing()) {
+				if (blocks_have_content($pageblocks, BLOCK_POS_LEFT) || $editing || $PAGE->user_allowed_editing() || !isloggedin()) { 
+					// eu adicionei a condição "|| !isloggedin()" neste if para que o menu vertical seja apresentado para usuarios que não estejam logados, 
+					//porem não consigo (ainda) calcular o seu impacto dentro da aplicação. -- Jhonatan Morais 
 
 					echo '<td style="width: '.$preferred_width_left.'px;" id="left-column">';
+					
 					print_container_start();					
+					
+					// Chamada do novo menu -- Jhonatan
+					//	d($novoMenuDomus->show());
+					
+					include_once 'NovoMenuDomus/classes/MenuTree.php';
+					$novoMenuDomus = new TreeMenu2();
+					echo $novoMenuDomus->show();
 					
 					blocks_print_group($PAGE, $pageblocks, BLOCK_POS_LEFT);
 					print_container_end();
@@ -153,7 +166,7 @@ else
 				
 				
 				echo '<td id="middle-column">'. skip_main_destination();
-					
+				
 				print_container_start();
 					
 				/// Print Section
