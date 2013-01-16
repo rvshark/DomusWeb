@@ -7,7 +7,7 @@
     require_once($CFG->libdir.'/blocklib.php');
     require_once($CFG->libdir.'/ajax/ajaxlib.php');
     require_once($CFG->dirroot.'/mod/forum/lib.php');
-
+ 
     $id          = optional_param('id', 0, PARAM_INT);
     $name        = optional_param('name', '', PARAM_RAW);
     $edit        = optional_param('edit', -1, PARAM_BOOL);
@@ -19,7 +19,7 @@
     $marker      = optional_param('marker',-1 , PARAM_INT);
     $switchrole  = optional_param('switchrole',-1, PARAM_INT);
 
-
+  
 
     if (empty($id) && empty($name) && empty($idnumber)) {
         error("Must specify course id, short name or idnumber");
@@ -28,7 +28,7 @@
     if (!empty($name)) {
         if (! ($course = get_record('course', 'shortname', $name)) ) {
             error('Invalid short course name');
-        }
+        } 
     } else if (!empty($idnumber)) {
         if (! ($course = get_record('course', 'idnumber', $idnumber)) ) {
             error('Invalid course idnumber');
