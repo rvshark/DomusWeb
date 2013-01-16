@@ -1,5 +1,4 @@
 <?php
-
 class block_menu_curso extends block_base{
 
 	function init(){
@@ -8,7 +7,9 @@ class block_menu_curso extends block_base{
 		$this->header = "";
 		$this->version = 01;
 		$this->menu_curso = TRUE;		
+		
 		$this->cursos_domus = new CursosDomus();
+		
 	}
 
 	function get_content(){
@@ -23,9 +24,8 @@ class block_menu_curso extends block_base{
 		if (empty($this->instance)) {
 			return $this->content;
 		}
-		
-		$this->content->text = $this->cursos_domus->ImprimirMenu();
-		
+		//Descomente para ativar o menu do hersilio --Jhonatan
+		//$this->content->text = $this->cursos_domus->ImprimirMenu();
 		return $this->content;
 	}
 
