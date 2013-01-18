@@ -64,7 +64,7 @@ else
             $(document).ready(function(){
 				$("#main,.coperacao,.nav").show();
 				$('#main_carregando').hide();
-            	$('#gallery a').lightBox();
+            	//$('#gallery a').lightBox();
             	$('#header-content').append("<div class='logo'></div>");
             	$('.logo').click(function(){window.location.href = "<?php echo $CFG->wwwroot ?>";})
 			});
