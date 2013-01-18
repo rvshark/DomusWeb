@@ -2066,22 +2066,37 @@ function purify_html($text) {
     global $CFG;
 
     // this can not be done only once because we sometimes need to reset the cache
-    $cachedir = $CFG->dataroot.'/cache/htmlpurifier/';
+    $cachedir = $CFG->dataroot.'/cache/htmlpurifier/library/';
     $status = check_dir_exists($cachedir, true, true);
 
     static $purifier = false;
     if ($purifier === false) {
-        require_once $CFG->libdir.'/htmlpurifier/HTMLPurifier.auto.php';
-        $config = HTMLPurifier_Config::createDefault();
-        $config->set('Core', 'AcceptFullDocuments', false);
+        require_once $CFG->libdir.'/htmlpurifier/library/HTMLPurifier.auto.php';
+      $config = HTMLPurifier_Config::createDefault();
+	$config->set('HTML.DefinitionID', 'enduser-customize1.html tutorial1');
+	$config->set('HTML.DefinitionRev', 2);
+	$config->set('Core.LexerImpl', 'DirectLex');
+	
+        $config->set('Attr.EnableID', true);
+        $config->set('HTML.Attr.Name.UseCDATA', true);
+        $def2 = $config->getHTMLDefinition(true);
+        $def2->addAttribute('a','id', 'CDATA');
+        $def2->addAttribute('a','name', 'CDATA');        
+	$purifier = new HTMLPurifier($config);
+       
+        /*$config->set('Core', 'AcceptFullDocuments', false);
         $config->set('Core', 'Encoding', 'UTF-8');
+        
         $config->set('HTML', 'Doctype', 'XHTML 1.0 Transitional');
         $config->set('Cache', 'SerializerPath', $cachedir);
         $config->set('URI', 'AllowedSchemes', array('http'=>1, 'https'=>1, 'ftp'=>1, 'irc'=>1, 'nntp'=>1, 'news'=>1, 'rtsp'=>1, 'teamspeak'=>1, 'gopher'=>1, 'mms'=>1));
-        $config->set('Attr', 'AllowedFrameTargets', array('_blank'));
-        $purifier = new HTMLPurifier($config);
+        $config->set('Attr', 'AllowedFrameTargets', array('_blank'));*/
+        
+        //$def = $config->getHTMLDefinition(true);
+       
     }
     return $purifier->purify($text);
+   // return $text;
 }
 
 /**
@@ -5384,14 +5399,14 @@ function print_textarea($usehtmleditor, $rows, $cols, $width, $height, $name, $v
         }
         
 
-         
+          
         if ($usehtmleditor) {
             if (!empty($courseid) and has_capability('moodle/course:managefiles', get_context_instance(CONTEXT_COURSE, $courseid))) {
                 $httpsrequired = empty($HTTPSPAGEREQUIRED) ? '' : '&amp;httpsrequired=1';
                 // needed for course file area browsing in image insert plugin
                 //$str .= ($scriptcount < 1) ? '<script type="text/javascript" src="'.
-                  //      $CFG->httpswwwroot .'/lib/editor/htmlarea/htmlarea.php?id='.$courseid.$httpsrequired.'"></script>'."\n" : '';
-                $str .= "<script src='$CFG->wwwroot/lib/editor/fckeditor/fckeditor.php?id=$courseid'></script>"."\n";
+                  //      $CFG->httpswwwroot .'/lib/editor/htmlarea/htmlarea.php?id='.$courseid.$ht tpsrequired.'"></script>'."\n" : '';
+                $str .= "<script src='$CFG->wwwroot/lib/editor/fckeditor/fckeditor.php?id=$courseid$httpsrequired'></script>"."\n";
                 $str .= "<script src='$CFG->wwwroot/lib/editor/fckeditor/editor/dialog/fck_image/fck_image.js?id=$courseid'></script>"."\n";
             } else {
                 $httpsrequired = empty($HTTPSPAGEREQUIRED) ? '' : '?httpsrequired=1';
