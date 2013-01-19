@@ -13,7 +13,7 @@ cursor: pointer; /*add by jhonatan*/
 .ddsmoothmenu-v ul li{
 position: relative;
 width: 148px; height: 50px;/* add by jhonatan*/
-border: 1px solid rgb(192, 192, 192); /*add by jhonatan*/
+border: 2px outset #FFFFFF ; /*add by jhonatan*/
 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif!important;
 font-weight: bolder!important;
 
@@ -22,8 +22,8 @@ font-size: 13px;
 
 
 
-margin-top:1px; /*add by jhonatan*/
-padding-top: 5px; /*add by jhonatan*/
+margin-top: 2px; /*add by jhonatan*/
+padding-top: 8px; /*add by jhonatan*/
 }
 
 .tituloMenu { /*add by jhonatan*/
