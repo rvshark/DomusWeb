@@ -10,14 +10,15 @@ class ConfiguradorMenu{
 	private $listaMenus = array();
 	
 	public function __construct(){
-	
+                $this->d("Cheguei1",1);
 		$this->con = Mysql::getInstance(); 						// Manipulador mysql
+                $this->d("Cheguei 2",1);
 		$this->geraTitulos();							// gera titulos de menu de acordo co a config do moodle
 		$this->geraPrimeiroNivel();						// gera o primeiro nive de menu de acordo com a config do moodle
 		
 		//$this->imprimeConfigurador();
-		//$this->con->fecharConexao();					// encerra conexão
-		//$this->d($this->log,0);							// mostra log de ações, mude de 0(zero) para 1(um) para ativar o stop apos impressão do menu.
+		//$this->con->fecharConexao();					// encerra conexï¿½o
+		//$this->d($this->log,0);							// mostra log de aï¿½ï¿½es, mude de 0(zero) para 1(um) para ativar o stop apos impressï¿½o do menu.
 	}
 	public function getListaMenus(){
 		//$this->d($this->listaMenus,1);
@@ -28,17 +29,17 @@ class ConfiguradorMenu{
 	
 	//adiciona os titulos de getCourseCategories ao menu
 	private function geraTitulos(){
-	
-		foreach ($this->getCourseCategories() as $x){
-	
-			$this->empilhador(new Menu2($x->id,$x->name,0,"linkSUPER"));
-	
+                
+		foreach ($this->getCourseCategories() as $curso_categoria){
+                    
+        		$this->empilhador(new Menu2($curso_categoria->id,$curso_categoria->name,0,"linkSUPER"));
+                            
 	
 		}
 	
 	}
 	
-	// guarda opções de menus na pilha
+	// guarda opï¿½ï¿½es de menus na pilha
 	public function empilhador($newMenu){
 	
 	
@@ -97,7 +98,7 @@ class ConfiguradorMenu{
 	private function getCourseCategories(){
 	
 	
-		//instâcia um array.
+		//instï¿½cia um array.
 		$arrayList = array();
 		$sql="select * from mdl_course_categories ORDER BY sortorder";
 		$query = $this->con->processa($sql);
@@ -108,11 +109,11 @@ class ConfiguradorMenu{
 	
 	}
 	
-	// busca os conteudos de cada categoria (Filhos de 1º das categorias: Domus, RQT, etc...)
+	// busca os conteudos de cada categoria (Filhos de 1ï¿½ das categorias: Domus, RQT, etc...)
 	public function getCourses($category = null){
 	
 	
-		//instâcia um array.
+		//instï¿½cia um array.
 		$arrayList = array();
 		$sql="select * from `vw_menu_vertical`";
 		//echo $sql;
@@ -130,7 +131,7 @@ class ConfiguradorMenu{
 	private function buscaSequenciaFiltradaDeMenu($cursoId = null){
 	
 	
-		//instâcia um array.
+		//instï¿½cia um array.
 		$arrayList = array();
 		// SQL para paramentos completos: select r.*,rr.id as 'moduleId', rr.indent from mdl_resource as r
 		$sql="
@@ -166,7 +167,7 @@ class ConfiguradorMenu{
 	
 	
 	public function searchItemConfigurado($idMenu){
-		//instâcia um array.
+		//instï¿½cia um array.
 		
 		$sql="select * from mdl_menu_vertical where idModule={$idMenu}";
 		//echo $sql."<br/>";
@@ -179,7 +180,7 @@ class ConfiguradorMenu{
 	
 			return false;
 	}
-	// função debug
+	// funï¿½ï¿½o debug
 	private function d($value="",$stop = 0){
 		echo "<br/>";
 		echo "<pre>";print_r($value);echo "</pre><br/>";if($stop)exit();

@@ -15,7 +15,7 @@ class TreeMenu2{
 		
 	}
 
-	public function addItem( Menu2 $menu){ 				// recebe um menu e o adiciona a posição correta
+	public function addItem( Menu2 $menu){ 				// recebe um menu e o adiciona a posiï¿½ï¿½o correta
 
 		$pai = $this->search($menu); 					// verifica se o pai do novo menu existe na raiz
 
@@ -23,7 +23,7 @@ class TreeMenu2{
 			array_push($this->itens,$menu);				// adiciona o novo menu na raiz principal
 			return $this;								// e retorna a raiz completa
 
-		}else{											// senão
+		}else{											// senï¿½o
 			$pai->addChild($menu);						// adiciona o novo menu no pai encontrado
 			return $this;								// e retorna a raiz principal
 
@@ -47,16 +47,18 @@ class TreeMenu2{
 					return $ret;							// retorna o nodo pai
 			}
 		}
-		return $res;									// caso não tenha sucesso na busca retorna um nodo negativo
+		return $res;									// caso nï¿½o tenha sucesso na busca retorna um nodo negativo
 
 	}
 
 	private function imprime($vet){
 
 		$str="";
+
 		foreach($vet as $root){
 
 			$str .= "<div class='tituloMenu'>".$root->nome."</div>";
+                                        
 			if(count($root->children)){
 				$str .= "<ul>".$root->imprime($root->children)."</ul>";
 			}
@@ -68,7 +70,8 @@ class TreeMenu2{
 	}
 
 	public function show(){
-		$this->getMenus();
+                
+		$this->carregarMenus();
 		$str = "<div id='smoothmenu2' class='ddsmoothmenu-v'> ";
 		$str .= $this->imprime($this->itens);
 		$str .= "<br style='clear: left' /> </div>";
@@ -78,29 +81,32 @@ class TreeMenu2{
 	
 	
 	
-	private function getMenus(){
+	private function carregarMenus(){
 	
 		$this->con = Mysql::getinstance(); 						// Manipulador mysql
-		//instâcia um array.
+		//instï¿½cia um array.
 		$arrayList = array();
 		$sql="select * from mdl_menu_vertical order by id";
 		$query = $this->con->processa($sql);
-		while($tempOBJ = mysql_fetch_object($query))
-		$this->addItem(new Menu2($tempOBJ->idModule, $tempOBJ->nome,$tempOBJ->pai,$tempOBJ->link));
+                
+		while($tempOBJ = mysql_fetch_object($query)){
+                    $this->addItem(new Menu2($tempOBJ->idModule, $tempOBJ->nome,$tempOBJ->pai,$tempOBJ->link));
+                }
+                        
 		
 	
 	
 	}
 
 	
-	// função debug
+	// funï¿½ï¿½o debug
 	function d($value="",$stop = 0){
 		echo "<br/>";
 		echo "<pre>";print_r($value);echo "</pre><br/>";if($stop)exit();
 
 	}
 	
-	// função log
+	// funï¿½ï¿½o log
 	public function log($texto){array_push($this->log,$texto);}
 
 

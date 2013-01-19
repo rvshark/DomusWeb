@@ -4,7 +4,7 @@ class Mysql{
         private $my_servidor = "localhost";  // Servidor mysql
         private $my_user     = "root";//"glpi"; // Usuario do banco
         private $my_senha    = "";//"mysql@anac"; // Senha do banco
-		private $nome_bd     = "moodle";
+	private $nome_bd     = "moodle_homo";
         private $con;
 		private static $instance;
       

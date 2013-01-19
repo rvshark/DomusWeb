@@ -3,8 +3,8 @@ class Mysql{
         
         private $my_servidor = "localhost";  // Servidor mysql
         private $my_user     = "root";//"glpi"; // Usuario do banco
-        private $my_senha    = "123456";//"mysql@anac"; // Senha do banco
-		private $nome_bd     = "moodle";
+        private $my_senha    = "rsmrsmmanowarsenha123";//"mysql@anac"; // Senha do banco
+	private $nome_bd     = "moodle";
         private $my_conecta;
 		private $my_banco;
         private $sql;
