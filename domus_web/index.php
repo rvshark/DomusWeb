@@ -121,7 +121,7 @@ true, '', user_login_string($SITE).$langmenu);
 
 //menu_sequence();
 ?>
-
+<br>
 <?php 
 if ($PAGE->user_allowed_editing()) {
 	echo '<div style="text-align:center;width: 150px;height: 30px;">'.update_course_icon($SITE->id).'</div>';
@@ -141,17 +141,17 @@ else
 		switch ($column) {
 			case 'left':
 				if (blocks_have_content($pageblocks, BLOCK_POS_LEFT) || $editing || $PAGE->user_allowed_editing() || !isloggedin()) { 
-					// eu adicionei a condição "|| !isloggedin()" neste if para que o menu vertical seja apresentado para usuarios que não estejam logados, 
-					//porem não consigo (ainda) calcular o seu impacto dentro da aplicação. -- Jhonatan Morais 
-
+					// eu adicionei a condiï¿½ï¿½o "|| !isloggedin()" neste if para que o menu vertical seja apresentado para usuarios que nï¿½o estejam logados, 
+					//porem nï¿½o consigo (ainda) calcular o seu impacto dentro da aplicaï¿½ï¿½o. -- Jhonatan Morais 
 					echo '<td style="width: '.$preferred_width_left.'px;" id="left-column">';
 					
 					print_container_start();					
 					
 					// Chamada do novo menu -- Jhonatan
 					//	d($novoMenuDomus->show());
-					
+
 					include_once 'NovoMenuDomus/classes/MenuTree.php';
+
 					$novoMenuDomus = new TreeMenu2();
 					echo $novoMenuDomus->show();
 					
