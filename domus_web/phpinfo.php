@@ -16,7 +16,7 @@ global $CFG;
         $def2->addAttribute('a','id', 'CDATA');
         $def2->addAttribute('a','name', 'CDATA');
 	$purifier = new HTMLPurifier($config);
-        $teste = $purifier->purify( '<a name="12312" id="dsfasd2" >dsadfasdf</a>' );
+        $teste = $purifier->purify( '<a name="12312" id="dsfasd2" >Luiz</a>' );
         echo  $teste;
 ?>
 
