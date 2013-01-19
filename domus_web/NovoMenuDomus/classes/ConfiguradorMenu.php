@@ -10,9 +10,7 @@ class ConfiguradorMenu{
 	private $listaMenus = array();
 	
 	public function __construct(){
-                $this->d("Cheguei1",1);
 		$this->con = Mysql::getInstance(); 						// Manipulador mysql
-                $this->d("Cheguei 2",1);
 		$this->geraTitulos();							// gera titulos de menu de acordo co a config do moodle
 		$this->geraPrimeiroNivel();						// gera o primeiro nive de menu de acordo com a config do moodle
 		
