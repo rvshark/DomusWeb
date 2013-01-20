@@ -1,15 +1,21 @@
 <?php
+
 class Mysql{
         
         private $my_servidor = "localhost";  // Servidor mysql
         private $my_user     = "root";//"glpi"; // Usuario do banco
-        private $my_senha    = "";//"mysql@anac"; // Senha do banco
-	private $nome_bd     = "moodle_homo";
+        private $my_senha    = "123456";//"mysql@anac"; // Senha do banco
+		private $nome_bd     = "moodle";
         private $con;
 		private static $instance;
       
         private function __construct() 
         {
+        		include_once 'config.php';
+	        	$my_servidor = $CFG->dbhost;
+	        	$my_user     = $CFG->dbuser;
+	        	$my_senha    = $CFG->dbpass;
+	        	$nome_bd     = $CFG->dbname;
 				$this->con = mysql_connect($this->my_servidor,$this->my_user,$this->my_senha);
 				mysql_select_db($this->nome_bd);
 		}
