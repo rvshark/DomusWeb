@@ -168,6 +168,12 @@ class resource_html extends resource_base {
 				}
 					
 				print_container_start();
+				//-- Adicionado para manter a compatibilidade com o NovoMenuDomus -- jhonatan
+				// esta função imprime o menu para todos os cursos
+				include_once $CFG->dirroot."/NovoMenuDomus/classes/MenuTree.php";
+				$novomenudomus = new TreeMenu2();
+				echo $novomenudomus->show();
+				
 				blocks_print_group($PAGE, $pageblocks, BLOCK_POS_LEFT);
 				print_container_end();
 				echo '</td>';
