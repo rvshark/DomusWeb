@@ -15,7 +15,7 @@ if ($show_instructions) {
 		
 		function submitForm(email_html,nome_html){
 		
-		$.post('../../homo/email/mail.php',{email: email_html,nome: nome_html},function(retorno){
+		$.post('../email/mail.php',{email: email_html,nome: nome_html},function(retorno){
 			
 		
 		if(retorno == 1){
