@@ -5,6 +5,92 @@ if ($show_instructions) {
     $columns = 'onecolumn';
 }
 ?>
+
+
+<script type="text/javascript">
+		
+	
+
+		
+		
+		function submitForm(email_html,nome_html){
+		
+		$.post('../../homo/email/mail.php',{email: email_html,nome: nome_html},function(retorno){
+			
+		
+		if(retorno == 1){
+			alert('Seu email foi enviado com sucesso , logo entraremos em contato.');
+			
+		}else{
+			alert('Ocorreu um erro ao enviar o email , tente mais tarde.');
+		}
+		
+		}
+		
+		
+		);
+	
+
+			
+		
+		}
+$(function() {
+
+
+		
+		$('#formAcessoVisitante').dialog({
+			
+			
+			autoOpen: false,
+	        modal: true,
+	        draggable: false,
+	        closeOnEscape: false,
+	        resizable: false,
+	        position: 'center',
+	        width: 450,
+	        title: 'Acesso Visitante',
+	                       
+	      
+	        buttons: {
+				"Ok": function() {
+					
+					var email_html = $('#email_go').val();
+					var nome_html = $('#nome_go').val();
+			  		submitForm(email_html,nome_html);
+				}, 
+				"Cancelar": function() { 
+					$(this).dialog("close"); 
+				} 
+			}
+		});
+		
+
+
+$( "#opener" ).click(function() {
+$( "#formAcessoVisitante" ).dialog( "open" );
+});
+});
+</script>
+
+
+
+<div id="formAcessoVisitante" style="display: none">
+	<form action="<?php echo $CFG->wwwroot ?>/util/mail.php" method="post" id="formAcessVisitante">
+		<table style="width: 100%">			
+			<tr>
+				<td style="text-align: right;width: 8%">Email*:</td>
+				<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="email_go" class="textBox email" name="txtEmail"></td>
+			</tr>
+			<tr id='trNome'>
+				<td style="text-align: right;width: 8%">Nome Completo*:</td>
+				<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="nome_go" name="txtNome"></td>
+			</tr>
+
+		</table>
+		<input type="hidden" value="true" id="verificarEmail" name="verificarEmail" />
+	</form>
+</div>
+
 <div class="loginbox clearfix <?php echo $columns ?>">
   <div class="loginpanel">
     <h2><?php print_string("returningtosite") ?></h2>
@@ -49,14 +135,10 @@ if ($show_instructions) {
         <div class="desc">
           <?php print_string("someallowguest") ?>
         </div>
-        <form action="index.php" method="post" id="guestlogin">
-          <div class="guestform">
-            <input type="hidden" name="username" value="guest" />
-            <input type="hidden" name="password" value="guest" />
-            <input type="hidden" name="testcookies" value="1" />
-            <input type="submit" value="<?php print_string("loginguest") ?>" />
-          </div>
-        </form>
+     
+<button id="opener"><?php print_string("loginguest") ?></button>
+
+       
       </div>
 <?php } ?>
 
