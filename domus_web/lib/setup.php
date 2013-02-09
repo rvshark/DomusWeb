@@ -590,7 +590,7 @@ global $HTTPSPAGEREQUIRED;
             $_SESSION['SESSION'] = new object;
             $_SESSION['SESSION']->session_test = random_string(10);
             if (!empty($_COOKIE['MoodleSessionTest'.$CFG->sessioncookie])) {
-                $_SESSION['SESSION']->has_timed_out = true;
+                $_SESSION['SESSION']->has_timed_out = false;
             }
             if (check_php_version('5.2.0')) {
                 setcookie('MoodleSessionTest'.$CFG->sessioncookie, $_SESSION['SESSION']->session_test, 0, $CFG->sessioncookiepath, $CFG->sessioncookiedomain, $CFG->cookiesecure, $CFG->cookiehttponly);
