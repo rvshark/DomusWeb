@@ -602,7 +602,7 @@ global $HTTPSPAGEREQUIRED;
         if (!isset($USER->id)) {
             $USER->id = 0; // to enable proper function of $CFG->notloggedinroleid hack
         }
-        echo " ------------------------------------------- " . $USER->id . " ------------------------------------------- ";
+        
     }
     else {
         $SESSION  = NULL;
@@ -781,6 +781,7 @@ global $HTTPSPAGEREQUIRED;
         }
     }
 
+    echo " ------------------------------------------- " . $USER->id . " ------------------------------------------- ";
 /// note: we can not block non utf-8 installatrions here, because empty mysql database
 /// might be converted to utf-8 in admin/index.php during installation
 ?>
