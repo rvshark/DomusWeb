@@ -1,7 +1,7 @@
 <?php // $Id$
 
 ///////////////////////////////////////////////////////////////////////////
-//                                                                       //
+//                                                                        //
 // NOTICE OF COPYRIGHT                                                   //
 //                                                                       //
 // Moodle - Modular Object-Oriented Dynamic Learning Environment         //
