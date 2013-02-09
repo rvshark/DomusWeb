@@ -85,7 +85,7 @@ if ((int)$CFG->version < 2007092000
 if (!isloggedin()) {
 	//require_login();
 	echo "<script>alert('Desculpe, apenas administradores tem acesso a esta pagina')</script>";
-	echo "<script>location.href=(`{$CFG->wwwroot}')</script>";
+	echo "<script>location.href=('http://domus.pucpr.br/homo/')</script>";
 } else {
 	user_accesstime_log();
 	
