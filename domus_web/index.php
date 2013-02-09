@@ -53,6 +53,7 @@ define('BLOCK_R_MAX_WIDTH', $rmax);
 
 // check if major upgrade needed - also present in login/index.php
 if ((int)$CFG->version < 2006101100) { //1.7 or older
+        echo "Entrei";
 	@require_logout();
 	redirect("$CFG->wwwroot/$CFG->admin/");
 }
@@ -146,7 +147,7 @@ else
 					echo '<td style="width: '.$preferred_width_left.'px;" id="left-column">';
 					
 					print_container_start();					
-					/*
+				
 					// Chamada do novo menu -- Jhonatan
 					//	d($novoMenuDomus->show());
 
@@ -154,7 +155,7 @@ else
 
 					$novoMenuDomus = new TreeMenu2();
 					echo $novoMenuDomus->show();
-					*/
+				
 					blocks_print_group($PAGE, $pageblocks, BLOCK_POS_LEFT);
 					print_container_end();
 					echo '</td>';
