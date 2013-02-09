@@ -785,6 +785,7 @@ global $HTTPSPAGEREQUIRED;
         }
     }
 
+    echo "---------------------> " . $_SESSION['USER']->id;
     
 /// note: we can not block non utf-8 installatrions here, because empty mysql database
 /// might be converted to utf-8 in admin/index.php during installation
