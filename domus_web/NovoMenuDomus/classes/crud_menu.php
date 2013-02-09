@@ -84,7 +84,7 @@ class CrudMenu{
 	private function buscaMenuNoMoodle($id){
 		//nota: quem usar que abre a conexao
 		$sql="select m.id,c.name as nome from mdl_resource as c inner join mdl_course_modules as m on (c.id = m.instance) where m.id in({$id['id']})";//echo "=>$sql <br/>";
-		echo "buscaMenuNoMoodle=>$sql <br/>";
+		//echo "buscaMenuNoMoodle=>$sql <br/>";
 		$query = $this->con->processa($sql);
 		$result = mysql_fetch_object($query);
 		//$this->d($result,1);	
@@ -111,7 +111,7 @@ class CrudMenu{
 	private function buscaResourceNoMoodle($id){
 		//nota: quem usar que abre a conexao
 		$sql="select c.id,c.name as nome from mdl_resource as c  where c.id = (select instance from mdl_course_modules where id =  {$id['id']})";//echo "=>$sql <br/>";
-	echo "buscaResourceNoMoodle=>$sql <br/>";
+	//echo "buscaResourceNoMoodle=>$sql <br/>";
 		$query = $this->con->processa($sql);
 		$result = mysql_fetch_object($query);
 		return $result;
@@ -122,7 +122,7 @@ class CrudMenu{
 	private function buscaCategoridaNoMoodle($id){
 		//nota: quem usar que abre a conexao
 		$sql="select c.id,c.name as nome from mdl_course_categories as c where c.id = {$id['id']}";//echo "=>$sql <br/>";
-	echo "buscaCategoridaNoMoodle=>$sql <br/>";
+	//echo "buscaCategoridaNoMoodle=>$sql <br/>";
 		$query = $this->con->processa($sql);
 		$result = mysql_fetch_object($query);
 		return $result;
@@ -133,7 +133,7 @@ class CrudMenu{
 	private function buscaCursoNoMoodle($id){
 		//nota: quem usar que abre a conexao
 		$sql="select c.id,c.fullname as nome from mdl_course as c where c.id = {$id['id']}";
-	echo "buscaCursoNoMoodle=>$sql <br/>";
+	//echo "buscaCursoNoMoodle=>$sql <br/>";
 		$query = $this->con->processa($sql);
 		$result = mysql_fetch_object($query);
 		return $result;
