@@ -571,6 +571,7 @@ global $HTTPSPAGEREQUIRED;
         sid_start_ob();
     }
 
+    echo " ------------------------------------------- " . $nomoodlecookie . " ------------------------------------------- ";
     if (empty($nomoodlecookie)) {
         session_name('MoodleSession'.$CFG->sessioncookie);
         if (check_php_version('5.2.0')) {
