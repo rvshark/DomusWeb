@@ -85,7 +85,9 @@ if ((int)$CFG->version < 2007092000
 if (!isloggedin()) {
 	require_login();
 } else {
-	user_accesstime_log();
+	//user_accesstime_log();
+	echo "<script>alert('Desculpe, apenas administradores tem acesso a esta pagina')</script>";
+	echo "<script>location.href=(`{$CFG->wwwroot}')</script>";
 }
 
 
