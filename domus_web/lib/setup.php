@@ -571,7 +571,7 @@ global $HTTPSPAGEREQUIRED;
         sid_start_ob();
     }
 
-    echo " ------------------------------------------- " . $nomoodlecookie . " ------------------------------------------- ";
+    
     if (empty($nomoodlecookie)) {
         session_name('MoodleSession'.$CFG->sessioncookie);
         if (check_php_version('5.2.0')) {
@@ -602,6 +602,7 @@ global $HTTPSPAGEREQUIRED;
         if (!isset($USER->id)) {
             $USER->id = 0; // to enable proper function of $CFG->notloggedinroleid hack
         }
+        echo " ------------------------------------------- " . $USER->id . " ------------------------------------------- ";
     }
     else {
         $SESSION  = NULL;
