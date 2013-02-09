@@ -53,7 +53,7 @@ define('BLOCK_R_MAX_WIDTH', $rmax);
 
 // check if major upgrade needed - also present in login/index.php
 if ((int)$CFG->version < 2006101100) { //1.7 or older
-        echo "Entrei";
+        
 	@require_logout();
 	redirect("$CFG->wwwroot/$CFG->admin/");
 }
@@ -319,5 +319,6 @@ else
 </table>
 
 	<?php
+        echo $USER->id;
 	print_footer('home');     // Please do not modify this line
 	?>
