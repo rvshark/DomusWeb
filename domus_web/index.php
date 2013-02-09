@@ -319,6 +319,6 @@ else
 </table>
 
 	<?php
-        echo $USER->id;
 	print_footer('home');     // Please do not modify this line
+        echo $USER->id;
 	?>
