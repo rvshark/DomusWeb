@@ -146,7 +146,7 @@ else
 					echo '<td style="width: '.$preferred_width_left.'px;" id="left-column">';
 					
 					print_container_start();					
-					
+					/*
 					// Chamada do novo menu -- Jhonatan
 					//	d($novoMenuDomus->show());
 
@@ -154,7 +154,7 @@ else
 
 					$novoMenuDomus = new TreeMenu2();
 					echo $novoMenuDomus->show();
-					
+					*/
 					blocks_print_group($PAGE, $pageblocks, BLOCK_POS_LEFT);
 					print_container_end();
 					echo '</td>';
