@@ -579,6 +579,12 @@ global $HTTPSPAGEREQUIRED;
         } else {
             session_set_cookie_params(0, $CFG->sessioncookiepath, $CFG->sessioncookiedomain, $CFG->cookiesecure);
         }
+        session_cache_limiter('private');
+        $cache_limiter = session_cache_limiter();
+
+        /* Define o limite de tempo do cache em 30 minutos */
+        session_cache_expire(60);
+        $cache_expire = session_cache_expire();        
         @session_start();
         if (! isset($_SESSION['SESSION'])) {
             $_SESSION['SESSION'] = new object;
