@@ -141,7 +141,7 @@ else
 	foreach ($lt as $column) {
 		switch ($column) {
 			case 'left':
-				if (blocks_have_content($pageblocks, BLOCK_POS_LEFT) || $editing || $PAGE->user_allowed_editing() || !isloggedin()) { 
+				if (blocks_have_content($pageblocks, BLOCK_POS_LEFT) || $editing || $PAGE->user_allowed_editing() /*|| !isloggedin()*/ ) { 
 					// eu adicionei a condi��o "|| !isloggedin()" neste if para que o menu vertical seja apresentado para usuarios que n�o estejam logados, 
 					//porem n�o consigo (ainda) calcular o seu impacto dentro da aplica��o. -- Jhonatan Morais 
 					echo '<td style="width: '.$preferred_width_left.'px;" id="left-column">';
@@ -320,5 +320,4 @@ else
 
 	<?php
 	print_footer('home');     // Please do not modify this line
-        echo $USER->id;
 	?>
