@@ -1,26 +1,83 @@
 /* CSS file */
 
-
-@font-face {
+/*@font-face {
         src: url("BankGothic.ttf");
-        fontFamily: BankGothic;        
-}
-Panel{fontFamily:BankGothic;}
-Button{fontFamily:BankGothic;}
-Label{fontFamily:BankGothic;}
+        fontFamily: Verdana;        
+}*/
+Panel{fontFamily:Verdana;
+	backgroundColor: #F8F3ED;
+	borderColor: #FFFFFF;
+	borderStyle: none;
+	cornerRadius: 8;
+	fontSize: 10;
+	themeColor: #2B2D2F;}
+Label{fontFamily:Verdana;}
+ button {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        /* border-color: #FFFFFF #666666 #666666 #FFFFFF;
+        background-color: #CCCC99; border-style: solid;
+        border-top-width: 1px; border-right-width: 1px;
+        border-bottom-width: 1px; border-left-width: 1px;*/
+        background-color: #CCCC99;
+        border: 2px #666666 outset;
+        /*padding: 1px 4px;*/
+    }
 
+Button.btnTiuloPrincipal2 {
+	fontFamily:Arial;
+	color: #0A5064;
+	fillAlphas: 1.0, 1.0;
+	fillColors: #FFFFFF, #FFFFFF;
+	fontSize: 22;
+	border: 2px #666666 outset;
+	fontWeight: bold;
+}
+/*Button.btnTiuloPrincipal
+{
+	color: #0E506A;
+	cornerRadius: 8;
+	fillAlphas: 1.0, 1.0;
+	fillColors: #FBFBFB, #EFE9F5, #E6DCEF, #E6DCEF;
+	themeColor: #FFFCFC;
+	border-style:solid;
+	font-size:16;
+	border: 2px #666666 outset;
+	fontWeight: bold;
+	/* skin: ClassReference("mx.skins.ProgrammaticSkin"); */
+	 	
+/*	
+}
+*/
 Button.btnTiuloPrincipal
 {
 	color: #0E506A;
 	cornerRadius: 8;
 	fillAlphas: 1.0, 1.0;
-	fillColors: #EFE9F5, #EFE9F5;
+	fillColors: #e6dcef, #e6dcef;
 	themeColor: #FFFCFC;
 	border-style:solid;
-	font-size:20;
+	font-size:16;
+	border: 2px #666666 outset;
+	fontFamily: Verdana;
+	fontWeight: bold;
+	paddingTop: -10;
 	
 }
-
+/*
+VBox.boxTituloPrincipal
+{
+	borderStyle: solid;
+	border-color: #000000;
+	padding-top:2;
+	padding-bottom:2;
+	padding-left:2;
+	padding-right:2;
+	cornerRadius: 12;
+	background-color: #FFFFFF;
+	
+}
+*/
 VBox.boxTituloPrincipal
 {
 	borderStyle: solid;
@@ -32,7 +89,6 @@ VBox.boxTituloPrincipal
 	cornerRadius: 12;
 	background-color: #FFFFFF;
 }
-
 	Button.btnSubtituloPrincipal
 	{
 		border-style:solid;
@@ -63,7 +119,7 @@ VBox.boxSubtitulo
 		color: #13506D;
 		cornerRadius: 8;
 		fontSize: 11;
-		fontFamily:BankGothic;
+		fontFamily:Verdana;
 		paddingBottom: 1;
 		paddingLeft: 0;
 		paddingRight: 0;
@@ -76,25 +132,27 @@ Button.btnTemas
 	borderColor: #FFFFFF;
 	color: #FFFFFF;
 	cornerRadius: 6;
-	fillAlphas: 1.0, 1.0, 1.0, 1.0;
-	fillColors: #85A1D3, #85A1D3;
+	fillAlphas: 0.7, 1.0, 0.6, 0.6;
+	fillColors: #0A78A0, #0A78A0;
 	fontSize: 14;
-	fontFamily:BankGothic;
+	fontFamily:Verdana;
 	fontStyle: normal;
 	paddingBottom: 0;
 	paddingLeft: 0;
 	paddingRight: 0;
 	paddingTop: 0;
 	textAlign: center;
-	themeColor: #FFFFFF;
+	themeColor: #353232;
+	fontWeight: normal;
+
 }
 
 Button.btnTxt
 {
 
 	color: #000000;
-	cornerRadius: 6;
-	fillAlphas: 1.0, 1.0, 1.0, 1.0;
+	cornerRadius: 12;
+	fillAlphas: 1.0, 1.0, 1.0, 2.0;
 	fillColors: #FFFFFF, #FFFFFF;
 	fontSize: 11;
 	fontStyle: normal;
@@ -112,7 +170,7 @@ Button.btnTxt2
 	
 	color: #000000;
 	cornerRadius: 6;
-	fillAlphas: 1.0, 1.0, 1.0, 1.0;
+	fillAlphas: 2.0, 1.0, 1.0, 2.0;
 	fillColors: #E6E6E6, #E6E6E6;
 	fontSize: 11;
 	fontStyle: normal;
@@ -124,3 +182,8 @@ Button.btnTxt2
 	textAlign: center;
 }
 
+Button.btnbgT
+{
+	
+	background-image:url(img/ButtonNotesNormal.png); 
+}
