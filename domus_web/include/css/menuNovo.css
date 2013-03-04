@@ -21,6 +21,11 @@
     z-index: 100;
 }
 
+#sub_horizontal {
+    position: absolute;
+    left:35px;
+}
+
 /* Navigation */
 .nav, .nav ul {
     list-style: none;
