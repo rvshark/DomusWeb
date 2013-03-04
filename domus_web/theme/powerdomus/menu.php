@@ -287,9 +287,9 @@ function ShowVideo(id_video, titulo)
 			<?php echo $CFG->versao_domus_teste ?></a>
 		</li>
 		
-		<li id="smoothmenu2" class="ddsmoothmenu-v"><a href="#">Link 4 (com subitens)</a>
+		<li class="PLVFOLink" iti="0" foi="0" style="float: left; width: 138px; height: 50px; text-align: center; border: 1px solid rgb(192, 192, 192); background: url("http://localhost/domus/html/blocks/menu_curso/img/fo_arrow.gif") no-repeat scroll right 85% rgb(222, 222, 222); cursor: pointer;" ><a href="#">Link 4 (com subitens)</a>
 
-				<ul id="smoothmenu2" class="ddsmoothmenu-v">
+				<ul style="float:left;margin:0 0 10px 0;padding:2px;background-color:#dedede;">
 
 					<li><a href="#">SubLink 1</a></li>
 
