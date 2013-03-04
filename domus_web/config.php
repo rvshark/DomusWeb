@@ -48,7 +48,7 @@ require_once("$CFG->dirroot/util/dBug.php");  */
 
 
 $CFG->versao_domus = 'Domus - Procel Edifica 2012';
-$CFG->versao_domus_teste = 'Domus - Procel Edifica 2013 (Beta)'; 
+$CFG->versao_domus_teste = 'Domus Procel Edifica 2013'; 
 
 $CFG->admin     = 'admin';
 $CFG->maxbytes  = 500097152;
