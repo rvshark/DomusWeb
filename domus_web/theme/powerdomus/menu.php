@@ -287,7 +287,7 @@ function ShowVideo(id_video, titulo)
 		
 		<li><a href="#">Link 4 (com subitens)</a>
 
-				<ul>
+				<ul  class="navSub">
 
 					<li><a href="#">SubLink 1</a></li>
 
@@ -314,7 +314,7 @@ function ShowVideo(id_video, titulo)
 		<li style="display:none">
 			<a href="javascript:void(0)" onclick="ShowVideo('video','HVAC parte 2');">HVAC - Part 2 (Video)</a>
 		</li>
-		<li>
+		<li style="display:none">
 			<a href="javascript:void(0)" onclick="ShowVideo('pUcRzmUnWoM','Método Simulação');">Método Simulação (Video)</a>
 		</li>
 		<li style="display:none">
