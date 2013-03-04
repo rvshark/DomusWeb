@@ -289,7 +289,7 @@ function ShowVideo(id_video, titulo)
 		
 		<li><a href="#">Link 4 (com subitens)</a>
 
-				<ul class="navSubmenu">
+				<ul id="sub_horizontal" class="navSubmenu">
 
 					<li><a href="#">SubLink 1</a></li>
 
