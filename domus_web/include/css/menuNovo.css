@@ -22,8 +22,11 @@
 }
 
 #sub_horizontal {
-    position: absolute;
-    left:35px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    z-index: 9999;
+    position: relative;
+    left:55px;
+    display: none;
 }
 
 /* Navigation */
