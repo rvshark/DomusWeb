@@ -288,15 +288,14 @@ function ShowVideo(id_video, titulo)
 		</li>
 		
 	
-				<ul style="float:left;margin:0 0 10px 0;padding:2px;background-color:#dedede;">
-
+	<ul class="navSub">
 					<li><a href="#">SubLink 1</a></li>
 
 					<li><a href="#">SubLink 2</a></li>
 
 					<li><a href="#">SubLink 3</a></li>
-
-				</ul>
+    </ul>
+	
 
 		
 			
