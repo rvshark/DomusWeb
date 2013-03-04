@@ -148,7 +148,19 @@
 
 
 #Navsubmenu {
-	
+	position: relative;
+	width: 140px; height: 40px;/* add by jhonatan*/
+	border: 2px outset #FFFFFF ; /*add by jhonatan*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif!important;
+	font-weight: bolder!important;
+
+	text-align: center!important;
+	font-size: 13px;
+
+
+	margin-left: 5px;
+	margin-top: 2px; /*add by jhonatan*/
+	padding-top: 8px; /*add by jhonatan*/	
 }
 
 .Navsubmenu-v ul{
