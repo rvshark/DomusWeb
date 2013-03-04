@@ -146,3 +146,36 @@
     background-color: #409DB5;
 }
 
+
+#Navsubmenu {
+	
+}
+
+.Navsubmenu-v ul{
+margin: 0;
+padding: 0;
+
+/*width: 170px; commented by jhonatan*/ /* Main Menu Item widths */ 
+width:151px;
+list-style-type: none;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif!important;
+font: bold 12px;
+background-color: rgb(222, 222, 222); /*add by jhonatan*/
+cursor: pointer; /*add by jhonatan*/
+}
+ 
+.Navsubmenu-v ul li{
+position: relative;
+width: 140px; height: 40px;/* add by jhonatan*/
+border: 2px outset #FFFFFF ; /*add by jhonatan*/
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif!important;
+font-weight: bolder!important;
+
+text-align: center!important;
+font-size: 13px;
+
+
+margin-left: 5px;
+margin-top: 2px; /*add by jhonatan*/
+padding-top: 8px; /*add by jhonatan*/
+}
