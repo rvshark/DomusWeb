@@ -57,6 +57,13 @@
     border-width: 1px 1px 2px 1px;
 }
 
+.navSubmenu {   
+    border-style: solid;
+    border-color: #ffffff #808080 #c0c0c0 #ffffff;
+    border-width: 1px 1px 2px 1px;
+    left: 35px;
+}
+
 .nav li a, .nav li a:link, .nav li a:active, .nav li a:visited {
     height: 32px;
     width: 100px;
