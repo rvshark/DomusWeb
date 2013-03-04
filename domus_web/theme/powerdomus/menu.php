@@ -288,10 +288,10 @@ function ShowVideo(id_video, titulo)
 		</li>
 		
 	
-		 <li><a href="#">Resources</a>
+	
 
 	            <ul>
-		           <li><a href="#">By category</a>
+		           <li><a href="#">Categoria</a>
 	                    <ul>
 	                        <li><a href="#">PHP</a></li>
 	                        <li><a href="#">MySQL</a></li>
@@ -303,7 +303,7 @@ function ShowVideo(id_video, titulo)
 	               
 	            </ul>
 
-	        </li>
+	    
 	
 
 	
