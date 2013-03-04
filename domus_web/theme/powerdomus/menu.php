@@ -287,7 +287,7 @@ function ShowVideo(id_video, titulo)
 			<?php echo $CFG->versao_domus_teste ?></a>
 		</li>
 		
-		<li class="ddsmoothmenu-v"><a href="#">Link 4 (com subitens)</a>
+		<li id="smoothmenu2" class="ddsmoothmenu-v"><a href="#">Link 4 (com subitens)</a>
 
 				<ul id="smoothmenu2" class="ddsmoothmenu-v">
 
