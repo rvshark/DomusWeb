@@ -290,7 +290,7 @@ function ShowVideo(id_video, titulo)
 	
 	
 
-	            <ul class="navSub">
+	           
 		           <li><a href="#">Categoria</a>
 	                    <ul class="navSub">
 	                        <li><a href="#">PHP</a></li>
@@ -301,7 +301,7 @@ function ShowVideo(id_video, titulo)
 	                </li>
 
 	               
-	            </ul>
+	        
 
 	    
 	
