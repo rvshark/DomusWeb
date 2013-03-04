@@ -285,11 +285,19 @@ function ShowVideo(id_video, titulo)
 			<?php echo $CFG->versao_domus_teste ?></a>
 		</li>
 		
-			<li><a href="#">Vídeos demonstrativos</a>
-				<ul class="navSub">
-				<li><a href="#">SubLink 2</a></li>
+		<li><a href="#">Link 4 (com subitens)</a>
+
+				<ul>
+
+					<li><a href="#">SubLink 1</a></li>
+
+					<li><a href="#">SubLink 2</a></li>
+
+					<li><a href="#">SubLink 3</a></li>
+
 				</ul>
-		    </li>
+
+			</li>
 			
 		<li>
 			<a href="javascript:void(0)" onclick="arquivo_climatico();">
