@@ -273,10 +273,7 @@ function ShowVideo(id_video, titulo)
 		<li><a href="#menu3_t">Download</a>
 
 		<ul class="navSub">
-			<li>
-			<a href="javascript:void(0)" onclick="avaliacao();">
-			Avaliação Domus</a>
-		</li>
+		
 		<li>
 			<a href="javascript:void(0)" onclick="historico();">
 			Histórico de versões</a>
@@ -287,20 +284,20 @@ function ShowVideo(id_video, titulo)
 			<a href="javascript:void(0)" onclick="Acao('download','domus.exe');">
 			<?php echo $CFG->versao_domus_teste ?></a>
 		</li>
+		
+			<li><a href="#">Vídeos demonstrativos</a>
+				<ul class="navSub">
+				</ul>
+		    </li>
+			
 		<li>
 			<a href="javascript:void(0)" onclick="arquivo_climatico();">
-			Arquivos de Climas (400 cidades) para o Domus</a>
+			Arquivos de Climas</a>
 		</li>
-		<li>
-			<a href="javascript:void(0)" onclick="ShowVideo('Dr8xDU3ZTZk','Domus');">Rápida demonstração do Domus (Video)</a>
-		</li>
-
-		<li><a href="javascript:void(0)" onclick="Acao('download','domus-release.exe');">
-			<?php echo $CFG->versao_domus ?></a></li>
-
+	
 
 		<li>
-			<a href="javascript:void(0)" onclick="Acao('pdf','TUTORIAL_FINAL-9_7_2012-mod.pdf');">Tutorial Domus (pdf interativo)</a>
+			<a href="javascript:void(0)" onclick="Acao('pdf','TUTORIAL_FINAL-9_7_2012-mod.pdf');">Tutorial do Domus</a>
 		</li>
 		<li style="display:none">
 			<a href="javascript:void(0)" onclick="ShowVideo('video','HVAC parte 1');">HVAC - Part 1 (Video)</a>
@@ -314,7 +311,7 @@ function ShowVideo(id_video, titulo)
 		<li style="display:none">
 			<a href="javascript:void(0)" onclick="ShowVideo('video','Parametros rar');">Parâmetros (Video)</a>
 		</li>
-		<li>
+		<li style="display:none">
 			<a href="javascript:void(0)" onclick="ShowVideo('pA1MVA8xUMI','Prescritivo');">Prescritivo (Video)</a>
 		</li>
 		</ul>
