@@ -289,7 +289,7 @@ function ShowVideo(id_video, titulo)
 		
 		<li><a href="#">Link 4 (com subitens)</a>
 
-				<ul id="Navsubmenu-v" class="Navsubmenu-v">
+				<ul id="smoothmenu2" class="ddsmoothmenu-v">
 
 					<li><a href="#">SubLink 1</a></li>
 
