@@ -265,6 +265,8 @@ function ShowVideo(id_video, titulo)
 		</form>
 		</div>
 		<div id="divVideo"></div>
+		
+		
 		<ul id="nav-one" class="nav">
 
 			<li><a href="<?php echo $CFG->wwwroot .'/' ?>" target="_self">Apresentação</a>
@@ -287,7 +289,7 @@ function ShowVideo(id_video, titulo)
 		
 		<li><a href="#">Link 4 (com subitens)</a>
 
-				<ul  class="navSub">
+				<ul class="ddsmoothmenu-v">
 
 					<li><a href="#">SubLink 1</a></li>
 
