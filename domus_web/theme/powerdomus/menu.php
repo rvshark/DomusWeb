@@ -288,13 +288,28 @@ function ShowVideo(id_video, titulo)
 		</li>
 		
 	
-	<!--<li><a href="#">Links 4</a>
-	<ul class="navSubmenu">
-	                      <li><a href="#">Web Design</a></li>
-	                      <li><a href="#">SEO</a></li>
-	                      <li><a href="#">Design</a></li>                   
-	</ul>
-	</li>--!>
+		 <li><a href="#">Resources</a>
+
+	            <ul>
+		           <li><a href="#">By category</a>
+	                    <ul>
+	                        <li><a href="#">PHP</a></li>
+	                        <li><a href="#">MySQL</a></li>
+	                        <li><a href="#">XSLT</a></li>
+	                        <li><a href="#">Ajax</a></li>
+	                    </ul>
+	                </li>
+
+	                <li><a href="#">By tag name</a>
+	                    <ul>
+	                        <li><a href="#">captcha</a></li>
+	                        <li><a href="#">gallery</a></li>
+	                        <li><a href="#">animation</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+
+	        </li>
 	
 
 	
