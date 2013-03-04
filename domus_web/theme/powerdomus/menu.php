@@ -274,7 +274,7 @@ function ShowVideo(id_video, titulo)
 		</li>
 		<li><a href="#menu3_t">Download</a>
 
-		<ul class="navSub">
+		<ul>
 		
 		<li>
 			<a href="javascript:void(0)" onclick="historico();">
@@ -292,7 +292,7 @@ function ShowVideo(id_video, titulo)
 
 	           
 		           <li><a href="#">Categoria</a>
-	                    <ul class="navSub">
+	                    <ul>
 	                        <li><a href="#">PHP</a></li>
 	                        <li><a href="#">MySQL</a></li>
 	                        <li><a href="#">XSLT</a></li>
@@ -335,6 +335,8 @@ function ShowVideo(id_video, titulo)
 			<a href="javascript:void(0)" onclick="ShowVideo('pA1MVA8xUMI','Prescritivo');">Prescritivo (Video)</a>
 		</li>
 		</ul>
+		
+		
 		</li>
 		<li><a href="#menu3_t">Documentação</a>
 		<ul class="navSub">
