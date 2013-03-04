@@ -300,13 +300,7 @@ function ShowVideo(id_video, titulo)
 	                    </ul>
 	                </li>
 
-	                <li><a href="#">By tag name</a>
-	                    <ul>
-	                        <li><a href="#">captcha</a></li>
-	                        <li><a href="#">gallery</a></li>
-	                        <li><a href="#">animation</a></li>
-	                    </ul>
-	                </li>
+	               
 	            </ul>
 
 	        </li>
