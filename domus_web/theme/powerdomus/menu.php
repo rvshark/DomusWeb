@@ -289,7 +289,7 @@ function ShowVideo(id_video, titulo)
 		
 	
 	<li><a href="#">Links 4</a>
-	<ul>
+	<ul class="navSub">
 	                      <li><a href="#">Web Design</a></li>
 	                      <li><a href="#">SEO</a></li>
 	                      <li><a href="#">Design</a></li>                   
