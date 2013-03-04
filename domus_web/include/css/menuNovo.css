@@ -97,16 +97,3 @@ font-weight:bold;
 left:103px;
 top:0px;
 }
-#nav li {
-		background:none repeat scroll 0 0 #DEDEDE;
-}
-#nav li li {
-	
-	background: url("http://domus.pucpr.br/blocks/menu_curso/img/fo_arrow.gif") no-repeat scroll right 85% rgb(222, 222, 222); cursor: pointer;
-	
-}
-
-#nav li li li {
-	
-	background:none repeat scroll 0 0 #DEDEDE;
-}
