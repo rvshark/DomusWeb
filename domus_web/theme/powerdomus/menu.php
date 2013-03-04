@@ -267,7 +267,7 @@ function ShowVideo(id_video, titulo)
 		<div id="divVideo"></div>
 		
 		
-		<ul id="smoothmenu2" class="ddsmoothmenu-v">
+		<ul id="nav-one" class="nav">
 
 			<li><a href="<?php echo $CFG->wwwroot .'/' ?>" target="_self">Apresentação</a>
 
