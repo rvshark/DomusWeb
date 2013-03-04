@@ -15,8 +15,8 @@
     *display:inline;	
 }
 #nav {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 display:inline-block;
- font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 margin: 0;
 padding: 0;
 width: 580px;
@@ -24,6 +24,8 @@ top: 137px;
 right: 20px;
 z-index: 100;
 position: absolute;
+font-size: 13px;
+font-weight: bold;
 }
 #nav li {
 margin: 0;
@@ -42,15 +44,22 @@ border-color: #ffffff #808080 #c0c0c0 #ffffff;
 border-width: 1px 2px 2px 1px;
 }
 #nav a {
-font: bold 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-color:#409DB5;
-text-decoration:none;
-display:block;
+color: #409DB5;
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+text-decoration: none;
+height: 32px;
+width: 100px;
+background: #DEDEDE;
+
+
 
 }/* selected menu element */
 #nav .current a, #nav li:hover > a {
 background:#7788aa;
 color:#FFF;
+
 border-top:1px solid #409DB5;
 }/* sublevels */
 #nav ul li:hover a, #nav li:hover li a {
@@ -81,11 +90,10 @@ float:none;
 margin:0;
 }
 #nav ul a {
-font-weight:normal;
+font-weight:bold;
 
 }
 #nav ul ul {
 left:103px;
 top:0px;
 }
-
