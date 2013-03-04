@@ -119,8 +119,8 @@
 }
 
 .nav ul ul {
-left:105px;
-top:0px;
+left:115px;
+top:-10px;
 }
 
 .nav li:hover ul, .nav li.sfHover ul {
