@@ -1,105 +1,319 @@
 <?php
 if ($show_instructions) {
-    $columns = 'twocolumns';
+	$columns = 'twocolumns';
 } else {
-    $columns = 'onecolumn';
+	$columns = 'onecolumn';
 }
 ?>
-<div class="loginbox clearfix <?php echo $columns ?>">
-  <div class="loginpanel">
-    <h2><?php print_string("returningtosite") ?></h2>
-      <div class="subcontent loginsub">
-        <div class="desc">
-          <?php
-            print_string("loginusing");
-            if (empty($CFG->usesid)) {
-                echo '<br/>';
-                echo '('.get_string("cookiesenabled").')';
-                helpbutton("cookies", get_string("cookiesenabled"));
-            }
-           ?>
-        </div>
-        <?php
-          if (!empty($errormsg)) {
-              echo '<div class="loginerrors">';
-              formerr($errormsg);
-              echo '</div>';
-          }
-        ?>
-        <form action="<?php echo $CFG->httpswwwroot; ?>/login/index.php" method="post" id="login">
-          <div class="loginform">
-            <div class="form-label"><label for="username"><?php print_string("username") ?></label></div>
-            <div class="form-input">
-              <input type="text" name="username" id="username" size="15" value="<?php p($frm->username, true) ?>" />
-            </div>
-            <div class="clearer"><!-- --></div>
-            <div class="form-label"><label for="password"><?php print_string("password") ?></label></div>
-            <div class="form-input">
-              <input type="password" name="password" id="password" size="15" value="" />
-              <input type="submit" value="<?php print_string("login") ?>" />
-              <input type="hidden" name="testcookies" value="1" />
-            </div>
-            <div class="clearer"><!-- --></div>
-          </div>
-        </form>
-      </div>
+<script type="text/javascript">
 
-<?php if ($CFG->guestloginbutton) {  ?>
-      <div class="subcontent guestsub">
-        <div class="desc">
-          <?php print_string("someallowguest") ?>
-        </div>
-        <form action="index.php" method="post" id="guestlogin">
-          <div class="guestform">
-            <input type="hidden" name="username" value="guest" />
-            <input type="hidden" name="password" value="guest" />
-            <input type="hidden" name="testcookies" value="1" />
-            <input type="submit" value="<?php print_string("loginguest") ?>" />
-          </div>
-        </form>
-      </div>
-<?php } ?>
 
-      <div class="subcontent forgotsub">
-        <div class="desc">
-          <?php print_string("forgotten") ?>
-        </div>
-        <form action="forgot_password.php" method="post" id="changepassword">
-          <div class="forgotform">
-            <input type="hidden" name="sesskey" value="<?php echo sesskey() ?>" />
-            <input type="submit" value="<?php print_string("passwordrecovery") ?>" />
-          </div>
-        </form>
-      </div>
-     </div>
-<?php if ($show_instructions) { ?>
-    <div class="signuppanel">
-      <h2><?php print_string("firsttime") ?></h2>
-      <div class="subcontent">
-<?php     if (is_enabled_auth('none')) { // instructions override the rest for security reasons 
-              print_string("loginstepsnone");
-          } else if ($CFG->registerauth == 'email') {
-              if (!empty($CFG->auth_instructions)) {
-                  echo format_text($CFG->auth_instructions);
-              } else {
-                  print_string("loginsteps", "", "signup.php");
-              } ?>
-                 <div class="signupform">
-                   <form action="signup.php" method="get" id="signup">
-                   <div><input type="submit" value="<?php print_string("startsignup") ?>" /></div>
-                   </form>
-                 </div>
-<?php     } else if (!empty($CFG->registerauth)) {
-              echo format_text($CFG->auth_instructions); ?>
-              <div class="signupform">
-                <form action="signup.php" method="get" id="signup">
-                <div><input type="submit" value="<?php print_string("startsignup") ?>" /></div>
-                </form>
-              </div>
-<?php     } else {
-              echo format_text($CFG->auth_instructions);
-          } ?>
-      </div>
-    </div>
-<?php } ?>
+$.validateEmail = function (email)
+{
+	er = /^[a-zA-Z0-9][a-zA-Z0-9\._-]+@([a-zA-Z0-9\._-]+\.)[a-zA-Z-0-9]{2}/;
+	if(er.exec(email))
+	return true;
+	else
+	return false;
+};
+
+function submitForm(email_html,nome_html,cidade_html,uf_html){
+
+
+
+	if(email_html == ""){
+		$('#enviando').hide();
+		alert('O Email deve ser preenchido.');
+		return false;
+
+	}else{
+		if(nome_html == ""){
+			$('#enviando').hide();
+			alert("O Nome deve ser preenchido.");
+			return false;
+		}else{
+			if(cidade_html ==""){
+				$('#enviando').hide();
+				alert("A cidade deve ser preenchida.");
+				return false;
+			}else{
+				if(uf_html ==""){
+						$('#enviando').hide();
+						alert("A cidade deve ser preenchida.");
+						return false;
+				}
+			}else{
+
+			if($.validateEmail(email_html)){
+
+
+				$.post('../email/mail.php',{email: email_html,nome: nome_html,cidade: cidade_html,uf: uf_html},function(retorno){
+
+
+					if(retorno == 1){
+						alert('Registro realizado com sucesso! Você receberá um e-mail de confirmação.');
+						$('#formAcessoVisitante').dialog("close"); 
+						$('#enviando').hide();
+						window.location.href='http://domus.pucpr.br';
+					}else{
+						alert('Oorreu um erro ao enviar o email , tente mais tarde.');
+						$('#formAcessoVisitante').dialog("close"); 
+						$('#enviando').hide();
+						window.location.href='http://domus.pucpr.br';
+					}
+
+				}
+
+
+			);
+
+		}else{
+			$('#enviando').hide();
+			alert('Email inválido.');
+			return false;
+
+		}
+
+
+	}
+}
+
+
+
+
+
+
+}
+$(function() {
+
+
+
+	$('#formAcessoVisitante').dialog({
+
+
+		autoOpen: false,
+		modal: true,
+		draggable: false,
+		closeOnEscape: false,
+		resizable: false,
+		position: 'center',
+		width: 450,
+		title: 'Acesso Visitante',
+
+
+		buttons: {
+			"Ok": function() {
+
+				var email_html = $('#email_go').val();
+				var nome_html = $('#nome_go').val();
+				var cidade_html = $('#cidade_go').val();
+				var uf_html = $('#uf_go').val();
+				$('#enviando').show();
+				submitForm(email_html,nome_html,cidade_html,uf_html);
+			}, 
+			"Cancelar": function() { 
+				$(this).dialog("close"); 
+				$('#enviando').hide();
+			} 
+		}
+	});
+
+
+
+
+
+
+	$( "#opener" ).click(function() {
+		$( "#formAcessoVisitante" ).dialog( "open" );
+	});
+});
+</script>
+
+<div id="formAcessoVisitante" style="display: none">
+	<p>Desculpem-nos pelo constrangimento de não podermos liberar o acesso.</p>
+
+	<p>
+
+		Estamos em desenvolvimento, por favor informe seu email para entrarmos em contato logo
+		que finalizarmos a fase alfa.
+	</p>
+	<form action="<?php echo $CFG->wwwroot ?>/util/mail.php" method="post" id="formAcessVisitante">
+		<table style="width: 100%">			
+			<tr>
+				<td style="text-align: right;width: 8%">Email*:</td>
+				<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="email_go" class="textBox email" name="email_go"></td>
+			</tr>
+			<tr id='trNome'>
+				<td style="text-align: right;width: 8%">Nome Completo*:</td>
+				<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="nome_go" name="nome_go"></td>
+			</tr>
+			<tr >
+				<td style="text-align: right;width: 8%">Cidade/Estado*:</td>
+				<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="cidade_go" name="cidade_go">
+					<select name="uf_go">
+                    <option value="">-Selecione-</option>
+					<option value="AC">Acre</option>
+
+					<option value="AL">Alagoas</option>
+
+					<option value="AM">Amazonas</option>
+
+					<option value="AP">Amapá</option>
+
+					<option value="BA">Bahia</option>
+
+					<option value="CE">Ceará</option>
+
+					<option value="DF">Distrito Federal</option>
+
+					<option value="ES">Espirito Santo</option>
+
+					<option value="GO">Goiás</option>
+
+					<option value="MA">Maranhão</option>
+
+					<option value="MG">Minas Gerais</option>
+
+					<option value="MS">Mato Grosso do Sul</option>
+
+					<option value="MT">Mato Grosso</option>
+
+					<option value="PA">Pará</option>
+
+					<option value="PB">Paraíba</option>
+
+					<option value="PE">Pernambuco</option>
+
+					<option value="PI">Piauí</option>
+
+					<option value="PR">Paraná</option>
+
+					<option value="RJ">Rio de Janeiro</option>
+
+					<option value="RN">Rio Grande do Norte</option>
+
+					<option value="RO">Rondônia</option>
+
+					<option value="RR">Roraima</option>
+
+					<option value="RS">Rio Grande do Sul</option>
+
+					<option value="SC">Santa Catarina</option>
+
+					<option value="SE">Sergipe</option>
+
+					<option value="SP">São Paulo</option>
+
+					<option value="TO">Tocantins</option>
+
+					</select>
+				
+				</td>
+				
+			</tr>
+			
+			
+			<div id="enviando" style="display: none">
+				<p>Enviando..</p>
+			</div>
+
+		</table>
+
+	</form>
 </div>
+
+<div class="loginbox clearfix <?php echo $columns ?>">
+	<div class="loginpanel">
+		<h2><?php print_string("returningtosite") ?></h2>
+		<div class="subcontent loginsub">
+			<div class="desc">
+				<?php
+			print_string("loginusing");
+			if (empty($CFG->usesid)) {
+				echo '<br/>';
+				echo '('.get_string("cookiesenabled").')';
+				helpbutton("cookies", get_string("cookiesenabled"));
+			}
+			?>
+		</div>
+		<?php
+		if (!empty($errormsg)) {
+			echo '<div class="loginerrors">';
+			formerr($errormsg);
+			echo '</div>';
+		}
+		?>
+		<form action="<?php echo $CFG->httpswwwroot; ?>/login/index.php" method="post" id="login">
+			<div class="loginform">
+				<div class="form-label"><label for="username"><?php print_string("username") ?></label></div>
+				<div class="form-input">
+					<input type="text" name="username" id="username" size="15" value="<?php p($frm->username, true) ?>" />
+				</div>
+				<div class="clearer"><!-- --></div>
+				<div class="form-label"><label for="password"><?php print_string("password") ?></label></div>
+				<div class="form-input">
+					<input type="password" name="password" id="password" size="15" value="" />
+					<input type="submit" value="<?php print_string("login") ?>" />
+					<input type="hidden" name="testcookies" value="1" />
+				</div>
+				<div class="clearer"><!-- --></div>
+			</div>
+		</form>
+	</div>
+
+	<?php if ($CFG->guestloginbutton) {  ?>
+		<div class="subcontent guestsub">
+			<div class="desc">
+				<?php print_string("someallowguest") ?>
+			</div>
+
+			<button id="opener"><?php print_string("loginguest") ?></button>
+
+
+		</div>
+		<?php } ?>
+
+
+		<div class="subcontent forgotsub">
+			<div class="desc">
+				<?php print_string("forgotten") ?>
+			</div>
+			<form action="forgot_password.php" method="post" id="changepassword">
+				<div class="forgotform">
+					<input type="hidden" name="sesskey" value="<?php echo sesskey() ?>" />
+					<input type="submit" value="<?php print_string("passwordrecovery") ?>" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<?php if ($show_instructions) { ?>
+		<div class="signuppanel">
+			<h2><?php print_string("firsttime") ?></h2>
+			<div class="subcontent">
+			<?php     if (is_enabled_auth('none')) { // instructions override the rest for security reasons 
+				print_string("loginstepsnone");
+			} else if ($CFG->registerauth == 'email') {
+				if (!empty($CFG->auth_instructions)) {
+					echo format_text($CFG->auth_instructions);
+				} else {
+					print_string("loginsteps", "", "signup.php");
+				} ?>
+				<div class="signupform">
+					<form action="signup.php" method="get" id="signup">
+						<div><input type="submit" value="<?php print_string("startsignup") ?>" /></div>
+					</form>
+				</div>
+				<?php     } else if (!empty($CFG->registerauth)) {
+					echo format_text($CFG->auth_instructions); ?>
+					<div class="signupform">
+						<form action="signup.php" method="get" id="signup">
+							<div><input type="submit" value="<?php print_string("startsignup") ?>" /></div>
+						</form>
+					</div>
+					<?php     } else {
+						echo format_text($CFG->auth_instructions);
+					} ?>
+				</div>
+			</div>
+			<?php } ?>
+		</div>
