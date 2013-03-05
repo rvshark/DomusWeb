@@ -1,9 +1,11 @@
 <?php // $Id: view.php,v 1.106.2.7 2009/10/03 01:35:05 nicolasconnault Exp $
 
 //  Display the course home page.
-
+    
     require_once('../config.php');
-    require_once('lib.php');
+    
+    //require_once('lib.php');
+    
     require_once($CFG->libdir.'/blocklib.php');
     require_once($CFG->libdir.'/ajax/ajaxlib.php');
     require_once($CFG->dirroot.'/mod/forum/lib.php');
