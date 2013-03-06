@@ -4,13 +4,13 @@
 $(document).ready(function(){
 
 	//Inicio - Monta o menu horizontal --------------------
-	$("#nav-one li").hover(
+	$("#nav li").hover(
 	function(){ $("ul", this).fadeIn("fast"); }, 
 	function() { } 
 );
 
 //if (document.all) {
-	//	$("#nav-one li").hoverClass ("sfHover");
+	//	$("#nav li").hoverClass ("sfHover");
 	//}
 
 
@@ -289,7 +289,7 @@ function ShowVideo(id_video, titulo)
 		<li>
 			<a href="#">Vídeos Demonstrativos</a>
 		<ul>
-			<li><a href="javascript:void(0)" onclick="ShowVideo('3zox9ivMbFM','Desenho de edificação intercafe aprimorada');">Desenho de edificação intercafe aprimorada</a></li>
+			<li><a href="javascript:void(0)" onclick="ShowVideo('3zox9ivMbFM','Desenho de edificação interface aprimorada');">Desenho de edificação interface aprimorada</a></li>
 		<li><a href="javascript:void(0)" onclick="ShowVideo('brGLxqh-BCo','Importando dxf');">Importando dxf</a></li>
 		<li><a href="javascript:void(0)" onclick="ShowVideo('lKCbc2JVwuw','Importando idf');">Importando idf</a></li>
 		<li><a href="javascript:void(0)" onclick="ShowVideo('eeN38Sw48O8','Modificando camadas');">Modificando camadas</a></li>
@@ -314,7 +314,7 @@ function ShowVideo(id_video, titulo)
 		<li>
 			<a href="javascript:void(0)" onclick="Acao('pdf','TUTORIAL_FINAL-9_7_2012-mod.pdf');">Tutorial do Domus</a>
 		</li>
-		<li style="display:none">
+	<?	/*<li style="display:none">
 			<a href="javascript:void(0)" onclick="ShowVideo('video','HVAC parte 1');">HVAC - Part 1 (Video)</a>
 		</li>
 		<li style="display:none">
@@ -329,31 +329,48 @@ function ShowVideo(id_video, titulo)
 		<li style="display:none">
 			<a href="javascript:void(0)" onclick="ShowVideo('pA1MVA8xUMI','Prescritivo');">Prescritivo (Video)</a>
 		</li>
+*/?>
 		</ul>
 
 
 		</li>
 		<li><a href="#menu3_t">Documentação</a>
-		<ul class="navSub">
-			<!--<li><a href="?acao=manualpd">Manual do PowerDomus</a></li>
+		<ul class="nav">
+		
+		
+			<?/*<!--<li><a href="?acao=manualpd">Manual do PowerDomus</a></li>
 		<li><a href="?acao=manualcursos">Manual do Curso</a></li>
 		<li><a href="?acao=modmatematico">Modelos Matematicos</a></li>
 		<li><a href="?acao=manuaispdf">Manuais (PDF)</a></li>
-		<li><a href="?acao=artigospdf">Artigos (PDF)</a></li>-->
-		<li><a href="http://jen.sagepub.com/content/30/1/7.abstract" target="_blank">Revisão Completa Artigo</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','Revised_Full-paper_Abadie_Mendes_PUCPR_Brazil.pdf');">Revisão Completa (PDF)</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','01_DOMUS_ASHRAE 1052-RP_.pdf');">ASHRAE</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','02_DOMUS_ANSI ASHRAE Standard 140-2007_Envelope_.pdf');">ANSI ASHRAE</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','03_DOMUS_Additional Validations and Verifications_.pdf');">Validações e Verificações Adicionais</a></li>
+		<li><a href="?acao=artigospdf">Artigos (PDF)</a></li>-->*/?>
+		
+<li><a href="javascript:void(0)" onclick="Acao('pdf','	primeira_avaliacao_do_domus-procel_edifica.pdf');">Avaliação</a></li>
+		<li><a href="javascript:void(0)" onclick="Acao('pdf','Temas_de_pesquisa.pdf');">Temas de Pesquisa</a></li>
+		<li><a href="#" target="_blank">Publicações e Orientações</a></li>
+
+		<li>
+			<a href="#">Validação</a>
+		<ul>
+			<li><a href="javascript:void(0)" onclick="Acao('pdf','01_DOMUS_ASHRAE 1052-RP_.pdf');">ASHRAE 1052-RP</a></li>
+		<li<a href="javascript:void(0)" onclick="Acao('pdf','02_DOMUS_ANSI ASHRAE Standard 140-2007_Envelope_.pdf');">ASHRAE 140-2007</a></li>
+		<li><a href="http://jen.sagepub.com/content/30/1/7.full.pdf" target="_blank">Response-factor vs. Finite-volume</a></li>
+		<li><a href="javascript:void(0)" onclick="Acao('pdf','03_DOMUS_Additional Validations and Verifications_.pdf');">Additional Validation</a></li>
+
+		</ul>
+		</li>
+		
+		<li><a href="#">Histórico de Desenvolvimento</li>
+	
+
 		</ul>
 		</li>
 		<li><a href="#menu4_t">Links</a>
-		<ul class="navSub">
+		<ul class="nav">
 			<li><a href="?acao=aplicativos">Aplicativos</a></li>
-		<li><a href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=115">Artigos</a></li>
-		<li><a href="?acao=faq">FAQ</a></li>
+		<!--<li><a href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=115">Artigos</a></li>--!>
+		<li><a href="?acao=faq">FAQs</a></li>
 		<li class="last-item"><a
-			href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=116">Sites Afins </a></li>
+			href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=116">Sítios Afins</a></li>
 		</ul>
 		</li>
 
