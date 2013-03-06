@@ -342,7 +342,7 @@ function ShowVideo(id_video, titulo)
 		<li><a href="?acao=manualcursos">Manual do Curso</a></li>
 		<li><a href="?acao=modmatematico">Modelos Matematicos</a></li>
 		<li><a href="?acao=manuaispdf">Manuais (PDF)</a></li>
-		<li><a href="?acao=artigospdf">Artigos (PDF)</a></li>-->*/?>
+		<li><a href="?acao=artigospdf">Artigos (PDF)</a></li>--!>*/?>
 		
 <li><a href="javascript:void(0)" onclick="Acao('pdf','	primeira_avaliacao_do_domus-procel_edifica.pdf');">Avaliação</a></li>
 		<li><a href="javascript:void(0)" onclick="Acao('pdf','Temas_de_pesquisa.pdf');">Temas de Pesquisa</a></li>
