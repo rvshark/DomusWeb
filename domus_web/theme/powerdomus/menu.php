@@ -335,7 +335,7 @@ function ShowVideo(id_video, titulo)
 
 		</li>
 		<li><a href="#menu3_t">Documentação</a>
-			<li><a href="#">Histórico de Desenvolvimento</li>
+		
 		
 		</li>
 		
