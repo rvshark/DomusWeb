@@ -4,13 +4,13 @@
 $(document).ready(function(){
 
 	//Inicio - Monta o menu horizontal --------------------
-	$("#nav-one li").hover(
+	$("#nav li").hover(
 	function(){ $("ul", this).fadeIn("fast"); }, 
 	function() { } 
 );
 
 //if (document.all) {
-	//	$("#nav-one li").hoverClass ("sfHover");
+	//	$("#nav li").hoverClass ("sfHover");
 	//}
 
 
@@ -314,15 +314,36 @@ function ShowVideo(id_video, titulo)
 		<li>
 			<a href="javascript:void(0)" onclick="Acao('pdf','TUTORIAL_FINAL-9_7_2012-mod.pdf');">Tutorial do Domus</a>
 		</li>
+        <li style="display:none">
+			<a href="javascript:void(0)" onclick="ShowVideo('video','HVAC parte 1');">HVAC - Part 1 (Video)</a>
+		</li>
+		<li style="display:none">
+			<a href="javascript:void(0)" onclick="ShowVideo('video','HVAC parte 2');">HVAC - Part 2 (Video)</a>
+		</li>
+		<li style="display:none">
+			<a href="javascript:void(0)" onclick="ShowVideo('pUcRzmUnWoM','Método Simulação');">Método Simulação (Video)</a>
+		</li>
+		<li style="display:none">
+			<a href="javascript:void(0)" onclick="ShowVideo('video','Parametros rar');">Parâmetros (Video)</a>
+		</li>
+		<li style="display:none">
+			<a href="javascript:void(0)" onclick="ShowVideo('pA1MVA8xUMI','Prescritivo');">Prescritivo (Video)</a>
+		</li>
 
 		</ul>
 
 
 		</li>
 		<li><a href="#menu3_t">Documentação</a>
-		<ul class="navSub">
+		<ul class="nav">
 		
-	
+		
+		<!-- <li><a href="?acao=manualpd">Manual do PowerDomus</a></li>
+		<li><a href="?acao=manualcursos">Manual do Curso</a></li>
+		<li><a href="?acao=modmatematico">Modelos Matematicos</a></li>
+		<li><a href="?acao=manuaispdf">Manuais (PDF)</a></li>
+		<li><a href="?acao=artigospdf">Artigos (PDF)</a></li> --!>
+		
 <li><a href="javascript:void(0)" onclick="Acao('pdf','	primeira_avaliacao_do_domus-procel_edifica.pdf');">Avaliação</a></li>
 		<li><a href="javascript:void(0)" onclick="Acao('pdf','Temas_de_pesquisa.pdf');">Temas de Pesquisa</a></li>
 		<li><a href="#" target="_blank">Publicações e Orientações</a></li>
@@ -344,7 +365,7 @@ function ShowVideo(id_video, titulo)
 		</ul>
 		</li>
 		<li><a href="#menu4_t">Links</a>
-		<ul class="navSub">
+		<ul class="nav">
 			<li><a href="?acao=aplicativos">Aplicativos</a></li>
 		<!--<li><a href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=115">Artigos</a></li>--!>
 		<li><a href="?acao=faq">FAQs</a></li>
