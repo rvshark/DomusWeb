@@ -334,30 +334,7 @@ function ShowVideo(id_video, titulo)
 
 
 		</li>
-		<li><a href="#menu3_t">Documentação</a>
-		<ul class="nav">
-		
-		
-		<!-- <li><a href="?acao=manualpd">Manual do PowerDomus</a></li>
-		<li><a href="?acao=manualcursos">Manual do Curso</a></li>
-		<li><a href="?acao=modmatematico">Modelos Matematicos</a></li>
-		<li><a href="?acao=manuaispdf">Manuais (PDF)</a></li>
-		<li><a href="?acao=artigospdf">Artigos (PDF)</a></li> --!>
-		
-<li><a href="javascript:void(0)" onclick="Acao('pdf','	primeira_avaliacao_do_domus-procel_edifica.pdf');">Avaliação</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','Temas_de_pesquisa.pdf');">Temas de Pesquisa</a></li>
-		<li><a href="#" target="_blank">Publicações e Orientações</a></li>
-
-		<li>
-			<a href="#">Validação</a>
-		<ul>
-			<li><a href="javascript:void(0)" onclick="Acao('pdf','01_DOMUS_ASHRAE 1052-RP_.pdf');">ASHRAE 1052-RP</a></li>
-		<li<a href="javascript:void(0)" onclick="Acao('pdf','02_DOMUS_ANSI ASHRAE Standard 140-2007_Envelope_.pdf');">ASHRAE 140-2007</a></li>
-		<li><a href="http://jen.sagepub.com/content/30/1/7.full.pdf" target="_blank">Response-factor vs. Finite-volume</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','03_DOMUS_Additional Validations and Verifications_.pdf');">Additional Validation</a></li>
-
-		</ul>
-		</li>
+		<li><a href="#menu3_t">Documentação</a></li>
 		
 		<li><a href="#">Histórico de Desenvolvimento</li>
 	
