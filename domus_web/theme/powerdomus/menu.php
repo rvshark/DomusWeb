@@ -4,13 +4,13 @@
 $(document).ready(function(){
 
 	//Inicio - Monta o menu horizontal --------------------
-	$("#nav li").hover(
+	$("#nav-one li").hover(
 	function(){ $("ul", this).fadeIn("fast"); }, 
 	function() { } 
 );
 
 //if (document.all) {
-	//	$("#nav li").hoverClass ("sfHover");
+	//	$("#nav-one li").hoverClass ("sfHover");
 	//}
 
 
