@@ -306,8 +306,7 @@ function ShowVideo(id_video, titulo)
 
 
 		<li>
-			<a href="javascript:void(0)" onclick="arquivo_climatico();">
-			Arquivos de Climas</a>
+			<a href="javascript:void(0)" onclick="arquivo_climatico();">Instalador de Climas (411 cidades)</a>
 		</li>
 
 
