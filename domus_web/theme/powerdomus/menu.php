@@ -340,10 +340,6 @@ function ShowVideo(id_video, titulo)
 		</li>
 		
 	
-	
-
-		</ul>
-		</li>
 		<li><a href="#menu4_t">Links</a>
 		<ul class="nav">
 			<li><a href="?acao=aplicativos">Aplicativos</a></li>
