@@ -358,6 +358,7 @@ function ShowVideo(id_video, titulo)
 
 			</ul>
 			
+			<li><a href="#">Histórico de Desenvolvimento</a></li>
 		</ul>	
 		
 		</li>
