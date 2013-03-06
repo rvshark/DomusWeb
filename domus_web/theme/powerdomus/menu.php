@@ -320,7 +320,7 @@ function ShowVideo(id_video, titulo)
 
 		</li>
 		<li><a href="#menu3_t">Documentação</a>
-		<ul class="nav">
+		<ul class="navSub">
 		
 	
 <li><a href="javascript:void(0)" onclick="Acao('pdf','	primeira_avaliacao_do_domus-procel_edifica.pdf');">Avaliação</a></li>
@@ -344,7 +344,7 @@ function ShowVideo(id_video, titulo)
 		</ul>
 		</li>
 		<li><a href="#menu4_t">Links</a>
-		<ul class="nav">
+		<ul class="navSub">
 			<li><a href="?acao=aplicativos">Aplicativos</a></li>
 		<!--<li><a href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=115">Artigos</a></li>--!>
 		<li><a href="?acao=faq">FAQs</a></li>
