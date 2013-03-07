@@ -8,6 +8,11 @@
 	background-repeat: no-repeat;
 	
 }
+.navSub li {   
+    border-style: solid;
+    border-color: #ffffff #808080 #c0c0c0 #ffffff;
+    border-width: 1px 1px 2px 1px;
+}
 
 /*BUG IE6 IE7*/
 .nav li a, .nav li a:link, .nav li a:active, .nav li a:visited {
