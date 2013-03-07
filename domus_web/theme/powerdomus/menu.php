@@ -265,7 +265,7 @@
 	</form>
 </div>
 <div id="divVideo"></div>
-
+<ul id="nav">
 
 
 
@@ -273,7 +273,7 @@
 
 
 	<li><a href="#menu4_t">Links</a>
-	<ul class="nav">
+	<ul>
 	<li><a href="?acao=aplicativos">Aplicativos</a></li>
 	<li><a href="?acao=faq">FAQs</a></li>
 	<li class="last-item"><a href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=116">Sítios Afins</a></li>
