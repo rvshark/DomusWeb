@@ -269,7 +269,23 @@
 
 
 
-
+		<li><a href="#menu3_t">Documentação</a>
+	<ul>
+    <li><a href="javascript:void(0)" onclick="Acao('pdf','	primeira_avaliacao_do_domus-procel_edifica.pdf');">Avaliação</a></li>
+<li><a href="javascript:void(0)" onclick="Acao('pdf','Temas_de_pesquisa.pdf');">Temas de Pesquisa</a></li>
+<li><a href="#" target="_blank">Publicações e Orientações</a></li>
+<li><a href="#">Validação</a>
+			<ul>
+<li><a href="javascript:void(0)" onclick="Acao('pdf','01_DOMUS_ASHRAE 1052-RP_.pdf');">ASHRAE 1052-RP</a></li>
+<li><a href="javascript:void(0)" onclick="Acao('pdf','02_DOMUS_ANSI ASHRAE Standard 140-2007_Envelope_.pdf');">ASHRAE 140-2007</a></li>
+<li><a href="http://jen.sagepub.com/content/30/1/7.full.pdf" target="_blank">Response-factor vs. Finite-volume</a></li>
+<li><a href="javascript:void(0)" onclick="Acao('pdf','03_DOMUS_Additional Validations and Verifications_.pdf');">Additional Validation</a></li>
+</li>
+			</ul>
+			<li><a href="#">Histórico de Desenvolvimento</a></li>
+		</ul>	
+		
+		</li>
 
 
 	<li><a href="#menu4_t">Links</a>
