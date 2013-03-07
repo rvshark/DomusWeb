@@ -282,7 +282,7 @@
 <li><a href="javascript:void(0)" onclick="Acao('pdf','03_DOMUS_Additional Validations and Verifications_.pdf');">Additional Validation</a></li>
 </li>
 			</ul>
-			<li><a href="#">Histórico de Desenvolvimento</a></li>
+
 		</ul>	
 		
 		</li>
