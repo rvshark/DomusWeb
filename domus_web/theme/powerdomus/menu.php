@@ -4,13 +4,13 @@
 $(document).ready(function(){
 
 	//Inicio - Monta o menu horizontal --------------------
-	$("#nav li").hover(
+	$("#nav-one li").hover(
 	function(){ $("ul", this).fadeIn("fast"); }, 
 	function() { } 
 );
 
 //if (document.all) {
-	//	$("#nav li").hoverClass ("sfHover");
+	//	$("#nav-one li").hoverClass ("sfHover");
 	//}
 
 
@@ -267,7 +267,7 @@ function ShowVideo(id_video, titulo)
 		<div id="divVideo"></div>
 
 
-		<ul id="nav-one">
+	<ul id="nav-one" class="nav">
 
 			<li><a href="<?php echo $CFG->wwwroot .'/' ?>" target="_self">Apresentação</a>
 
