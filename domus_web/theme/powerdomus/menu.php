@@ -267,7 +267,7 @@ function ShowVideo(id_video, titulo)
 		<div id="divVideo"></div>
 
 
-		<ul id="nav">
+		<ul id="nav-one">
 
 			<li><a href="<?php echo $CFG->wwwroot .'/' ?>" target="_self">Apresentação</a>
 
