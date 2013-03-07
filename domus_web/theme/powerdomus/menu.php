@@ -267,7 +267,29 @@
 <div id="divVideo"></div>
 <ul id="nav">
 
-
+		<li><a href="<?php echo $CFG->wwwroot .'/' ?>" target="_self">Apresentação</a></li>
+	<li><a href="#menu3_t">Download</a>
+	<ul>
+	<li><a href="javascript:void(0)" onclick="historico();">Histórico de versões</a></li>
+	<li><a href="javascript:void(0)" onclick="Acao('download','domus.exe');"><?php echo $CFG->versao_domus_teste ?></a></li>
+	<li><a href="#">Vídeos Demonstrativos</a>
+	<ul>
+		<li><a href="javascript:void(0)" onclick="ShowVideo('3zox9ivMbFM','Desenho de edificação interface aprimorada');">Desenho de edificação interface aprimorada</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('brGLxqh-BCo','Importando dxf');">Importando dxf</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('lKCbc2JVwuw','Importando idf');">Importando idf</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('eeN38Sw48O8','Modificando camadas');">Modificando camadas</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('PllrHJO8Oto','Definindo ganhos internos');">Definindo ganhos internos</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('XiqrEkfaiJI','Configurando um sistema de climatização');">Configurando um sistema de climatização</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('4twxOhjBVso','Definindo parâmetros gerais');">Definindo parâmetros gerais</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('Uac08MbIy_4','Método prescritivo');">Método prescritivo</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('KJmLkfeltYU','Método da simulação rtq');">Método da simulação RTQ</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('_NbcUvB7MRk','Resultados');">Resultados</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('bm1YsqBmAaQ','Sombras');">Sombras</a></li>
+	</ul>
+	</li>
+	
+	</ul>
+    </li>
 
 <li><a href="#menu3_t">Documentação</a>
 	<ul>
