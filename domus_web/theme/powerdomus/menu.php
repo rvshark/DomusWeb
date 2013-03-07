@@ -265,81 +265,18 @@
 	</form>
 </div>
 <div id="divVideo"></div>
-<ul id="nav" class="nav">
-
-	<li><a href="<?php echo $CFG->wwwroot .'/' ?>" target="_self">Apresentação</a>
-
-	</li>
-	<li><a href="#menu3_t">Download</a>
-	
-	<ul class="navSub">
-			<li>
-	<a href="javascript:void(0)" onclick="avaliacao();">
-					Avaliação Domus</a>
-			</li>
-			<li>
-	<a href="javascript:void(0)" onclick="historico();">
-					Histórico de versões</a>
-			</li>
 
 
-	<li>
-			<a href="javascript:void(0)" onclick="Acao('download','domus.exe');">
-			<?php echo $CFG->versao_domus_teste ?></a>
-		</li>
-  <li>
-                        <a href="javascript:void(0)" onclick="arquivo_climatico();">
-                        Arquivos de Climas (400 cidades) para o Domus</a>
-                </li>
-<li>
-<a href="javascript:void(0)" onclick="ShowVideo('Dr8xDU3ZTZk','Domus');">Rápida demonstração do Domus (Video)</a>
-</li>
 
-		<li><a href="javascript:void(0)" onclick="Acao('download','domus-release.exe');">
-			<?php echo $CFG->versao_domus ?></a></li>
-		
 
-		<li>
-			<a href="javascript:void(0)" onclick="Acao('pdf','TUTORIAL_FINAL-9_7_2012-mod.pdf');">Tutorial Domus (pdf interativo)</a>
-		</li>
-		<li style="display:none">
-			<a href="javascript:void(0)" onclick="ShowVideo('video','HVAC parte 1');">HVAC - Part 1 (Video)</a>
-		</li>
-		<li style="display:none">
-			<a href="javascript:void(0)" onclick="ShowVideo('video','HVAC parte 2');">HVAC - Part 2 (Video)</a>
-		</li>
-		<li>
-			<a href="javascript:void(0)" onclick="ShowVideo('pUcRzmUnWoM','Método Simulação');">Método Simulação (Video)</a>
-		</li>
-		<li style="display:none">
-			<a href="javascript:void(0)" onclick="ShowVideo('video','Parametros rar');">Parâmetros (Video)</a>
-		</li>
-		<li>
-			<a href="javascript:void(0)" onclick="ShowVideo('pA1MVA8xUMI','Prescritivo');">Prescritivo (Video)</a>
-		</li>
-	</ul>
-	</li>
-	<li><a href="#menu3_t">Documentação</a>
-	<ul class="navSub">
-		<!--<li><a href="?acao=manualpd">Manual do PowerDomus</a></li>
-		<li><a href="?acao=manualcursos">Manual do Curso</a></li>
-		<li><a href="?acao=modmatematico">Modelos Matematicos</a></li>
-		<li><a href="?acao=manuaispdf">Manuais (PDF)</a></li>
-		<li><a href="?acao=artigospdf">Artigos (PDF)</a></li>-->
-		<li><a href="http://jen.sagepub.com/content/30/1/7.abstract" target="_blank">Revisão Completa Artigo</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','Revised_Full-paper_Abadie_Mendes_PUCPR_Brazil.pdf');">Revisão Completa (PDF)</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','01_DOMUS_ASHRAE 1052-RP_.pdf');">ASHRAE</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','02_DOMUS_ANSI ASHRAE Standard 140-2007_Envelope_.pdf');">ANSI ASHRAE</a></li>
-		<li><a href="javascript:void(0)" onclick="Acao('pdf','03_DOMUS_Additional Validations and Verifications_.pdf');">Validações e Verificações Adicionais</a></li>
-	</ul>
-	</li>
+
+
+
 	<li><a href="#menu4_t">Links</a>
-	<ul class="navSub">
-		<li><a href="?acao=aplicativos">Aplicativos</a></li>
-		<li><a href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=115">Artigos</a></li>
-		<li><a href="?acao=faq">FAQ</a></li>
-		<li class="last-item"><a
-			href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=116">Sites Afins </a></li>
+	<ul class="nav">
+	<li><a href="?acao=aplicativos">Aplicativos</a></li>
+	<li><a href="?acao=faq">FAQs</a></li>
+	<li class="last-item"><a href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=116">Sítios Afins</a></li>
 	</ul>
 	</li>
 	
