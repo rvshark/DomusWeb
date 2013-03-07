@@ -269,7 +269,7 @@
 
 
 
-		<li><a href="#menu3_t">Documentação</a>
+<li><a href="#menu3_t">Documentação</a>
 	<ul>
     <li><a href="javascript:void(0)" onclick="Acao('pdf','	primeira_avaliacao_do_domus-procel_edifica.pdf');">Avaliação</a></li>
 <li><a href="javascript:void(0)" onclick="Acao('pdf','Temas_de_pesquisa.pdf');">Temas de Pesquisa</a></li>
@@ -280,8 +280,9 @@
 <li><a href="javascript:void(0)" onclick="Acao('pdf','02_DOMUS_ANSI ASHRAE Standard 140-2007_Envelope_.pdf');">ASHRAE 140-2007</a></li>
 <li><a href="http://jen.sagepub.com/content/30/1/7.full.pdf" target="_blank">Response-factor vs. Finite-volume</a></li>
 <li><a href="javascript:void(0)" onclick="Acao('pdf','03_DOMUS_Additional Validations and Verifications_.pdf');">Additional Validation</a></li>
-</li>
+
 			</ul>
+</li>
 
 		</ul>	
 		
@@ -294,6 +295,7 @@
 	<li><a href="?acao=faq">FAQs</a></li>
 	<li class="last-item"><a href="<?php echo $CFG->wwwroot ?>/moodle/mod/resource/view.php?id=116">Sítios Afins</a></li>
 	</ul>
+	
 	</li>
 	
 	<li style="width:150px; height:28px; padding: 3px 0 0 0">
