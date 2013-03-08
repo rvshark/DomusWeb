@@ -163,7 +163,7 @@
 		var iframe = '<iframe width="853" height="480" src="http://www.youtube.com/embed/' + id_video + '" frameborder="0" allowfullscreen></iframe>';
 		
 		$('#divVideo').html(iframe);
-		if(titulo == 'Trailer'){
+		if(titulo == 'Trailer08032013'){
 			titulo = 'Trailer de vídeo-aula : Nathan Mendes.';
 		}		
 		$('#divVideo').dialog("option","title",titulo).dialog('open'); 
