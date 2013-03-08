@@ -107,8 +107,9 @@ top:0px;
 #navAbaixo {
 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 display:inline-block;
-margin-left:100px;
+
 width: 110px;
+float:right;
 z-index: 100;
 font-size: 13px;
 font-weight: bold;
