@@ -14,7 +14,7 @@
 
 			<li><a href='javascript:void(0)' onclick='ShowVideo('Bbbsi4yx1wg','Trailer de Vídeo-Aula');'>Trailer de vídeo-aula : Nathan Mendes.</a></li>
 		</ul>";
-	    $server=$_SERVER['REQUEST_URI'];
+	    $server=$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 		if($server == $CFG->wwwroot){
 	    print $html;
 		}
