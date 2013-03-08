@@ -107,12 +107,11 @@ top:0px;
 #navAbaixo {
 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 display:inline-block;
-right:20em;
-position: absolute;
-top: 200px;
+margin-right:20em;
+margin-top: 200px;
 width: 150px;
 float:right;
-z-index: 100;
+z-index: 80;
 font-size: 13px;
 font-weight: bold;
 }
