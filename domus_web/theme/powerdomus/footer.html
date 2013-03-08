@@ -10,10 +10,10 @@
   <div id="footer">
 	<div>
 		<?php
-	 	$html ="<ul id='navAbaixo'>
-
-			<li><a href='javascript:void(0)' onclick='ShowVideo('Bbbsi4yx1wg','Trailer de Vídeo-Aula');'>Trailer de vídeo-aula : Nathan Mendes.</a></li>
-		</ul>";
+		settype($html,"string");
+	 	$html .='<ul id="navAbaixo">';
+        $html.='<li><a href="javascript:void(0)" onclick="ShowVideo("Bbbsi4yx1wg","Trailer de vídeo-aula : Nathan Mendes.");">Trailer de vídeo-aula : Nathan Mendes.</a></li>';
+		$html.='</ul>';
 	    $server="http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 	    $nome_principal=$CFG->wwwroot."/";
 		if($server == $nome_principal){
