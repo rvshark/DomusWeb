@@ -1,10 +1,6 @@
  
 </div>
-<div  style="position:absolute;float:right;margin-bottom:10px;margin-right:-50px;right:100px;">
 
-<a href="<?php echo $CFG->wwwroot .'/' ?>" target="_self">Apresentação</a>
-
-  </div>
   </div> <!-- end div containerContent -->
   <!-- START OF FOOTER -->
   <?php global $CFG, $COURSE; ?>  
@@ -12,6 +8,11 @@
   <?php if($_GET["id"] != 35) echo "</div>"; ?>
 
   <div id="footer">
+	<div  style="position:absolute;float:right;margin-bottom:10px;margin-right:-50px;right:100px;">
+
+	<a href="<?php echo $CFG->wwwroot .'/' ?>" target="_self">Apresentação</a>
+
+	  </div>
   	
   <?php
   if ($home) {
