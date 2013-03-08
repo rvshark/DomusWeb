@@ -164,7 +164,7 @@
 		
 		$('#divVideo').html(iframe);
 		if(titulo == 'Trailer08032013'){
-			titulo = 'Trailer de vídeo-aula : Nathan Mendes.';
+			titulo = 'Trailer de vídeo-aula';
 		}		
 		$('#divVideo').dialog("option","title",titulo).dialog('open'); 
 		
