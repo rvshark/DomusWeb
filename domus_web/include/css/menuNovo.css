@@ -110,7 +110,6 @@ display:inline-block;
 margin: 0 auto;
 width: 110px;
 z-index: 100;
-position: absolute;
 font-size: 13px;
 font-weight: bold;
 }
