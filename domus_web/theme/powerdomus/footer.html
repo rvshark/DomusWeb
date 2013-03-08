@@ -11,13 +11,8 @@
 	<div>
 		<?php
 		settype($html,"string");
-		settype($html,"link_out");
-	//	$nome_tratado = htmlentities("Trailer de vídeo-aula : Nathan Mendes.");
-	//	$nome_tratado = utf8_decode($nome_tratado);
-		$link_out .= '<a href="javascript:void(0)"';
-		$link_out.='onclick="ShowVideo("Bbbsi4yx1wg",';
-		$link_out.='"Teste");';
-		$link_out.='">Trailer de vídeo-aula : Nathan Mendes.</a>';
+		$nome_tratado = htmlentities("Trailer de video-aula : Nathan Mendes.");
+		$link_out = "<a href=javascript:void(0) onclick=ShowVideo('Bbbsi4yx1wg','teste');>teste</a>";
 	 	$html_out.='<ul id="navAbaixo">';
         $html_out.="<li>$link_out</li>";
 		$html_out.='</ul>';
