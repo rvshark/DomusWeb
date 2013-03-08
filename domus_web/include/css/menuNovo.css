@@ -110,7 +110,7 @@ display:inline-block;
 margin: 0;
 padding: 0;
 width: 110px;
-right: 20px;
+margin-right: 100px;
 z-index: 100;
 position: absolute;
 font-size: 13px;
