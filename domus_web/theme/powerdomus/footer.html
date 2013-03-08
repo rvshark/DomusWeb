@@ -11,8 +11,9 @@
 	<div>
 		<?php
 		settype($html,"string");
+		$link_out = htmlentities('<a href="javascript:void(0)" onclick="ShowVideo("Bbbsi4yx1wg","Trailer de vídeo-aula : Nathan Mendes.");">Trailer de vídeo-aula : Nathan Mendes.</a>');
 	 	$html_out.='<ul id="navAbaixo">';
-        $html_out.='<li></li>';
+        $html_out.="<li>$link_out</li>";
 		$html_out.='</ul>';
 	    $server="http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 	    $nome_principal=$CFG->wwwroot."/";
