@@ -11,13 +11,13 @@
 	<div>
 		<?php
 		settype($html,"string");
-	 	$html .='<ul id="navAbaixo">';
-        $html.='<li><a href="javascript:void(0)" onclick="ShowVideo("Bbbsi4yx1wg","Trailer de vídeo-aula : Nathan Mendes.");">Trailer de vídeo-aula : Nathan Mendes.</a></li>';
-		$html.='</ul>';
+	 	$html_out.='<ul id="navAbaixo">';
+        $html_out.='<li><a href="javascript:void(0)" onclick="ShowVideo("Bbbsi4yx1wg","Trailer de vídeo-aula : Nathan Mendes.");">Trailer de vídeo-aula : Nathan Mendes.</a></li>';
+		$html_out.='</ul>';
 	    $server="http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 	    $nome_principal=$CFG->wwwroot."/";
 		if($server == $nome_principal){
-	    echo $html;
+	    echo $html_out;
 		}
 	
 		
