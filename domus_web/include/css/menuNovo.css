@@ -27,6 +27,9 @@ position: absolute;
 font-size: 13px;
 font-weight: bold;
 }
+
+
+
 #nav li {
 margin: 0;
 padding: 0;
@@ -94,6 +97,94 @@ font-weight:bold;
 
 }
 #nav ul ul {
+left:103px;
+top:0px;
+}
+
+
+
+
+#navAbaixo {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+display:inline-block;
+margin: 0;
+padding: 0;
+width: 110px;
+right: 20px;
+z-index: 100;
+position: absolute;
+font-size: 13px;
+font-weight: bold;
+}
+
+
+#navAbaixo li {
+margin: 0;
+padding: 0;
+float:left;
+position:relative;
+list-style:none;
+background-color: #DEDEDE;
+font-size: 13px;
+font-weight: bold;
+color: #409DB5;
+width: 100px;
+text-decoration: none;
+border-style: solid;
+border-color: #ffffff #808080 #c0c0c0 #ffffff;
+border-width: 1px 2px 2px 1px;
+}
+#navAbaixo a {
+color: #409DB5;
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+text-decoration: none;
+height: 32px;
+width: 100px;
+background: #DEDEDE;
+
+
+
+}/* selected menu element */
+#navAbaixo .current a, #navAbaixo li:hover > a {
+background:#7788aa;
+color:#FFF;
+
+border-top:1px solid #409DB5;
+}/* sublevels */
+#navAbaixo ul li:hover a, #navAbaixo li:hover li a {
+background:none;
+border:none;
+color:#409DB5;
+}
+#navAbaixo ul li a:hover {
+  color: #ffffff;
+    background-color: #409DB5;
+}
+
+#navAbaixo li:hover > ul {
+opacity:1;
+visibility:visible;
+}
+#navAbaixo ul {
+opacity:0;
+visibility:hidden;
+padding:0;
+width:100px;
+position:absolute;
+border:1px solid #DEDEDE;
+
+}
+#navAbaixo ul li {
+float:none;
+margin:0;
+}
+#navAbaixo ul a {
+font-weight:bold;
+
+}
+#navAbaixo ul ul {
 left:103px;
 top:0px;
 }
