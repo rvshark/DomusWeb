@@ -279,7 +279,7 @@
 			<li><a href="javascript:void(0)" onclick="ShowVideo('XiqrEkfaiJI','Configuração de climatização');">Configuração de climatização</a></li>
 				<li><a href="javascript:void(0)" onclick="ShowVideo('eeN38Sw48O8','Modificando camadas');">Modificando camadas</a></li>
 					<li><a href="javascript:void(0)" onclick="ShowVideo('Uac08MbIy_4','Método prescritivo');">Método prescritivo</a></li>
-						<li><a href="javascript:void(0)" onclick="ShowVideo('KJmLkfeltYU','Método da simulação rtq');">Método da simulação RTQ</a></li>
+						<li><a href="javascript:void(0)" onclick="ShowVideo('KJmLkfeltYU','Método da simulação');">Método da simulação</a></li>
 		<li><a href="javascript:void(0)" onclick="ShowVideo('3zox9ivMbFM','Desenho de edificação');">Desenho de edificação</a></li>
 	<li><a href="javascript:void(0)" onclick="ShowVideo('brGLxqh-BCo','Importando dxf');">Importando dxf</a></li>
 	<li><a href="javascript:void(0)" onclick="ShowVideo('lKCbc2JVwuw','Importando idf');">Importando idf</a></li>
