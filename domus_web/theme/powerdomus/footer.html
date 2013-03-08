@@ -10,7 +10,7 @@
   <div id="footer">
 	<div>
 		<?php
-	 	$html ="<ul id='navAbaixo' style='display=inline-block';>
+	 	$html ="<ul id='navAbaixo'>
 
 			<li><a href='javascript:void(0)' onclick='ShowVideo('Bbbsi4yx1wg','Trailer de Vídeo-Aula');'>Trailer de vídeo-aula : Nathan Mendes.</a></li>
 		</ul>";
@@ -18,7 +18,8 @@
 		if($server == $CFG->wwwroot){
 	    print $html;
 		}
-	
+		print $server."<br/>";
+		print $CFG->wwwroot;
 		
 		?>
 
