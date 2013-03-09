@@ -122,6 +122,16 @@ header("Content-type: text/html; charset=utf-8");
                 <div class="navbutton">
                     <?php echo $button; ?>
                 </div>
+
+            </div>
+            <?php } ?>
+            <div id="main_carregando" style="<?php if (!$navigation) echo "background-position: 0 -168px!important"; 
+            									 			else echo "background-position: 0 -198px!important"; ?>">
+            
+            <div class="rodape_carregando"></div>    
+            </div>
+            <!-- END OF HEADER -->
+            <div id="main" style="display: none; ">
 				<?php
 
 				$link_out = "<a href=javascript:void(0) onclick=ShowVideo('Bbbsi4yx1wg','Trailer08032013');>Trailer de vídeo-aula</a>";
@@ -136,14 +146,4 @@ header("Content-type: text/html; charset=utf-8");
 
 
 				?>
-            </div>
-            <?php } ?>
-            <div id="main_carregando" style="<?php if (!$navigation) echo "background-position: 0 -168px!important"; 
-            									 			else echo "background-position: 0 -198px!important"; ?>">
-            
-            <div class="rodape_carregando"></div>    
-            </div>
-            <!-- END OF HEADER -->
-            <div id="main" style="display: none; ">
-			
                 <div id="container">
