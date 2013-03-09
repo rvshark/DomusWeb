@@ -1445,6 +1445,18 @@ function get_slash_arguments($file='file.php') {
  * @return array|string
  * @todo Finish documenting this function
  */
+
+function retorna_botao_trailer(){
+$link_out = "<a href=javascript:void(0) onclick=ShowVideo('Bbbsi4yx1wg','Trailer08032013');>Trailer de vídeo-aula</a>";
+$html_out.='<ul id="navAbaixo">';
+$html_out.="<li>$link_out</li>";
+$html_out.='</ul>';
+$server="http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+$nome_principal=$CFG->wwwroot."/";
+if($server == $nome_principal){
+return $html_out;
+}
+}
 function parse_slash_arguments($string, $i=0) {
 
     if (detect_munged_arguments($string)) {
@@ -2465,7 +2477,8 @@ function get_html_lang($dir = false) {
  * @return string HTML element.
  */
 function skip_main_destination() {
-    return '<span id="maincontent"></span>';
+	$trailer = retorna_botao_trailer();
+    return '<span id="maincontent"></span>'.$trailer;
 }
 
 
