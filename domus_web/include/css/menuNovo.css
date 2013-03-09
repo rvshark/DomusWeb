@@ -101,7 +101,10 @@ left:103px;
 top:0px;
 }
 
-
+#linkTrailer {
+position: absolute;	
+float:right;
+}
 
 
 #navAbaixo {
