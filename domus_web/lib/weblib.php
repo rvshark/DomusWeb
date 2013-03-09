@@ -2481,6 +2481,8 @@ function skip_main_destination() {
 	$nome_principal=$CFG->wwwroot."/";
 	if($server == $nome_principal){
     $ss_out=$html_out;
+	}else{
+		$ss_out = 'nao';
 	}
 		 return '<span id="maincontent"><div>'.$ss_out.'</div></span>';
 
