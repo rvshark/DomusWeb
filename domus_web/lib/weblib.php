@@ -2476,15 +2476,13 @@ function skip_main_destination() {
 global $CFG;
 
 	$link_out = "<a href=javascript:void(0) onclick=ShowVideo('lpE7K768D3A','Trailer08032013');>Trailer de vídeo-aula</a>";
-	$html_out.='<ul id="navAbaixo">';
-	$html_out.="<li>$link_out</li>";
-	$html_out.='</ul>';
+
+	$html_out.="$link_out";
+
 	$server="http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 	$nome_principal=$CFG->wwwroot."/";
 	if($server == $nome_principal){
     $ss_out=$html_out;
-	}else{
-		$ss_out = 	$nome_principal.'  '.$server;
 	}
 		 return '<span id="maincontent"><div>'.$ss_out.'</div></span>';
 
