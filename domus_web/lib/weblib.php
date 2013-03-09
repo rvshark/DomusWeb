@@ -1688,7 +1688,7 @@ function format_text($text, $format=FORMAT_MOODLE, $options=NULL, $courseid=NULL
         }
     }
 	
-	$text = '<div id="gallery">'.$text.'</div>';
+	$text = '<div id="gallery">OIOI'.$text.'</div>';
 	
     return $text;
 }
@@ -2477,8 +2477,8 @@ function get_html_lang($dir = false) {
  * @return string HTML element.
  */
 function skip_main_destination() {
-	$trailer = retorna_botao_trailer();
-    return '<span id="maincontent"></span>'.$trailer;
+	
+    return '<span id="maincontent"></span>';
 }
 
 
