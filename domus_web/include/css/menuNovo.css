@@ -102,12 +102,7 @@ top:0px;
 }
 
 
-#Savenav {
 
-width: 150px;
-margin-right:15em;
-margin-top: -53em;
-}
 
 #navAbaixo {
 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -115,6 +110,7 @@ display:inline-block;
 position: absolute;
 width: 150px;
 float:right;
+top:210px;
 z-index: 80;
 font-size: 13px;
 font-weight: bold;
