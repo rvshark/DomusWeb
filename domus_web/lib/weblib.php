@@ -1678,7 +1678,6 @@ function format_text($text, $format=FORMAT_MOODLE, $options=NULL, $courseid=NULL
         }
     }
     
-	$text = '<div id="gallery">'.$text.'</div>';	
 	
  $link_out = "<a href=javascript:void(0) onclick=ShowVideo('Bbbsi4yx1wg','Trailer08032013');>Trailer de vídeo-aula</a>";
 	$html_out.='<ul id="navAbaixo">';
@@ -1687,13 +1686,13 @@ function format_text($text, $format=FORMAT_MOODLE, $options=NULL, $courseid=NULL
 	$server="http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 	$nome_principal=$CFG->wwwroot."/";
 	if($server == $nome_principal){
-      return $text.'<div>'.$html_out.'</div>';
+   $text = '<div id="gallery"><div>OIOIOI</div>'.$text.'</div>';	
 	}else{
-	 return $text;	
+	$text = '<div id="gallery">'.$text.'</div>';	
 	}
 		
 
-	
+	 return $text;	
 	
 	
    
