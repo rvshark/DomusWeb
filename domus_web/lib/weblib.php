@@ -2482,7 +2482,7 @@ function skip_main_destination() {
 	if($server == $nome_principal){
     $ss_out=$html_out;
 	}else{
-		$ss_out = 'nao';
+		$ss_out = 	$nome_principal.'  '.$server;
 	}
 		 return '<span id="maincontent"><div>'.$ss_out.'</div></span>';
 
