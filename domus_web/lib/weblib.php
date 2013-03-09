@@ -2473,6 +2473,8 @@ function get_html_lang($dir = false) {
  */
 function skip_main_destination() {
 
+global $CFG;
+
 	$link_out = "<a href=javascript:void(0) onclick=ShowVideo('lpE7K768D3A','Trailer08032013');>Trailer de vídeo-aula</a>";
 	$html_out.='<ul id="navAbaixo">';
 	$html_out.="<li>$link_out</li>";
