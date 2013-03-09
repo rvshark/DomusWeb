@@ -277,23 +277,15 @@
 	<li><a href="javascript:void(0)" onclick="Acao('download','domus.exe');"><?php echo $CFG->versao_domus_teste ?></a></li>
 	<li><a href="#">Vídeos Demonstrativos</a>
 	<ul>
-		<li><a href="javascript:void(0)" onclick="ShowVideo('Bbbsi4yx1wg','Trailer de Vídeo-Aula');">Trailer de Vídeo-Aula</a></li>
+		<li><a href="javascript:void(0)" onclick="ShowVideo('lpE7K768D3A','Trailer de Vídeo-Aula');">Trailer de Vídeo-Aula</a></li>
 		<li><a href="javascript:void(0)" onclick="ShowVideo('UGvx_OBCZpI','Visão geral do Domus');">Visão geral do Domus</a></li>
-			<li><a href="javascript:void(0)" onclick="ShowVideo('XiqrEkfaiJI','Configuração de climatização');">Configuração de climatização</a></li>
-				<li><a href="javascript:void(0)" onclick="ShowVideo('eeN38Sw48O8','Modificando camadas');">Modificando camadas</a></li>
-					<li><a href="javascript:void(0)" onclick="ShowVideo('Uac08MbIy_4','Método prescritivo');">Método prescritivo</a></li>
-						<li><a href="javascript:void(0)" onclick="ShowVideo('KJmLkfeltYU','Método da simulação');">Método da simulação</a></li>
-		<li><a href="javascript:void(0)" onclick="ShowVideo('3zox9ivMbFM','Desenho de edificação');">Desenho de edificação</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('3zox9ivMbFM','Desenho de edificação');">Desenho de edificação</a></li>
 	<li><a href="javascript:void(0)" onclick="ShowVideo('brGLxqh-BCo','Importando dxf');">Importando dxf</a></li>
 	<li><a href="javascript:void(0)" onclick="ShowVideo('lKCbc2JVwuw','Importando idf');">Importando idf</a></li>
-
-	<li><a href="javascript:void(0)" onclick="ShowVideo('PllrHJO8Oto','Definindo ganhos internos');">Definindo ganhos internos</a></li>
-
-	<li><a href="javascript:void(0)" onclick="ShowVideo('4twxOhjBVso','Definindo parâmetros');">Definindo parâmetros</a></li>
-
-
-	<li><a href="javascript:void(0)" onclick="ShowVideo('_NbcUvB7MRk','Resultados');">Resultados</a></li>
-	<li><a href="javascript:void(0)" onclick="ShowVideo('bm1YsqBmAaQ','Sombras');">Sombras</a></li>
+	<li><a href="javascript:void(0)" onclick="ShowVideo('XiqrEkfaiJI','Configuração de climatização');">Configuração de climatização</a></li>
+		<li><a href="javascript:void(0)" onclick="ShowVideo('Uac08MbIy_4','Método prescritivo');">Método prescritivo</a></li>
+			<li><a href="javascript:void(0)" onclick="ShowVideo('KJmLkfeltYU','Método da simulação');">Método da simulação</a></li>
+	
 	</ul>
 	</li>
 	
