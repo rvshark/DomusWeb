@@ -1446,17 +1446,7 @@ function get_slash_arguments($file='file.php') {
  * @todo Finish documenting this function
  */
 
-function retorna_botao_trailer(){
-$link_out = "<a href=javascript:void(0) onclick=ShowVideo('Bbbsi4yx1wg','Trailer08032013');>Trailer de vídeo-aula</a>";
-$html_out.='<ul id="navAbaixo">';
-$html_out.="<li>$link_out</li>";
-$html_out.='</ul>';
-$server="http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-$nome_principal=$CFG->wwwroot."/";
-if($server == $nome_principal){
-return $html_out;
-}
-}
+
 function parse_slash_arguments($string, $i=0) {
 
     if (detect_munged_arguments($string)) {
@@ -1687,8 +1677,20 @@ function format_text($text, $format=FORMAT_MOODLE, $options=NULL, $courseid=NULL
                                                            // the cron cleaner will delete them.
         }
     }
-	$trailer = retorna_botao_trailer();
-	$text = '<div id="gallery"><div>'.$trailer.'</div>'.$text.'</div>';
+    
+
+    $link_out = "<a href=javascript:void(0) onclick=ShowVideo('Bbbsi4yx1wg','Trailer08032013');>Trailer de vídeo-aula</a>";
+	$html_out.='<ul id="navAbaixo">';
+	$html_out.="<li>$link_out</li>";
+	$html_out.='</ul>';
+	$server="http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+	$nome_principal=$CFG->wwwroot."/";
+	if($server == $nome_principal){
+		$text = '<div id="gallery"><div>'.$html_out.'</div>'.$text.'</div>';
+	}else{
+	$text = '<div id="gallery">'.$text.'</div>';	
+	}
+	
 	
     return $text;
 }
