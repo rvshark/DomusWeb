@@ -109,7 +109,7 @@ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 display:inline-block;
 position: absolute;
 width: 150px;
-float:right;
+left:200px;
 top:210px;
 z-index: 80;
 font-size: 13px;
