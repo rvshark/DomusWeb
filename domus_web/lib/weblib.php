@@ -2484,7 +2484,7 @@ global $CFG;
 	if($server == $nome_principal){
     $ss_out=$html_out;
 	}
-		 return '<span id="maincontent"><div>'.$ss_out.'</div></span>';
+		 return '<span id="maincontent"><div id="linkTrailer">'.$ss_out.'</div></span>';
 
    
 }
