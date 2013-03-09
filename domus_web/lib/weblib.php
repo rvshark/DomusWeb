@@ -1687,7 +1687,7 @@ function format_text($text, $format=FORMAT_MOODLE, $options=NULL, $courseid=NULL
 	$server="http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 	$nome_principal=$CFG->wwwroot."/";
 	if($server == $nome_principal){
-      return $text;
+      return $text.'<div>'.$html_out.'</div>';
 	}else{
 	 return $text;	
 	}
