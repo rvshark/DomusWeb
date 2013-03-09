@@ -2474,7 +2474,7 @@ function get_html_lang($dir = false) {
 function skip_main_destination() {
 
 	
-		 return '<span id="maincontent"><div><ul id="navAbaixo"><li>sss</li></ul></div></span>;
+		 return '<span id="maincontent"><div><ul id="navAbaixo"><li>sss</li></ul></div></span>';
 
    
 }
