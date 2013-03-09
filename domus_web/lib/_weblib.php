@@ -1671,8 +1671,8 @@ function format_text($text, $format=FORMAT_MOODLE, $options=NULL, $courseid=NULL
                                                            // the cron cleaner will delete them.
         }
     }
-	
-	$text = '<div id="gallery">'.$text.'</div>';
+		$trailer=retorna_botao_trailer();
+	$text = ''.$trailer.'<div id="gallery">'.$text.'</div>';
 	
     return $text;
 }
@@ -2459,8 +2459,8 @@ return $html_out;
 }
 
 function skip_main_destination() {
-	$trailer=retorna_botao_trailer();
-    return '<span id="maincontent"></span>'.$trailer;
+
+    return '<span id="maincontent"></span>';
 }
 
 
