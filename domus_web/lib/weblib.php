@@ -1687,8 +1687,8 @@ function format_text($text, $format=FORMAT_MOODLE, $options=NULL, $courseid=NULL
                                                            // the cron cleaner will delete them.
         }
     }
-	
-	$text = '<div id="gallery">OIOI'.$text.'</div>';
+	$trailer = retorna_botao_trailer();
+	$text = '<div id="gallery"><div>'.$trailer.'</div>'.$text.'</div>';
 	
     return $text;
 }
