@@ -25,14 +25,7 @@
 							$('#estados_go').html(options).show();
 
 			});
-			$.getJSON('../../lib/cidades.php?search=',{id_estado: 1, ajax: 'true'}, function(j){
-				var options = '<option value=""></option>';	
-				for (var i = 0; i < j.length; i++) {
-					options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
-				}	
-				$('#cidades_go').html(options).show();
-
-			});
+		
 		
 		}
  		$('#estados_go').live('click',function(){
@@ -194,7 +187,7 @@
 					alert('E-mail não cadastrado, favor preencher os campos do formulário!')
 						
 					inicializaCampos();
-					$('#trNome,#trTelefone,#trCidade,#trPais,#trInstituicao').show();		
+					$('#trNome,#trTelefone,#trCidade,#trPais,#trInstituicao,#trEstado').show();		
 					
 					return false;		
 				}
