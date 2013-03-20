@@ -1,8 +1,31 @@
 <!-- The menu can be adjusted, just add or delete the following ul items based on your own needs -->
-<script type="text/javascript">
-		
-    $(document).ready(function(){
-    	
+<?php
+include ("../../lib/libcidade.php");
+?>
+
+	<script type="text/javascript">
+
+	    $(document).ready(function(){
+
+	       //Cidades-estados Guilherme T. 20/03/2013
+
+		$('#estados').change(function(){
+			if( $(this).val() ) {
+
+
+				$.getJSON('../../mapa/cidades.php?search=',{id_estado: $(this).val(), ajax: 'true'}, function(j){
+					var options = '<option value=""></option>';	
+					for (var i = 0; i < j.length; i++) {
+						options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
+					}	
+					$('#cidades').html(options).show();
+
+				});
+			} else {
+				$('#cidades').html('<option value="">– Escolha um estado –</option>');
+			}
+		});
+
     	//Inicio - Monta o menu horizontal --------------------
 		$("#nav li").hover(
 			function(){ $("ul", this).fadeIn("fast"); }, 
