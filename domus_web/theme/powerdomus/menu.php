@@ -30,9 +30,7 @@
 					$('#cidades_go').html(options).show();
 
 				});
-			} else {
-				$('#cidades_go').html('<option value="">– Escolha uma cidade –</option>');
-			}
+			} 
 		});
 
     	//Inicio - Monta o menu horizontal --------------------
