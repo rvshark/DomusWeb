@@ -81,7 +81,7 @@
 	        open: function(){ 
 	        	inicializaCampos();	
 	        	carregarCampos("");
-	            carregaEstados();
+	          
 	        },                        
 	        buttons: {
 				"Ok": function() {
