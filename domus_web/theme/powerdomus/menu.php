@@ -294,7 +294,7 @@
 	</li>
 
 	<li>
-	<a rel='#voverlay' href='<?php  echo $CFG->dirroot .'/mapa_r/videos/engine/swf'; ?>/player.swf?url=/<?php  echo $CFG->dirroot .'/temp/teste.f4v'; ?>&volume=100' title='Abrir Video'>Teste</a>";
+	<a rel='#voverlay' href='<?php  echo $CFG->dirroot .'/mapa_r/videos/engine/swf'; ?>/player.swf?url=/<?php  echo $CFG->dirroot .'/temp/teste.f4v'; ?>&volume=100' title='Abrir Video'>Teste</a>
 	</li>
 
 	<li>
