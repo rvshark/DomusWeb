@@ -41,8 +41,10 @@
 						$('#cidades_go').html(options).show();
 
 					});
-				
-		})
+				} else {
+					$('#estados_go').html('<option value="">– Escolha um estado–</option>');
+				}
+		});
 		
 		$('#estados_go').change(function(){
 			if( $(this).val() ) {
@@ -56,7 +58,9 @@
 					$('#cidades_go').html(options).show();
 
 				});
-		
+			} else {
+				$('#estados_go').html('<option value="">– Escolha um estado –</option>');
+			}
 		});
 
     	//Inicio - Monta o menu horizontal --------------------
