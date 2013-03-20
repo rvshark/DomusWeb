@@ -307,7 +307,8 @@
     <li><a href="javascript:void(0)" onclick="Acao('pdf','	primeira_avaliacao_do_domus-procel_edifica.pdf');">Avaliação</a></li>
     <li><a href="javascript:void(0)" onclick="Acao('pdf','FAQs.pdf');">Perguntas Frequentes</a></li>
 <li><a href="javascript:void(0)" onclick="Acao('pdf','Temas_de_pesquisa.pdf');">Temas de Pesquisa</a></li>
-<li><a href="javascript:void(0)" onclick="Acao('pdf','ORIENTAÇÕES_CONCLUÍDAS_ASSOCIADAS_AO_DOMUS.pdf');">Publicações e Orientações</a></li>
+    <li><a href="javascript:void(0)" onclick="Acao('pdf','ORIENTACOES_CONCLUIDAS_ASSOCIADAS_AO_DOMUS.pdf');">Publicações e Orientações</a></li>
+
 <li><a href="#">Validação</a>
 			<ul>
 <li><a href="javascript:void(0)" onclick="Acao('pdf','01_DOMUS_ASHRAE 1052-RP_.pdf');">ASHRAE 1052-RP</a></li>
