@@ -171,6 +171,17 @@
 	}
 	
 	
+	function ShowVideoF4V(link, titulo)
+	{
+		
+		var iframe = '<iframe width="853" height="480" src="/mapa_r/videos/engine/swf/player.swf?url=' + link + '&volume=100" frameborder="0" allowfullscreen></iframe>';
+		
+		$('#divVideo').html(iframe);
+		
+		$('#divVideo').dialog("option","title",titulo).dialog('open'); 
+		
+	}
+	
 	
 	//Ações do menu horizontal
 	function historico(){  //17-12-2012 13:00 -- Guilherme Trevisan de Oliveira
@@ -294,7 +305,7 @@
 	</li>
 
 	<li>
-	<a rel='#voverlay' href='/mapa_r/videos/engine/swf/player.swf?url=/temp/teste.f4v&volume=100' title='Abrir Video'>Teste</a>
+<a href="javascript:void(0)" onclick="ShowVideoF4V('/temp/teste.f4v','Teste');">Teste</a></a>
 	</li>
 
 	<li>
