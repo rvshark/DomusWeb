@@ -298,7 +298,7 @@
 				</tr>
 			<tr id='trCidade'>
 				<td style="text-align: right;width: 8%">Cidade:</td>
-				<td style="text-align: left;width: 92%"><select name='cidades'  id='cidades'>
+				<td style="text-align: left;width: 92%"><select name='cidades_go'  id='cidades_go'>
 			    <option value=''>-- Escolha uma cidade --</option>
 				</select></td>
 			</tr>
