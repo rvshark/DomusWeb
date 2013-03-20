@@ -6,7 +6,16 @@
 	    $(document).ready(function(){
 
 	       //Cidades-estados Guilherme T. 20/03/2013
- 	
+ 		$(function(){
+		$.getJSON('../../lib/estados.php?search=',{estados: 2013, ajax: 'true'}, function(j){
+						var options = '<option value=""></option>';	
+						for (var i = 0; i < j.length; i++) {
+							options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
+						}	
+						$('#estados_go').html(options).show();
+
+		});
+		});
 		
 		$('#estados_go').change(function(){
 			if( $(this).val() ) {
@@ -276,24 +285,7 @@
 					<td style="text-align: right;width: 8%">Estado:</td>
 					<td style="text-align: left;width: 92%">
 					 <select name='estados_go' id='estados_go'>
-						<option value=''>-- Escolha um estado --</option>
-						<option value="1">– Escolha um estado –</option>
-						<option value="2">– Escolha um estado –</option>
-						<option value="3">– Escolha um estado –</option>
-						<option value="4">– Escolha um estado –</option>
-						<option value="5">– Escolha um estado –</option>
-						<option value="6">– Escolha um estado –</option>
-						<option value="7">– Escolha um estado –</option>
-						<option value="8">– Escolha um estado –</option>
-						<option value="9">– Escolha um estado –</option>
-						<option value="10">– Escolha um estado –</option>
-						<option value="11">– Escolha um estado –</option>
-						<option value="12">– Escolha um estado –</option>
-						<option value="13">– Escolha um estado –</option>
-						<option value="14">– Escolha um estado –</option>
-						<option value="15">– Escolha um estado –</option>
-						</select>
-						
+						<option value=''>-- Escolha um estado --</option></select>
 					</td>
 				</tr>
 			<tr id='trCidade'>
