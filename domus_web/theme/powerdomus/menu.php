@@ -273,10 +273,25 @@ include ("../../lib/libcidade.php");
 				<td style="text-align: right;width: 8%">Instituição*:</td>
 				<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="txtInstituicao" name="txtInstituicao"></td>
 			</tr>
+				<tr id='trEstado'>
+					<td style="text-align: right;width: 8%">Estado:</td>
+					<td style="text-align: left;width: 92%">
+						<?php
+						$ufCombo = ufCombo();
+						print "<select name='estados' id='estados'>
+						<option value=''>-- Escolha um estado --</option>
+						$ufCombo
+						</select>";?>
+					</td>
+				</tr>
 			<tr id='trCidade'>
-				<td style="text-align: right;width: 8%">Cidade/Município*:</td>
-				<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="txtCidade" name="txtCidade"></td>
+				<td style="text-align: right;width: 8%">Cidade:</td>
+				<td style="text-align: left;width: 92%"><select name='cidades'  id='cidades'>
+			    <option value=''>-- Escolha uma cidade --</option>
+				</select></td>
 			</tr>
+			
+			
 			<tr id='trPais'>
 				<td style="text-align: right;width: 8%">País*:</td>
 				<td style="text-align: left;width: 92%">
