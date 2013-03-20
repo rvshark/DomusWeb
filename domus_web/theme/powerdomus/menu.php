@@ -12,12 +12,12 @@
 						for (var i = 0; i < j.length; i++) {
 							options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
 						}	
-						$('#estados').html(options).show();
+						$('#estados_go').html(options).show();
 
 		});
 		});
 		
-		$('#estados').change(function(){
+		$('#estados_go').change(function(){
 			if( $(this).val() ) {
 
 
@@ -284,7 +284,7 @@
 				<tr id='trEstado'>
 					<td style="text-align: right;width: 8%">Estado:</td>
 					<td style="text-align: left;width: 92%">
-					 <select name='estados' id='estados'>
+					 <select name='estados_go' id='estados_go'>
 						<option value=''>-- Escolha um estado --</option></select>
 					</td>
 				</tr>
