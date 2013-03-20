@@ -6,7 +6,14 @@
 	    $(document).ready(function(){
 
 	       //Cidades-estados Guilherme T. 20/03/2013
-
+       function(){
+			$.getJSON('../../lib/cidades.php?estados=true, ajax: 'true'}, function(j){
+				var options = '<option value=""></option>';	
+				for (var i = 0; i < j.length; i++) {
+					options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
+				}	
+				$('#estados').html(options).show();
+       }
 		$('#estados').change(function(){
 			if( $(this).val() ) {
 
@@ -20,7 +27,7 @@
 
 				});
 			} else {
-				$('#cidades').html('<option value="">– Escolha um estado –</option>');
+				$('#cidades').html('<option value="">– Escolha uma cidade –</option>');
 			}
 		});
 
@@ -274,13 +281,8 @@
 				<tr id='trEstado'>
 					<td style="text-align: right;width: 8%">Estado:</td>
 					<td style="text-align: left;width: 92%">
-						<?php
-					    require "lib/libcidade.php";
-				
-						print "<select name='estados' id='estados'>
-						<option value=''>-- Escolha um estado --</option>
-						
-						</select>";?>
+					 <select name='estados' id='estados'>
+						<option value=''>-- Escolha um estado --</option></select>
 					</td>
 				</tr>
 			<tr id='trCidade'>
