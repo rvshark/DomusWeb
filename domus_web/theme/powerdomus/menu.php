@@ -13,6 +13,7 @@
 					options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
 				}	
 				$('#estados').html(options).show();
+				});
        }
 		$('#estados').change(function(){
 			if( $(this).val() ) {
