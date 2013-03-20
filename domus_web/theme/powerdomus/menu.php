@@ -16,7 +16,17 @@
 	    $(document).ready(function(){
 
 	       //Cidades-estados Guilherme T. 20/03/2013
-	
+		function carregaEstados(){
+			$.getJSON('../../lib/estados.php?search=',{estados: 2013, ajax: 'true'}, function(j){
+							var options = '<option value=""></option>';	
+							for (var i = 0; i < j.length; i++) {
+								options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
+							}	
+							$('#estados_go').html(options).show();
+
+			});
+		
+		}
  		$('#estados_go').live('click',function(){
 		   
 				if( $(this).val() ) {
@@ -89,6 +99,7 @@
 	        open: function(){ 
 	        	inicializaCampos();	
 	        	carregarCampos("");
+	            carregaEstados();
 	        },                        
 	        buttons: {
 				"Ok": function() {
