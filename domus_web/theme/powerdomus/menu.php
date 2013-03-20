@@ -3,19 +3,20 @@
 
 	<script type="text/javascript">
 
+	$(function(){
+	$.getJSON('../../lib/estados.php?search=',{estados: 2013, ajax: 'true'}, function(j){
+					var options = '<option value=""></option>';	
+					for (var i = 0; i < j.length; i++) {
+						options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
+					}	
+					$('#estados_go').html(options).show();
+
+	});
+	});
 	    $(document).ready(function(){
 
 	       //Cidades-estados Guilherme T. 20/03/2013
- 		$(function(){
-		$.getJSON('../../lib/estados.php?search=',{estados: 2013, ajax: 'true'}, function(j){
-						var options = '<option value=""></option>';	
-						for (var i = 0; i < j.length; i++) {
-							options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
-						}	
-						$('#estados_go').html(options).show();
-
-		});
-		});
+ 	
 		
 		$('#estados_go').change(function(){
 			if( $(this).val() ) {
