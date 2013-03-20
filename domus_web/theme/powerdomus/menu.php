@@ -42,7 +42,7 @@
 
 					});
 				} else {
-					$('#estados_go').html('<option value="">– Escolha um estado–</option>');
+					
 				}
 		});
 		
@@ -59,7 +59,7 @@
 
 				});
 			} else {
-				$('#estados_go').html('<option value="">– Escolha um estado –</option>');
+			
 			}
 		});
 
