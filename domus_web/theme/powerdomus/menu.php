@@ -275,7 +275,7 @@
 					<td style="text-align: right;width: 8%">Estado:</td>
 					<td style="text-align: left;width: 92%">
 						<?php
-					    require "../../lib/libcidade.php";
+					    require "lib/libcidade.php";
 				
 						print "<select name='estados' id='estados'>
 						<option value=''>-- Escolha um estado --</option>
