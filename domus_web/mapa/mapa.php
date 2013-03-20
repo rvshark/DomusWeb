@@ -1,4 +1,35 @@
-<?php 
+<?php
+require_once ("../config.php");
+
+public function getCidade($id_estado) {
+    $conexao = new Conexao();
+    $query = "SELECT id_cidade, nome , capital FROM cidades WHERE id_estado=$id_estado ORDER BY nome";
+    $conexao->setConsulta($query);
+    $sql = $conexao->getConsulta();
+    $mostra = $conexao->fetchAll();
+    return $mostra;
+}
+
+public function getUf() {
+    $conexao = new Conexao();
+    $query = "SELECT id_estado,uf FROM estados ORDER BY uf";
+    $conexao->setConsulta($query);
+    $mostra = $conexao->fetchAll();
+    return $mostra;
+}
+
+$query="SELECT * FROM mdl_cidade";
+$sql = execute_sql ();
+
+/*$id_estado = intval( $_REQUEST['id_estado'] );
+$ufcidades = new UFcidade();
+$cidade = $ufcidades->getCidade($id_estado);
+
+echo( json_encode( $cidade ) );*/
+
+print_r($sql);
+
+
 
 $array.="[['City','Downloads'],";
 $array.="['Paraná',229],";
