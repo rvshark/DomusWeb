@@ -221,8 +221,8 @@
 	
 	//Iniciliza os campos do formulário
 	function inicializaCampos(){
-		$('#trNome,#trTelefone,#trCidade,#trPais,#trInstituicao').hide();
-		$("#txtNome,#txtCidade,#txtTelefone,#txtInstituicao").val('');
+		$('#trNome,#trTelefone,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
+		$("#txtNome,#txtTelefone,#txtInstituicao").val('');
 		$('#txtPais').val(0);  			
 	}
 	
