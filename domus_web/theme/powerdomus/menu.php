@@ -276,7 +276,7 @@
 					<td style="text-align: right;width: 8%">Estado:</td>
 					<td style="text-align: left;width: 92%">
 					 <select name='estados_go' id='estados_go'>
-						<option value=''>-- Escolha um estado --</option></select>
+						<option value=''>-- Escolha um estado --</option>
 						<option value="1">– Escolha um estado –</option>
 						<option value="2">– Escolha um estado –</option>
 						<option value="3">– Escolha um estado –</option>
@@ -292,6 +292,7 @@
 						<option value="13">– Escolha um estado –</option>
 						<option value="14">– Escolha um estado –</option>
 						<option value="15">– Escolha um estado –</option>
+						</select>
 						
 					</td>
 				</tr>
