@@ -29,7 +29,7 @@
 		
 		}
 		$("#estados_go").click(function() {
-		alert("ra.");
+		alert($(this).val());
 		});
  	
 		
