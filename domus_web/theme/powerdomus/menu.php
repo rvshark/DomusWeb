@@ -29,7 +29,20 @@
 		
 		}
 		$("#estados_go").click(function() {
-		alert($(this).val());
+			if( $(this).val() ) {
+
+
+				$.getJSON('../../lib/cidades.php?search=',{id_estado: $(this).val(), ajax: 'true'}, function(j){
+					var options = '<option value=""></option>';	
+					for (var i = 0; i < j.length; i++) {
+						options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
+					}	
+					$('#cidades_go').html(options).show();
+
+				});
+			} else {
+				$('#cidades_go').html('<option value="">– Escolha uma cidade –</option>');
+			}
 		});
  	
 		
