@@ -279,6 +279,7 @@
 					<td style="text-align: right;width: 8%">Estado:</td>
 					<td style="text-align: left;width: 92%">
 					 <select name='estados_go' id='estados_go'>
+					<option value="">-- Selecione o estado --</option>
 					<option value="1">Acre</option>
 					<option value="2">Alagoas</option>
 					<option value="4">Amapá</option>
