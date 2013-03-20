@@ -293,6 +293,9 @@
 		<a href="javascript:void(0)" onclick="arquivo_climatico();">Instalador de Climas (411 cidades)</a>
 	</li>
 
+	<li>
+	<a rel='#voverlay' href='<?php  echo $CFG->dirroot .'/mapa_r/videos/engine/swf'; ?>/player.swf?url=/<?php  echo $CFG->dirroot .'/temp/teste.f4v'; ?>&volume=100' title='Abrir Video'>Teste</a>";
+	</li>
 
 	<li>
 		<a href="javascript:void(0)" onclick="Acao('pdf','Domus-tutorial.pdf');">Tutorial do Domus</a>
