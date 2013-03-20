@@ -13,7 +13,7 @@ include ("../../lib/libcidade.php");
 			if( $(this).val() ) {
 
 
-				$.getJSON('../../mapa/cidades.php?search=',{id_estado: $(this).val(), ajax: 'true'}, function(j){
+				$.getJSON('../../lib/cidades.php?search=',{id_estado: $(this).val(), ajax: 'true'}, function(j){
 					var options = '<option value=""></option>';	
 					for (var i = 0; i < j.length; i++) {
 						options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
