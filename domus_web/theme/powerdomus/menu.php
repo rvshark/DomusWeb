@@ -277,10 +277,10 @@ include ("../../lib/libcidade.php");
 					<td style="text-align: right;width: 8%">Estado:</td>
 					<td style="text-align: left;width: 92%">
 						<?php
-						$ufCombo = ufCombo();
+					
 						print "<select name='estados' id='estados'>
 						<option value=''>-- Escolha um estado --</option>
-						$ufCombo
+						
 						</select>";?>
 					</td>
 				</tr>
