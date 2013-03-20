@@ -7,7 +7,7 @@
 
 	       //Cidades-estados Guilherme T. 20/03/2013
  		$(function(){
-		$.getJSON('../../lib/cidades.php?search=',{estados: 2013, ajax: 'true'}, function(j){
+		$.getJSON('../../lib/estados.php?search=',{estados: 2013, ajax: 'true'}, function(j){
 						var options = '<option value=""></option>';	
 						for (var i = 0; i < j.length; i++) {
 							options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
@@ -26,11 +26,11 @@
 					for (var i = 0; i < j.length; i++) {
 						options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
 					}	
-					$('#cidades').html(options).show();
+					$('#cidades_go').html(options).show();
 
 				});
 			} else {
-				$('#cidades').html('<option value="">– Escolha uma cidade –</option>');
+				$('#cidades_go').html('<option value="">– Escolha uma cidade –</option>');
 			}
 		});
 
