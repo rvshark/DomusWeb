@@ -42,7 +42,7 @@
 
 					});
 				} else {
-					
+					$('#cidades_go').html('<option value="">– Escolha uma cidade –</option>');
 				}
 		});
 		
@@ -59,7 +59,7 @@
 
 				});
 			} else {
-			
+				$('#cidades_go').html('<option value="">– Escolha uma cidade –</option>');
 			}
 		});
 
@@ -315,7 +315,7 @@
 					<td style="text-align: right;width: 8%">Estado:</td>
 					<td style="text-align: left;width: 92%">
 					 <select name='estados_go' id='estados_go'>
-						<option value='1'>-- Escolha um estado --</option></select>
+						<option value=''>-- Escolha um estado --</option></select>
 					</td>
 				</tr>
 			<tr id='trCidade'>
