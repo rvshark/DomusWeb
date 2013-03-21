@@ -27,10 +27,8 @@ switch ($_GET["acao"]) {
 			}
 			
 
-			$sql = "INSERT INTO {$CFG->prefix}cadastro_download 
-						(nome,email,cpf,telefone,instituicao,id_cidade,id_estado,pais,ip,dt_cadastro)
-					VALUES
-						('$nome','$email','0','$telefone','$instituicao',1,1,'$ip',CURRENT_TIMESTAMP())";
+						$sql = "INSERT INTO {$CFG->prefix}cadastro_download (nome, email, cpf, telefone, instituicao,id_cidade, id_estado, pais, ip, dt_cadastro) VALUES
+						( '$nome', '$email', '$cpf', '$telefone', '$instituicao', $cidade, $estado, '$pais', '$ip', CURRENT_TIMESTAMP())";
 			
 			execute_sql($sql,false);
 		}
