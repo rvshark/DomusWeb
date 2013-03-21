@@ -239,7 +239,7 @@
 				if(parseInt('<?php echo $USER->id ?>') > 0){
 					$('#txtNome').val('<?php echo $USER->username . ' ' .$USER->lastname ?>');
 					$('#txtEmail').val('<?php echo $USER->email ?>');
-					$('#txtCidade').val('<?php echo $USER->city ?>');
+					
 					$('#txtPais').val('<?php echo $USER->country ?>');
 					$('#txtInstituicao').val('Domus');
 					$('#arquivo').val(arquivo);
