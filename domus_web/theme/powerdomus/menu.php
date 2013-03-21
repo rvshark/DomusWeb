@@ -16,12 +16,14 @@
 		$('#estados_go').change(function(){
 			if( $(this).val() ) {
 
-
+            $('#cidades_go').hide();
+              $('#carregando_cidade').show();
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: $(this).val(), ajax: 'true'}, function(j){
 					var options = '<option value=""></option>';	
 					for (var i = 0; i < j.length; i++) {
 						options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
 					}	
+					 $('#carregando_cidade').hide();
 					$('#cidades_go').html(options).show();
 
 				});
@@ -315,7 +317,7 @@
 				</tr>
 			<tr id='trCidade'>
 				<td style="text-align: right;width: 8%">Cidade:</td>
-				<td style="text-align: left;width: 92%"><select name='cidades_go'  id='cidades_go'>
+				<td style="text-align: left;width: 92%"><div id="carregando_cidade" style="display:none;">Carregando..</div><select name='cidades_go'  id='cidades_go'>
 			    <option value=''>-- Escolha uma cidade --</option>
 				</select></td>
 			</tr>
