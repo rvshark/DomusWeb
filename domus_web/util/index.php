@@ -10,9 +10,11 @@ switch ($_GET["acao"]) {
 			
 			$nome = $_POST['txtNome'];
 			$email = $_POST['txtEmail'];
+			$cpf =$_POST['cpf'];
 			$telefone = $_POST['txtTelefone'];
 			$instituicao = $_POST['txtInstituicao'];
-			$cidade = $_POST['txtCidade'];
+			$id_cidade = $_POST['cidade'];
+			$id_estado = $_POST['estado'];
 			$pais = $_POST['txtPais'] == '' ? 'NULL' : $_POST['txtPais'];
 			$ip = $_SERVER['REMOTE_ADDR'];
 			
@@ -26,9 +28,9 @@ switch ($_GET["acao"]) {
 			
 
 			$sql = "INSERT INTO {$CFG->prefix}cadastro_download 
-						(nome,email,telefone,instituicao,cidade,pais,ip,dt_cadastro)
+						(nome,email,cpf,telefone,instituicao,id_cidade,id_estado,pais,ip,dt_cadastro)
 					VALUES
-						('$nome','$email','$telefone','$instituicao','$cidade','$pais','$ip',CURRENT_TIMESTAMP())";
+						('$nome','$email','$cpf','$telefone','$instituicao',intval($id_cidade),intval($id_estado),'$pais','$ip',CURRENT_TIMESTAMP())";
 			
 			execute_sql($sql,false);
 		}
