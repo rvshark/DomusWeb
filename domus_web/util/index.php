@@ -13,8 +13,8 @@ switch ($_GET["acao"]) {
 			$cpf =$_POST['cpf'];
 			$telefone = $_POST['txtTelefone'];
 			$instituicao = $_POST['txtInstituicao'];
-			$id_cidade = $_POST['cidades_go'];
-			$id_estado = $_POST['estados_go'];
+			$cidade = intval($_POST['cidades_go']);
+			$estado = intval($_POST['estados_go']);
 			$pais = $_POST['txtPais'] == '' ? 'NULL' : $_POST['txtPais'];
 			$ip = $_SERVER['REMOTE_ADDR'];
 			
