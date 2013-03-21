@@ -6,8 +6,29 @@
 
 	    $(document).ready(function(){
 
-	       //Cidades-estados Guilherme T. 20/03/2013
+	       //valida cpf Guilherme T. 20/03/2013
 		
+		function TestaCPF(strCPF) {
+		    var Soma;
+		    var Resto;
+		    Soma = 0;
+		    if (strCPF == "00000000000") return false;
+
+		    for (i=1; i<=9; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
+		    Resto = (Soma * 10) % 11;
+
+		    if ((Resto == 10) || (Resto == 11))  Resto = 0;
+		    if (Resto != parseInt(strCPF.substring(9, 10)) ) return false;
+
+		    Soma = 0;
+		    for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (12 - i);
+		    Resto = (Soma * 10) % 11;
+
+		    if ((Resto == 10) || (Resto == 11))  Resto = 0;
+		    if (Resto != parseInt(strCPF.substring(10, 11) ) ) return false;
+		    return true;
+		}
+
 
 	
 		
@@ -55,6 +76,7 @@
     	
     	
     	$('#txtTelefone').mask('(99) 9999-9999');
+	    $('#cpf').mask('999.999.999-99');
     	
   		//Dialogo com o formulário de preenchimento para download do arquivo
   		$('#formDownload').dialog({
@@ -113,6 +135,8 @@
 	            } else {
 	                $("div.error").hide();
 	            }
+	
+	
 	        },
 	        rules: {
 	            "txtNome": { required: true },
@@ -128,12 +152,17 @@
 	
 	//Envia o formulário para a para gravação e download do arquivo
 	function submitForm(){
+		if(TestaCPF($('#cpf').val())){
 		if(carregarCampos($('#txtEmail').val()) && $('#formCadDownload').validate().form()){			
   			_gaq.push(['_setAccount','UA-27676049-1']);
 			_gaq.push(['_trackPageview','/util/index.php?acao=download&arquivo=' + $('#arquivo').val()]);					
 			$('#formCadDownload').submit();		
 			$('#formDownload').dialog('close');
+		}}else{
+			return false;
+			alert('CPF Inválido');
 		}
+		
 	}
 	
 	//Busca os dados do usuário para verificar se já é cadastrado na base
