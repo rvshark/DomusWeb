@@ -374,7 +374,7 @@
 	</li>
 
 	<li>
-<a href="javascript:void(0)" onclick="ShowVideoF4V('/apresentacao/Domus Procel Edifica_20-03_v1_002.f4v  ','Teste');">Teste</a></a>
+<a href="javascript:void(0)" onclick="ShowVideoF4V('/apresentacao/Domus Procel Edifica_20-03_v1_002.f4v  ','Plataforma de Disseminação');">Plataforma de Disseminação</a></a>
 	</li>
 
 	<li>
