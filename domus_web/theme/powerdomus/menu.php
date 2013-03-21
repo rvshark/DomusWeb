@@ -159,8 +159,10 @@
 			_gaq.push(['_trackPageview','/util/index.php?acao=download&arquivo=' + $('#arquivo').val()]);					
 			$('#formCadDownload').submit();		
 			$('#formDownload').dialog('close');
-		}}else{
-			return false;
+		}
+		
+		}else{
+		
 			alert('CPF Inválido');
 		}
 		
