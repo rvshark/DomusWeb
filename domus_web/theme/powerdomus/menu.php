@@ -117,8 +117,10 @@
 	        rules: {
 	            "txtNome": { required: true },
 	            "txtEmail": { required:true },
+             	"cpf": { required:true },
 	            "txtInstituicao" : { required:true },
-	            "txtCidade" : { required:true },
+	            "cidades_go" : { required:true },
+	            "estados_go" : { required:true },
 	            "txtPais" : { required:true }                 
 	        }
 	    });
@@ -156,7 +158,7 @@
 					alert('E-mail não cadastrado, favor preencher os campos do formulário!')
 						
 					inicializaCampos();
-					$('#trNome,#trTelefone,#trCidade,#trPais,#trInstituicao,#trEstado').show();		
+					$('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').show();		
 					
 					return false;		
 				}
@@ -164,7 +166,9 @@
 					$('#verificarEmail').val('false');
 					$("#txtNome").val(data.nome);
 					$("#txtEmail").val(data.email);
+				    $("#cpf").val(data.cpf);
 					$("#cidades_go").val(data.cidade);
+					$("#estados_go").val(data.estado);
 					$("#txtPais").val(data.pais);
 					$("#txtTelefone").val(data.telefone);
 					$("#txtInstituicao").val(data.instituicao);					
@@ -183,7 +187,7 @@
 	
 	//Iniciliza os campos do formulário
 	function inicializaCampos(){
-		$('#trNome,#trTelefone,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
+		$('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
 		$("#txtNome,#txtTelefone,#txtInstituicao").val('');
 		$('#txtPais').val(0);  			
 	}
@@ -272,6 +276,10 @@
 				<td style="text-align: right;width: 8%">Nome Completo*:</td>
 				<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="txtNome" name="txtNome"></td>
 			</tr>
+				<tr id='trCPF'>
+					<td style="text-align: right;width: 8%">CPF*:</td>
+					<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="cpf" name="cpf"></td>
+				</tr>
 			<tr id='trTelefone'>
 				<td style="text-align: right;width: 8%">Telefone:</td>
 				<td style="text-align: left;width: 92%"><input type="text" style="width:50%" id="txtTelefone" name="txtTelefone"></td>
