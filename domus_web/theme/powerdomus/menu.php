@@ -164,7 +164,7 @@
 					$('#verificarEmail').val('false');
 					$("#txtNome").val(data.nome);
 					$("#txtEmail").val(data.email);
-					$("#txtCidade").val(data.cidade);
+					$("#cidades_go").val(data.cidade);
 					$("#txtPais").val(data.pais);
 					$("#txtTelefone").val(data.telefone);
 					$("#txtInstituicao").val(data.instituicao);					
