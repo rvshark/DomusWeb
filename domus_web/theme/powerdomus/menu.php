@@ -110,7 +110,7 @@
 	        closeOnEscape: false,
 	        resizable: false,
 	        position: 'center',
-	        width: 450,
+	        width: 500,
 	        title: 'Cadastro Solicitação Domus',
 	        open: function(){ 
 	        	inicializaCampos();	
@@ -176,6 +176,15 @@
 	
 	//Envia o formulário para a para gravação e download do arquivo
 	function submitForm(){
+		if(parseInt('<?php echo $USER->id ?>') > 0){
+				if(carregarCampos($('#txtEmail').val()) && $('#formCadDownload').validate().form()){			
+		  			_gaq.push(['_setAccount','UA-27676049-1']);
+					_gaq.push(['_trackPageview','/util/index.php?acao=download&arquivo=' + $('#arquivo').val()]);					
+					$('#formCadDownload').submit();		
+					$('#formDownload').dialog('close');
+				}	
+			
+		}else{
 		if(TestaCPF($('#cpf').val())){
 		if(carregarCampos($('#txtEmail').val()) && $('#formCadDownload').validate().form()){			
   			_gaq.push(['_setAccount','UA-27676049-1']);
@@ -187,7 +196,10 @@
 		}else{
 		
 			alert('CPF Inválido');
+			
 		}
+	}
+	
 		
 	}
 	
@@ -221,9 +233,6 @@
 					$('#verificarEmail').val('false');
 					$("#txtNome").val(data.nome);
 					$("#txtEmail").val(data.email);
-				    $("#cpf").val(data.cpf);
-					$("#cidades_go").val(data.cidade);
-					$("#estados_go").val(data.estado);
 					$("#txtPais").val(data.pais);
 					$("#txtTelefone").val(data.telefone);
 					$("#txtInstituicao").val(data.instituicao);					
@@ -242,7 +251,7 @@
 	
 	//Iniciliza os campos do formulário
 	function inicializaCampos(){
-		$('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
+		//$('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
 		$("#txtNome,#txtTelefone,#txtInstituicao").val('');
 		$('#txtPais').val(0);  			
 	}
@@ -290,17 +299,17 @@
 			if(arquivo == 'domus.exe' || arquivo == 'domus-release.exe'){				 
             	
             	$('#arquivo').val(arquivo);
-				
-				if(parseInt('<?php echo $USER->id ?>') > 0){
-					$('#txtNome').val('<?php echo $USER->username . ' ' .$USER->lastname ?>');
-					$('#txtEmail').val('<?php echo $USER->email ?>');
-					
-					$('#txtPais').val('<?php echo $USER->country ?>');
-					$('#txtInstituicao').val('Domus');
-					$('#arquivo').val(arquivo);
-					$('#verificarEmail').val('false');
-					submitForm();					
-				}	
+			
+if(parseInt('<?php echo $USER->id ?>') > 0){
+$('#txtNome').val('<?php echo $USER->username . ' ' .$USER->lastname ?>');
+$('#txtEmail').val('<?php echo $USER->email ?>');
+$('#txtCidade').val('<?php echo $USER->city ?>');
+$('#txtPais').val('<?php echo $USER->country ?>');
+$('#txtInstituicao').val('Domus');
+$('#arquivo').val(arquivo);
+$('#verificarEmail').val('false');
+submitForm();				
+}	
 				else									
 					$('#formDownload').dialog('open');				
 			}
@@ -344,7 +353,7 @@
 				<td style="text-align: left;width: 92%"><input type="text" style="width:94%" id="txtInstituicao" name="txtInstituicao"></td>
 			</tr>
 				<tr id='trEstado'>
-					<td style="text-align: right;width: 8%">Estado:</td>
+					<td style="text-align: right;width: 8%">Estado*:</td>
 					<td style="text-align: left;width: 92%">
 					 <select name='estados_go' id='estados_go'>
 					<option value="">-- Selecione o estado --</option>
@@ -379,7 +388,7 @@
 					</td>
 				</tr>
 			<tr id='trCidade'>
-				<td style="text-align: right;width: 8%">Cidade:</td>
+				<td style="text-align: right;width: 8%">Cidade*:</td>
 				<td style="text-align: left;width: 92%"><div id="carregando_cidade" style="display:none;">Carregando..</div><select name='cidades_go'  id='cidades_go'>
 			    <option value=''>-- Escolha uma cidade --</option>
 				</select></td>
