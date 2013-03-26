@@ -196,7 +196,7 @@
 		}else{
 		
 			alert('CPF Inválido');
-			
+		   $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').show();	
 		}
 	}
 	
@@ -251,7 +251,7 @@
 	
 	//Iniciliza os campos do formulário
 	function inicializaCampos(){
-		//$('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
+		$('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
 		$("#txtNome,#txtTelefone,#txtInstituicao").val('');
 		$('#txtPais').val(0);  			
 	}
