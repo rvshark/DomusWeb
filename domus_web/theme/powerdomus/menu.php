@@ -74,6 +74,24 @@
 
 	}
 	
+	function carregaFormCidade(Txtemail){
+	$.ajax({
+		type:"POST",
+		dataType: "json",
+		url:"<?php $CFG->wwwroot ?>theme/powerdomus/formAjax.php",
+		data: {email: Txtemail},
+		cache: false,  				
+		success: function(data){  		
+
+				if(data.cidades_go){
+				carregaCidade(data.estados_go,data.cidades_go);
+			    }
+	
+		}
+	});
+
+	}
+	
 		function carregaCidade(estado,cidade){
 			if(cidade > 0 ){
 			
@@ -206,12 +224,11 @@
 	        },                        
 	        buttons: {
 				"Ok": function() {
-
+if($('#cidades_go').val() == ""){
+	carregaFormCidade($('#txtEmail').val());
+}
 	                   submitForm();
-					   
-			  	
-			        
-			
+		
 				}, 
 				"Cancelar": function() { 
 					$(this).dialog("close"); 
