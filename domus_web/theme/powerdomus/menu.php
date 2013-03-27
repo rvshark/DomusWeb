@@ -77,6 +77,10 @@
 	
 		function carregaCidade(estado,cidade){
 			if(cidade > 0 ){
+				if(document.getElementById('cidade_div_html') != null)
+				{
+				   
+				
           $("#cidade_div_html").remove();
           $("#div_estado_html").remove();
 
@@ -126,6 +130,7 @@
 					
 					
 			}
+			}
 
 		}
 
@@ -140,7 +145,7 @@
 		$('#cpf').bind('focus', function(){
 		  $('#cpf').addClass('error');
 		});
-	
+	  
 	    carregaForm($('$txtEmail').val());
 	
 			$('#estados_go').change(function(){
