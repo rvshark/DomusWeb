@@ -49,7 +49,7 @@
 		function carregaCidade(estado,cidade){
           $("#cidade_div_html").remove();
 
-	        $('#carregando_cidade').show();
+	       
 	        
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
 					var options = '<select name="cidades_go"  id="cidades_go">';
