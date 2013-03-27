@@ -47,9 +47,9 @@
 
 	}
 		function carregaCidade(estado,cidade){
-			if(cidade){
+	
           $("#cidade_div_html").remove();
-          
+           
 	       
 	        
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
@@ -72,7 +72,6 @@
 					
 
 				});
-				   }
 
 		}
 
