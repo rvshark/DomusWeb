@@ -140,8 +140,6 @@
 		$('#cpf').bind('focus', function(){
 		  $('#cpf').addClass('error');
 		});
-		
-		carregaForm($('#txtEmail').val());
 	
 	
 	
@@ -202,7 +200,7 @@
 	        open: function(){ 
 	        	inicializaCampos();	
 	        	carregarCampos("");
-	            carregaForm($('#txtEmail').val());
+	           
 	          
 	        },                        
 	        buttons: {
@@ -286,7 +284,7 @@
 			alert('CPF Inválido');
 			
 			$('#cpf').focus();
-			carregaForm($('#txtEmail').val());
+
 		    $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').show();
 		  
 		}
@@ -325,8 +323,12 @@
 					$('#verificarEmail').val('false');
 					$("#txtNome").val(data.nome);
 					$("#cpf").val(data.cpf);
+					if(data.cidades_go){
+					carregaCidade(data.estados_go,data.cidades_go);
+				    }else{
+					$("#estados_go").val(data.estados_go);
+				    }
 				    $("#txtEmail").val(data.email);
-				
 					$("#txtPais").val(data.pais);
 					$("#txtTelefone").val(data.telefone);
 					$("#txtInstituicao").val(data.instituicao);					
@@ -345,7 +347,7 @@
 	
 	//Iniciliza os campos do formulário
 	function inicializaCampos(){
-	   // $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
+	    $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
 		$("#txtNome,#txtTelefone,#txtInstituicao").val('');
 		$('#txtPais').val(0);  			
 	}
