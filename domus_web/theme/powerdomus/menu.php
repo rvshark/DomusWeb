@@ -200,7 +200,10 @@
 	        open: function(){ 
 	        	inicializaCampos();	
 	        	carregarCampos("");
-	           
+	           if($('#txtEmail').val()){
+		
+			carregaForm($('#txtEmail').val());
+                	}
 	          
 	        },                        
 	        buttons: {
