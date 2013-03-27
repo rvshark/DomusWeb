@@ -202,7 +202,7 @@
 	        open: function(){ 
 	        	inicializaCampos();	
 	        	carregarCampos("");
-	           
+	            carregaForm($('#txtEmail').val());
 	          
 	        },                        
 	        buttons: {
