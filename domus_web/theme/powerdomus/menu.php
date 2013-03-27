@@ -88,7 +88,7 @@
 						url:"../../lib/cidades.php?search=",
 						data: {id_estado: estado},
 						cache: false,  				
-						success: function(data){  		
+						success: function(j){  		
 
 							var options = '';	
 
@@ -148,7 +148,7 @@
 					url:"../../lib/cidades.php?search=",
 					data: {id_estado: $(this).val()},
 					cache: false,  				
-					success: function(data){  		
+					success: function(j){  		
 
 						var options = '<option value=""></option>';	
 						for (var i = 0; i < j.length; i++) {
