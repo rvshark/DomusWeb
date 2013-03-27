@@ -68,7 +68,7 @@
 
 					}
 				    options+="</select>";
-				     var estados_options = '<select name='estados_go' id='estados_go'>
+				     var estados_options = '<select name="estados_go" id="estados_go">
 					<option value="">-- Selecione o estado --</option>
 					<option value="1">Acre</option>
 					<option value="2">Alagoas</option>
