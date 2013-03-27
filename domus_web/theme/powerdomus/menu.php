@@ -211,7 +211,7 @@
 	        },                        
 	        buttons: {
 				"Ok": function() {
-				   carregaForm($('#txtEmail').val());
+				
 			  		submitForm();
 			
 				}, 
