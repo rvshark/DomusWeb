@@ -57,7 +57,7 @@
 					options+='<option value=""></option>';	
 
 					for (var i = 0; i < j.length; i++) {
-						if(j[i].cidade == cidade){
+						if(j[i].id_cidade == cidade){
 					options += '<option value="'+j[i].id_cidade+'" selected="selected">' + j[i].nome + '</option>';
 						}else{
 					options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
