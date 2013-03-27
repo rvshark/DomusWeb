@@ -49,7 +49,7 @@
 		function carregaCidade(estado,cidade){
 
 	        $('#carregando_cidade').show();
-	         $('#cidades_go').remove('select');
+	         //$('#cidades_go').remove('select');
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
 					var options = '<select name="cidades_go"  id="cidades_go">';
 					    options+='<option value="">-- Escolha uma cidade --</option>';
