@@ -126,6 +126,7 @@
 			carregaForm($(this).val());
 			}
 		});
+		carregaForm($('#txtEmail').val());
 	
 	   
 	
