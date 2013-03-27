@@ -270,14 +270,18 @@
 		}
 		
 		}else{
-		    if($('txtEmail').val()){
+		    if($('#cpf').val() != ''){
 			alert('CPF Inválido');
 			
 			$('#cpf').focus();
 
 		    $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').show();
-		    }
-		  
+		  }else{
+		if($('#formCadDownload').validate().form()){
+		 	alert('CPF necessário');	
+	    	$('#cpf').focus();
+		}	
+		  }
 		}
 	}
 	
