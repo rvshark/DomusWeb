@@ -145,6 +145,12 @@
 		$('#cpf').bind('focus', function(){
 		  $('#cpf').addClass('error');
 		});
+		$('#txtEmail').change(function(){
+			if(carregarCampos($('#txtEmail').val()) && $('#formCadDownload').validate().form()){
+		carregaForm($('#txtEmail').val());
+	        }
+			
+		});
 	  
 	   
 	
