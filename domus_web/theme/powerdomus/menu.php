@@ -273,7 +273,7 @@
 	
 	//Envia o formulário para a para gravação e download do arquivo
 	function submitForm(){
-		if( carregarCampos($('#txtEmail').val()){
+		if( carregarCampos($('#txtEmail').val() ) ){
 			carregaForm($('#txtEmail').val());
 		}
 		if(parseInt('<?php echo $USER->id ?>') > 0){
