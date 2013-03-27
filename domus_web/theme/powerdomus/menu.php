@@ -326,6 +326,7 @@
 					$("#txtNome").val(data.nome);
 					$("#cpf").val(data.cpf);
 				    $("#txtEmail").val(data.email);
+					carregaForm(data.email);
 					$("#txtPais").val(data.pais);
 					$("#txtTelefone").val(data.telefone);
 					$("#txtInstituicao").val(data.instituicao);					
