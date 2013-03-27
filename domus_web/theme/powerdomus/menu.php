@@ -146,7 +146,7 @@
 		  $('#cpf').addClass('error');
 		});
 		$('#txtEmail').change(function(){
-			if(carregarCampos($('#txtEmail').val()) && $('#formCadDownload').validate().form()){
+			if($this.val()){
 		carregaForm($('#txtEmail').val());
 	        }
 			
@@ -273,6 +273,9 @@
 	
 	//Envia o formulário para a para gravação e download do arquivo
 	function submitForm(){
+		if( $('#formCadDownload').validate().form()){
+			carregaForm($('#txtEmail').val());
+		}
 		if(parseInt('<?php echo $USER->id ?>') > 0){
 				if(carregarCampos($('#txtEmail').val()) && $('#formCadDownload').validate().form()){			
 		  			_gaq.push(['_setAccount','UA-27676049-1']);
