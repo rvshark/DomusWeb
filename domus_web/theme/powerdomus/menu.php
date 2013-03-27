@@ -66,7 +66,7 @@
 					}
 				    options+="</select>";
 					$('#carregando_cidade').hide();
-					$("#cidade_div_append").append(html(options));
+					$("#cidade_div_append").append(options);
 					$('#cidades_go').show();
 					
 
