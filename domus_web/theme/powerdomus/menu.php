@@ -62,10 +62,8 @@
 				$("#cpf").val(data.cpf);
 				if(data.cidades_go){
 				carregaCidade(data.estados_go,data.cidades_go);
-			    }else{
-				$("#estados_go").val(data.estados_go);
 			    }
-			   
+			    $("#estados_go").val(data.estados_go);
 				$("#txtPais").val(data.pais);
 				$("#txtTelefone").val(data.telefone);
 				$("#txtInstituicao").val(data.instituicao);					
@@ -98,7 +96,7 @@
 								}
 
 							}
-						    options+="</select>";
+						   
 								$('#carregando_cidade').hide();
 								$("#cidades_go").html(options);
 
@@ -202,12 +200,13 @@
 	        open: function(){ 
 	        	inicializaCampos();	
 	        	carregarCampos("");
+	
 	           
 	          
 	        },                        
 	        buttons: {
 				"Ok": function() {
-				
+				     
 			  		submitForm();
 			
 				}, 
