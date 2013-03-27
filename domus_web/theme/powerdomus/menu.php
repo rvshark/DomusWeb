@@ -94,7 +94,7 @@
 
 							for (var i = 0; i < j.length; i++) {
 								if(j[i].id_cidade == cidade){
-						    	options += '<option value="'+j[i].id_cidade+'" selected="selected">' + j[i].nome + '</option>';
+					options += '<option value="'+j[i].id_cidade+'" selected="selected">' + j[i].nome + '</option>';
 								}
 
 							}
@@ -357,7 +357,7 @@
 	
 	//Iniciliza os campos do formulário
 	function inicializaCampos(){
-	    $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
+	   // $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
 		//$("#txtNome,#txtTelefone,#txtInstituicao").val('');
 		//$('#txtPais').val(0);  			
 	}
