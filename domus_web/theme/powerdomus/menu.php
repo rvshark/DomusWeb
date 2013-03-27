@@ -246,7 +246,7 @@
 			data: {email: strEmail},
 			cache: false,  				
 			success: function(data){  		
-				carregaCidade(data.estados_go,data.cidades_go);			  					
+				  					
 				if(strEmail != '' && data.email == '')
 				{					
 					alert('E-mail não cadastrado, favor preencher os campos do formulário!')
