@@ -247,7 +247,7 @@
 		}else{
 		
 			alert('CPF Inválido');
-			$('#cpf').focus();
+			$('#cpf').focus(function(){$(this).addClass('error');});
 		   $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').show();	
 		}
 	}
