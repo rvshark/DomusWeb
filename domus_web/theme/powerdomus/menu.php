@@ -149,6 +149,11 @@
 		$('#cpf').bind('focus', function(){
 		  $('#cpf').addClass('error');
 		});
+		$('#txtEmail').change(function(){
+			if( $(this).val() ) {
+			carregaForm($(this.val());
+			}
+		});
 	
 	   
 	
