@@ -74,7 +74,7 @@
 					estados_options+='<option value="2">Alagoas</option>';
 					estados_options+='<option value="4">Amapá</option>';
 					estados_options+='<option value="3">Amazonas</option>';
-					estados_options+='<option value="5">Bahia</option>v
+					estados_options+='<option value="5">Bahia</option>';
 					estados_options+='<option value="6">Ceará</option>';
 					estados_options+='<option value="7">Destrito Federal</option>';
 					estados_options+='<option value="8">Espírito Santo</option>';
