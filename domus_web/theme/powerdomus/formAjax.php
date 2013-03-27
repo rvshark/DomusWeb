@@ -19,7 +19,9 @@ setcookie("IP_DOMUS", $_SERVER['REMOTE_ADDR']);
 echo json_encode(array("email" => ($row -> NumRows() > 0 ? $row->fields["email"] : "")
 					 , "nome" => ($row -> NumRows() > 0 ? $row->fields["nome"] : "")
 					, "cpf" => ($row -> NumRows() > 0 ? $row->fields["cpf"] : "")
-					 , "pais" => ($row -> NumRows() > 0 ? $row->fields["pais"] : "")
+					, "cidades_go" => ($row -> NumRows() > 0 ? $row->fields["id_cidade"] : "")
+		        	, "estados_go" => ($row -> NumRows() > 0 ? $row->fields["id_estado"] : "")
+				    , "pais" => ($row -> NumRows() > 0 ? $row->fields["pais"] : "")
 					 , "telefone" => ($row -> NumRows() > 0 ? $row->fields["telefone"] : "")
 					 , "instituicao" => ($row -> NumRows() > 0 ? $row->fields["instituicao"] : "")));
 
