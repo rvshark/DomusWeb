@@ -126,7 +126,7 @@
 		$('#cpf').bind('focus', function(){
 		  $('#cpf').addClass('error');
 		});
-		$('#txtEmail').change(function(){
+		$('#txtEmail').click(function(){
 			if( $(this).val() ) {
 			carregaForm($(this).val());
 			}
