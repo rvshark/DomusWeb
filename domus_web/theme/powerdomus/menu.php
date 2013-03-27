@@ -325,11 +325,6 @@
 					$('#verificarEmail').val('false');
 					$("#txtNome").val(data.nome);
 					$("#cpf").val(data.cpf);
-					if(data.cidades_go){
-					carregaCidade(data.estados_go,data.cidades_go);
-				    }else{
-					$("#estados_go").val(data.estados_go);
-				    }
 				    $("#txtEmail").val(data.email);
 					$("#txtPais").val(data.pais);
 					$("#txtTelefone").val(data.telefone);
