@@ -411,9 +411,9 @@ submitForm();
 				</tr>
 			<tr id='trCidade'>
 				<td style="text-align: right;width: 8%">Cidade*:</td>
-				<td style="text-align: left;width: 92%"><div id="carregando_cidade" style="display:none;">Carregando..</div><select name='cidades_go'  id='cidades_go'>
+				<td style="text-align: left;width: 92%"><div id="carregando_cidade" style="display:none;">Carregando..</div><div id="cidade_div_append"><div id="cidade_div_html"><select name='cidades_go'  id='cidades_go'>
 			    <option value=''>-- Escolha uma cidade --</option>
-				</select></td>
+				</select></div></div></td>
 			</tr>
 			
 			
