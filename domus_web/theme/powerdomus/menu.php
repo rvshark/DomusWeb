@@ -83,8 +83,8 @@
 				   
 			
 				
-          $("#cidade_div_html").remove();
-          $("#div_estado_html").remove();
+          $("#cidade_div_html").hide();
+          $("#div_estado_html").hide();
 
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
 					var options = '<select name="cidades_go"  id="cidades_go">';
@@ -105,7 +105,7 @@
 					$("#cidade_div_append").append(options);
 					
 				
-					$('#cidades_go').show();
+					
 					
 
 				});
@@ -150,7 +150,6 @@
 		  $('#cpf').addClass('error');
 		});
 	
-	  
 	   
 	
 			$('#estados_go').change(function(){
