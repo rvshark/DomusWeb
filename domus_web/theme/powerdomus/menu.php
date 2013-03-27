@@ -206,9 +206,9 @@
 	        },                        
 	        buttons: {
 				"Ok": function() {
-				    if(carregaForm($('#txtEmail').val())){
+				   
 			  		submitForm();
-			        }
+			        
 			
 				}, 
 				"Cancelar": function() { 
