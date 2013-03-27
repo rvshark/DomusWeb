@@ -59,9 +59,9 @@
 	        $('#carregando_cidade').show();
 	         $('#cidades_go').remove('select');
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
-					var options = "<select name="cidades_go"  id="cidades_go">
-					    <option value="">-- Escolha uma cidade --</option>
-					    <option value=""></option>";	
+					var options = '<select name="cidades_go"  id="cidades_go">';
+					    options+='<option value="">-- Escolha uma cidade --</option>';
+					   options+='<option value=""></option>';	
 
 					for (var i = 0; i < j.length; i++) {
 						if(j[i].cidade == cidade){
