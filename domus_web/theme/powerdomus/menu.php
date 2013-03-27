@@ -77,8 +77,7 @@
 	
 		function carregaCidade(estado,cidade){
 			if(cidade > 0 ){
-				if(document.getElementById('cidade_div_html') != null)
-				{
+			
 				   
 				
           $("#cidade_div_html").remove();
@@ -130,51 +129,7 @@
 					
 					
 			}
-			}else{
-					$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
-						var options = '<select name="cidades_go"  id="cidades_go">';
-					    options+='<option value="">-- Escolha uma cidade --</option>';
-						options+='<option value=""></option>';	
-
-						for (var i = 0; i < j.length; i++) {
-							if(j[i].id_cidade == cidade){
-						options += '<option value="'+j[i].id_cidade+'" selected="selected">' + j[i].nome + '</option>';
-							}else{
-						options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
-							}
-
-						}
-					    options+="</select>";
-
-						$('#carregando_cidade').hide();
-						$("#cidade_div_append").append(options);
-
-
-						$('#cidades_go').show();
-
-
-					});
-
-						$.getJSON('../../lib/estados.php?search=',{ ajax: 'true'}, function(j){
-							 var estados_options = '<select name="estados_go" id="estados_go">';
-						    estados_options+='<option value="">-- Escolha um estado --</option>';
-
-
-							for (var i = 0; i < j.length; i++) {
-								if(j[i].id_estado == estado){
-						estados_options += '<option value="'+j[i].id_estado+'" selected="selected">' + j[i].nome_estado + '</option>';
-								}else{
-							estados_options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
-								}
-
-							}
-						    estados_options+="</select>";
-
-							$("#div_estado_append").append(estados_options);
-
-
-						});	
-			}
+			
 
 		}
 
@@ -191,7 +146,7 @@
 		  $('#cpf').addClass('error');
 		});
 	  
-	    carregaForm($('#txtEmail').val());
+	   
 	
 			$('#estados_go').change(function(){
 				if( $(this).val() ) {
