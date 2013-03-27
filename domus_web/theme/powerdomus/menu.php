@@ -270,7 +270,7 @@
 		}
 		
 		}else{
-		    if(carregarCampos($('#txtEmail').val()) && $('#formCadDownload').validate().form()){
+		    if($('txtEmail').val()){
 			alert('CPF Inválido');
 			
 			$('#cpf').focus();
