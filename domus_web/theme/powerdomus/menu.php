@@ -67,10 +67,11 @@
 				$("#txtPais").val(data.pais);
 				$("#txtTelefone").val(data.telefone);
 				$("#txtInstituicao").val(data.instituicao);					
-               return true;
+             
 
 		}
 	});
+	  return true;
 	}
 	
 		function carregaCidade(estado,cidade){
@@ -200,14 +201,16 @@
 	        open: function(){ 
 	        	inicializaCampos();	
 	        	carregarCampos("");
-	
-	           
+	      
 	          
 	        },                        
 	        buttons: {
 				"Ok": function() {
-				   
-			  		submitForm();
+				   	if(carregaForm($('#txtEmail').val()))
+					   {
+	                   submitForm();
+					}
+			  	
 			        
 			
 				}, 
