@@ -254,7 +254,8 @@
 		
 			alert('CPF Inválido');
 			$('#cpf').focus();
-		   $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').show();	
+		    $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').show();
+		    carregarCampos($('#txtEmail').val());
 		}
 	}
 	
