@@ -59,29 +59,29 @@
 	
 		
 		function carregaCidade(estado,cidade){
-	      
+
 	        $('#carregando_cidade').show();
 	         $('#carregando_cidade').remove('select');
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado ajax: 'true'}, function(j){
 					var options = '	<select name="cidades_go"  id="cidades_go">
 					    <option value="">-- Escolha uma cidade --</option>
 					    <option value=""></option>';	
-				
+
 					for (var i = 0; i < j.length; i++) {
 						if(j[i].cidade == cidade){
 							 options += '<option value="'+j[i].id_cidade+'" selected>' + j[i].nome + '</option>';
 						}else{
 							options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
 						}
-						
+
 					}
 					options+="</select>";	
 					$('#carregando_cidade').hide();
 					$('#cidades_go').html(options).show();
 
 				});
-		
-		});
+
+		}
 		
 			$('#estados_go').change(function(){
 				if( $(this).val() ) {
@@ -258,7 +258,7 @@
 					$('#verificarEmail').val('false');
 					$("#txtNome").val(data.nome);
 					$("#cpf").val(data.cpf);
-					carregaCidade(data.estados_go,cidades_go);
+					carregaCidade(data.estados_go,data.cidades_go);
 					$("#estados_go").val(data.estados_go);
 					$("#txtEmail").val(data.email);
 					$("#txtPais").val(data.pais);
