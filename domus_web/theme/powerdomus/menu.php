@@ -65,7 +65,7 @@
 			    }else{
 				$("#estados_go").val(data.estados_go);
 			    }
-			    $("#txtEmail").val(data.email);
+			   
 				$("#txtPais").val(data.pais);
 				$("#txtTelefone").val(data.telefone);
 				$("#txtInstituicao").val(data.instituicao);					
