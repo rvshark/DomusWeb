@@ -82,25 +82,32 @@
 				{
 				   
 			  
-				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
-					var options = '';	
+					$.ajax({
+						type:"POST",
+						dataType: "json",
+						url:"../../lib/cidades.php?search=",
+						data: {id_estado: estado},
+						cache: false,  				
+						success: function(data){  		
 
-					for (var i = 0; i < j.length; i++) {
-						if(j[i].id_cidade == cidade){
-				    	options += '<option value="'+j[i].id_cidade+'" selected="selected">' + j[i].nome + '</option>';
+							var options = '';	
+
+							for (var i = 0; i < j.length; i++) {
+								if(j[i].id_cidade == cidade){
+						    	options += '<option value="'+j[i].id_cidade+'" selected="selected">' + j[i].nome + '</option>';
+								}
+
+							}
+						    options+="</select>";
+								$('#carregando_cidade').hide();
+								$("#cidades_go").html(options);
+
+
+								$('#cidades_go').show();
+
 						}
 
-					}
-				    options+="</select>";
-				   
-					$('#carregando_cidade').hide();
-					$("#cidades_go").html(options);
-					
-				
-					$('#cidades_go').show();
-					
-
-				});
+					});
 				
 				
 			}
@@ -135,15 +142,23 @@
 
 	            $('#cidades_go').hide();
 	              $('#carregando_cidade').show();
-					$.getJSON('../../lib/cidades.php?search=',{id_estado: $(this).val(), ajax: 'true'}, function(j){
+				$.ajax({
+					type:"POST",
+					dataType: "json",
+					url:"../../lib/cidades.php?search=",
+					data: {id_estado: $(this).val()},
+					cache: false,  				
+					success: function(data){  		
+
 						var options = '<option value=""></option>';	
 						for (var i = 0; i < j.length; i++) {
 							options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
-						}	
+						}
 						 $('#carregando_cidade').hide();
 						$('#cidades_go').html(options).show();
+					}
 
-					});
+				});
 				} else {
 					$('#cidades_go').html('<option value="">– Escolha uma cidade –</option>');
 				}
