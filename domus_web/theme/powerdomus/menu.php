@@ -140,6 +140,8 @@
 		$('#cpf').bind('focus', function(){
 		  $('#cpf').addClass('error');
 		});
+		
+		carregaForm($('#txtEmail').val());
 	
 	
 	
@@ -200,10 +202,7 @@
 	        open: function(){ 
 	        	inicializaCampos();	
 	        	carregarCampos("");
-	           if($('#txtEmail').val()){
-		
-			carregaForm($('#txtEmail').val());
-                	}
+	           
 	          
 	        },                        
 	        buttons: {
@@ -350,7 +349,7 @@
 	
 	//Iniciliza os campos do formulário
 	function inicializaCampos(){
-	    //$('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
+	    $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').hide();
 		$("#txtNome,#txtTelefone,#txtInstituicao").val('');
 		$('#txtPais').val(0);  			
 	}
