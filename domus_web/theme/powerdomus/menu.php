@@ -71,7 +71,7 @@
 
 		}
 	});
-	  return true;
+
 	}
 	
 		function carregaCidade(estado,cidade){
@@ -206,10 +206,9 @@
 	        },                        
 	        buttons: {
 				"Ok": function() {
-				   	if(carregaForm($('#txtEmail').val()))
-					   {
+
 	                   submitForm();
-					}
+					   
 			  	
 			        
 			
