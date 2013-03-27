@@ -150,7 +150,7 @@
 					cache: false,  				
 					success: function(j){  		
 
-						var options = '<option value=""></option>';	
+						var options = '';	
 						for (var i = 0; i < j.length; i++) {
 							options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
 						}
