@@ -77,7 +77,7 @@
 	
 		function carregaCidade(estado,cidade){
 			if(cidade > 0 ){
-				if(document.getElementById('cidade_div_html') == null)
+				if(document.getElementById('cidade_div_html') != null)
 				{
 				   
 				
