@@ -67,7 +67,7 @@
 				$("#txtPais").val(data.pais);
 				$("#txtTelefone").val(data.telefone);
 				$("#txtInstituicao").val(data.instituicao);					
-
+               return true;
 
 		}
 	});
@@ -206,8 +206,9 @@
 	        },                        
 	        buttons: {
 				"Ok": function() {
-				      carregaForm($('#txtEmail').val());
+				    if(carregaForm($('#txtEmail').val())){
 			  		submitForm();
+			        }
 			
 				}, 
 				"Cancelar": function() { 
