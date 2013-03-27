@@ -47,7 +47,7 @@
 
 	}
 		function carregaCidade(estado,cidade){
-          $("cidade_div_html").remove();
+          $("#cidade_div_html").remove();
 
 	        $('#carregando_cidade').show();
 	        
@@ -66,7 +66,7 @@
 					}
 				    options+="</select>";
 					$('#carregando_cidade').hide();
-					$("cidade_div_append").append('options');
+					$("#cidade_div_append").append('options');
 					$('#cidades_go').show();
 					
 
