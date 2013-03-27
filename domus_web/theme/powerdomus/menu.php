@@ -51,7 +51,7 @@
           $("#cidade_div_html").remove();
           $("#div_estado_html").remove();
 
-
+http://domus.pucpr.br/lib/estados.php
 	       
 	        
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
@@ -68,44 +68,37 @@
 
 					}
 				    options+="</select>";
-				     var estados_options = '<select name="estados_go" id="estados_go">';
-				    estados_options+='<option value="">-- Selecione o estado --</option>';
-					estados_options+='<option value="1">Acre</option>';
-					estados_options+='<option value="2">Alagoas</option>';
-					estados_options+='<option value="4">Amapá</option>';
-					estados_options+='<option value="3">Amazonas</option>';
-					estados_options+='<option value="5">Bahia</option>';
-					estados_options+='<option value="6">Ceará</option>';
-					estados_options+='<option value="7">Destrito Federal</option>';
-					estados_options+='<option value="8">Espírito Santo</option>';
-					estados_options+='<option value="9">Goiás</option>';
-					estados_options+='<option value="10">Maranhão</option>';
-					estados_options+='<option value="13">Mato Grosso</option>';
-					estados_options+='<option value="12">Mato Grosso do Sul</option>';
-					estados_options+='<option value="11">Minas Gerais</option>';
-					estados_options+='<option value="14">Pará</option>';
-					estados_options+='<option value="15">Paraíba</option>';
-					estados_options+='<option value="18">Paraná</option>';
-					estados_options+='v<option value="16">Pernambuco</option>';
-					estados_options+='<option value="17">Piauí</option>';
-					estados_options+='<option value="19">Rio de Janeiro</option>';
-					estados_options+='<option value="20">Rio Grande do Norte</option>';
-					estados_options+='<option value="23">Rio Grandre do Sul</option>';
-					estados_options+='<option value="21">Rondônia</option>';
-					estados_options+='<option value="22">Rorâima</option>';
-					estados_options+='<option value="24">Santa Catarina</option>';
-					estados_options+='<option value="26">São Paulo</option>';
-					estados_options+='<option value="25">Sergipe</option>';
-					estados_options+='<option value="27">Tocantins</option>';
-					estados_options+='</select>';
+				   
 					$('#carregando_cidade').hide();
 					$("#cidade_div_append").append(options);
 					
-					$("#div_estado_append").append(estados_options);
+				
 					$('#cidades_go').show();
 					
 
 				});
+				
+					$.getJSON('../../lib/estados.php?search=',{ ajax: 'true'}, function(j){
+						 var estados_options = '<select name="estados_go" id="estados_go">';
+					    estados_options+='<option value="">-- Escolha um estado --</option>';
+					
+
+						for (var i = 0; i < j.length; i++) {
+							if(j[i].id_estado == estado){
+					estados_options += '<option value="'+j[i].id_estado+'" selected="selected">' + j[i].nome_estado + '</option>';
+							}else{
+						estados_options += '<option value="' + j[i].id_estado + '">' + j[i].nome_estado + '</option>';
+							}
+
+						}
+					    estados_options+="</select>";
+
+					
+
+
+					});
+					
+						$("#div_estado_append").append(estados_options);
 			}
 
 		}
