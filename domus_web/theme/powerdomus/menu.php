@@ -46,11 +46,19 @@
 	    return true;
 
 	}
+	
+
+
+	    $(document).ready(function(){
+
+	       //valida cpf Guilherme T. 20/03/2013
+		
+	
 		function carregaCidade(estado,cidade){
 
 	        $('#carregando_cidade').show();
 	         $('#cidades_go').remove('select');
-				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado ajax: 'true'}, function(j){
+				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
 					var options = '	<select name="cidades_go"  id="cidades_go">
 					    <option value="">-- Escolha uma cidade --</option>
 					    <option value=""></option>';	
@@ -70,15 +78,6 @@
 				});
 
 		}
-	
-
-
-	    $(document).ready(function(){
-
-	       //valida cpf Guilherme T. 20/03/2013
-		
-	
-		
 	
 			$('#estados_go').change(function(){
 				if( $(this).val() ) {
