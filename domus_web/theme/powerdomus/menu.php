@@ -555,10 +555,9 @@ submitForm();
 	<li><a href="javascript:void(0)" onclick="historico();">Histórico de versões</a></li>
 	<li><a href="javascript:void(0)" onclick="Acao('download','domus.exe');"><?php echo $CFG->versao_domus_teste ?></a></li>
 	<li><a href="#">Vídeos Demonstrativos</a>
-	<ul>
-			<li>
-		<a href="javascript:void(0)" onclick="ShowVideoF4V('/apresentacao/Domus Procel Edifica_20-03_v1_002.f4v  ','Plataforma de Disseminação');">Plataforma de Disseminação</a></a>
-			</li>
+	<ul>	<!--<li>
+	<a href="javascript:void(0)" onclick="ShowVideoF4V('/apresentacao/Domus Procel Edifica_20-03_v1_002.f4v  ','Plataforma de Disseminação');">Plataforma de Disseminação</a></a>
+		</li>--!>
 		<li><a href="javascript:void(0)" onclick="ShowVideo('lpE7K768D3A','Trailer de Vídeo-Aula');">Trailer de Vídeo-Aula</a></li>
 		<li><a href="javascript:void(0)" onclick="ShowVideo('UGvx_OBCZpI','Visão geral do Domus');">Visão geral do Domus</a></li>
 	<li><a href="javascript:void(0)" onclick="ShowVideo('3zox9ivMbFM','Desenho de edificação');">Desenho de edificação</a></li>
