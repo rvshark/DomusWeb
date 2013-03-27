@@ -58,24 +58,49 @@
 		
 	
 		
-		$('#estados_go').change(function(){
-			if( $(this).val() ) {
-
-            $('#cidades_go').hide();
-              $('#carregando_cidade').show();
-				$.getJSON('../../lib/cidades.php?search=',{id_estado: $(this).val(), ajax: 'true'}, function(j){
-					var options = '<option value=""></option>';	
+		function carregaCidade(estado,cidade){
+	      
+	        $('#carregando_cidade').show();
+	         $('#carregando_cidade').remove('select');
+				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado ajax: 'true'}, function(j){
+					var options = '	<select name="cidades_go"  id="cidades_go">
+					    <option value="">-- Escolha uma cidade --</option>
+					    <option value=""></option>';	
+				
 					for (var i = 0; i < j.length; i++) {
-						options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
-					}	
-					 $('#carregando_cidade').hide();
+						if(j[i].cidade == cidade){
+							 options += '<option value="'+j[i].id_cidade+'" selected>' + j[i].nome + '</option>';
+						}else{
+							options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
+						}
+						
+					}
+					options+="</select>";	
+					$('#carregando_cidade').hide();
 					$('#cidades_go').html(options).show();
 
 				});
-			} else {
-				$('#cidades_go').html('<option value="">– Escolha uma cidade –</option>');
-			}
+		
 		});
+		
+			$('#estados_go').change(function(){
+				if( $(this).val() ) {
+
+	            $('#cidades_go').hide();
+	              $('#carregando_cidade').show();
+					$.getJSON('../../lib/cidades.php?search=',{id_estado: $(this).val(), ajax: 'true'}, function(j){
+						var options = '<option value=""></option>';	
+						for (var i = 0; i < j.length; i++) {
+							options += '<option value="' + j[i].id_cidade + '">' + j[i].nome + '</option>';
+						}	
+						 $('#carregando_cidade').hide();
+						$('#cidades_go').html(options).show();
+
+					});
+				} else {
+					$('#cidades_go').html('<option value="">– Escolha uma cidade –</option>');
+				}
+			});
 
     	//Inicio - Monta o menu horizontal --------------------
 		$("#nav li").hover(
@@ -232,6 +257,9 @@
 				else{					
 					$('#verificarEmail').val('false');
 					$("#txtNome").val(data.nome);
+					$("#cpf").val(data.cpf);
+					carregaCidade(data.estados_go,cidades_go);
+					$("#estados_go").val(data.estados_go);
 					$("#txtEmail").val(data.email);
 					$("#txtPais").val(data.pais);
 					$("#txtTelefone").val(data.telefone);
