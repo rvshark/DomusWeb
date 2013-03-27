@@ -183,11 +183,7 @@
 
 	       //valida cpf Guilherme T. 20/03/2013
 	   
-	<?php
-	if($_COOKIE["IP_DOMUS"] == $_SERVER['REMOTE_ADDR']){
-		echo "carregaForm($('#txtEmail').val());";
-	}
-	?>
+
 		$('#cpf').bind('blur', function(){
 		   $('#cpf').removeClass('error');
 		});
@@ -195,7 +191,7 @@
 		  $('#cpf').addClass('error');
 		});
 	  
-	    carregaForm($('#txtEmail').val());
+	   
 	
 			$('#estados_go').change(function(){
 				if( $(this).val() ) {
