@@ -78,7 +78,10 @@
 		function carregaCidade(estado,cidade){
 			if(cidade > 0 ){
 			
+				   if(document.getElementById('cidade_div_html') != null)
+				{
 				   
+			
 				
           $("#cidade_div_html").remove();
           $("#div_estado_html").remove();
@@ -129,6 +132,7 @@
 					
 					
 			}
+				}
 			
 
 		}
