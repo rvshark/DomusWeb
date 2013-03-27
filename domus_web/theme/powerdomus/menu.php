@@ -47,9 +47,9 @@
 
 	}
 		function carregaCidade(estado,cidade){
-	
+			if(cidade){
           $("#cidade_div_html").remove();
-           
+
 	       
 	        
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
@@ -72,6 +72,7 @@
 					
 
 				});
+			}
 
 		}
 
@@ -140,6 +141,7 @@
 	        open: function(){ 
 	        	inicializaCampos();	
 	        	carregarCampos("");
+	           
 	          
 	        },                        
 	        buttons: {
@@ -244,7 +246,7 @@
 			data: {email: strEmail},
 			cache: false,  				
 			success: function(data){  		
-							  					
+				carregaCidade(data.estados_go,data.cidades_go);			  					
 				if(strEmail != '' && data.email == '')
 				{					
 					alert('E-mail não cadastrado, favor preencher os campos do formulário!')
