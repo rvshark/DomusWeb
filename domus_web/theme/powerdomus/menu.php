@@ -93,12 +93,12 @@ http://domus.pucpr.br/lib/estados.php
 						}
 					    estados_options+="</select>";
 
-					
+						$("#div_estado_append").append(estados_options);
 
 
 					});
 					
-						$("#div_estado_append").append(estados_options);
+					
 			}
 
 		}
