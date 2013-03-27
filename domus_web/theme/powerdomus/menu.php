@@ -46,6 +46,35 @@
 	    return true;
 
 	}
+	
+	function carregaForm(Txtemail){
+	$.ajax({
+		type:"POST",
+		dataType: "json",
+		url:"<?php $CFG->wwwroot ?>theme/powerdomus/formAjax.php",
+		data: {email: Txtemail},
+		cache: false,  				
+		success: function(data){  		
+
+
+
+				$("#txtNome").val(data.nome);
+				$("#cpf").val(data.cpf);
+				if(data.cidades_go){
+				carregaCidade(data.estados_go,data.cidades_go);
+			    }else{
+				$("#estados_go").val(data.estados_go);
+			    }
+			    $("#txtEmail").val(data.email);
+				$("#txtPais").val(data.pais);
+				$("#txtTelefone").val(data.telefone);
+				$("#txtInstituicao").val(data.instituicao);					
+
+
+		}
+	});
+	}
+	
 		function carregaCidade(estado,cidade){
 			if(cidade > 0 ){
           $("#cidade_div_html").remove();
@@ -255,6 +284,7 @@
 			alert('CPF Inválido');
 			
 			$('#cpf').focus();
+			carregaForm($('#txtEmail').val());
 		    $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').show();
 		  
 		}
