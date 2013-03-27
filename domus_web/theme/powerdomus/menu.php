@@ -104,7 +104,13 @@
 	    $(document).ready(function(){
 
 	       //valida cpf Guilherme T. 20/03/2013
-		
+	
+		$('#cpf').bind('blur', function(){
+		   $('#cpf').removeClass('error');
+		});
+		$('#cpf').bind('focus', function(){
+		  $('#cpf').addClass('error');
+		});
 	
 	
 	
@@ -247,7 +253,7 @@
 		}else{
 		
 			alert('CPF Inválido');
-			$('#cpf').focus(function(){$(this).addClass('error');});
+			$('#cpf').focus();
 		   $('#trNome,#trTelefone,#trCPF,#trCidade,#trPais,#trInstituicao,#trEstado').show();	
 		}
 	}
