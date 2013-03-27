@@ -51,9 +51,6 @@
           $("#cidade_div_html").remove();
           $("#div_estado_html").remove();
 
-http://domus.pucpr.br/lib/estados.php
-	       
-	        
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
 					var options = '<select name="cidades_go"  id="cidades_go">';
 				    options+='<option value="">-- Escolha uma cidade --</option>';
