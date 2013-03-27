@@ -49,6 +49,8 @@
 		function carregaCidade(estado,cidade){
 			if(cidade > 0 ){
           $("#cidade_div_html").remove();
+          $("#div_estado_html").remove();
+
 
 	       
 	        
@@ -66,8 +68,40 @@
 
 					}
 				    options+="</select>";
+				     var estados_options = '<select name='estados_go' id='estados_go'>
+					<option value="">-- Selecione o estado --</option>
+					<option value="1">Acre</option>
+					<option value="2">Alagoas</option>
+					<option value="4">Amapá</option>
+					<option value="3">Amazonas</option>
+					<option value="5">Bahia</option>
+					<option value="6">Ceará</option>
+					<option value="7">Destrito Federal</option>
+					<option value="8">Espírito Santo</option>
+					<option value="9">Goiás</option>
+					<option value="10">Maranhão</option>
+					<option value="13">Mato Grosso</option>
+					<option value="12">Mato Grosso do Sul</option>
+					<option value="11">Minas Gerais</option>
+					<option value="14">Pará</option>
+					<option value="15">Paraíba</option>
+					<option value="18">Paraná</option>
+					<option value="16">Pernambuco</option>
+					<option value="17">Piauí</option>
+					<option value="19">Rio de Janeiro</option>
+					<option value="20">Rio Grande do Norte</option>
+					<option value="23">Rio Grandre do Sul</option>
+					<option value="21">Rondônia</option>
+					<option value="22">Rorâima</option>
+					<option value="24">Santa Catarina</option>
+					<option value="26">São Paulo</option>
+					<option value="25">Sergipe</option>
+					<option value="27">Tocantins</option>
+					</select>';
 					$('#carregando_cidade').hide();
 					$("#cidade_div_append").append(options);
+					
+					$("#div_estado_append").append(estados_options);
 					$('#cidades_go').show();
 					
 
@@ -262,9 +296,10 @@
 					$("#cpf").val(data.cpf);
 					if(data.cidades_go){
 					carregaCidade(data.estados_go,data.cidades_go);
+				    }else{
+					$("#estados_go").val(data.estados_go);
 				    }
-					//$("#estados_go").val(data.estados_go);
-					$("#txtEmail").val(data.email);
+				    $("#txtEmail").val(data.email);
 					$("#txtPais").val(data.pais);
 					$("#txtTelefone").val(data.telefone);
 					$("#txtInstituicao").val(data.instituicao);					
@@ -387,7 +422,8 @@ submitForm();
 				<tr id='trEstado'>
 					<td style="text-align: right;width: 8%">Estado*:</td>
 					<td style="text-align: left;width: 92%">
-					 <select name='estados_go' id='estados_go'>
+					<div id="div_estado_append"><div id="div_estado_html">
+					<select name='estados_go' id='estados_go'>
 					<option value="">-- Selecione o estado --</option>
 					<option value="1">Acre</option>
 					<option value="2">Alagoas</option>
@@ -417,6 +453,7 @@ submitForm();
 					<option value="25">Sergipe</option>
 					<option value="27">Tocantins</option>
 					</select>
+					</div></div>
 					</td>
 				</tr>
 			<tr id='trCidade'>
