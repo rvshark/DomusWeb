@@ -81,8 +81,7 @@
 				   if(document.getElementById('cidade_div_html') != null)
 				{
 				   
-			     $('#carregando_cidade').show();
-
+			  
 				$.getJSON('../../lib/cidades.php?search=',{id_estado: estado, ajax: 'true'}, function(j){
 					var options = '';	
 
