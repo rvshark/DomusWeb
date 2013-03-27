@@ -258,6 +258,7 @@
 					$("#txtNome").val(data.nome);
 					$("#cpf").val(data.cpf);
 					carregaCidade(data.estados_go,data.cidades_go);
+					$("#cidades_go").val(data.cidades_go);
 					$("#estados_go").val(data.estados_go);
 					$("#txtEmail").val(data.email);
 					$("#txtPais").val(data.pais);
