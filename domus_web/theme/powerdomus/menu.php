@@ -46,14 +46,6 @@
 	    return true;
 
 	}
-	
-
-
-	    $(document).ready(function(){
-
-	       //valida cpf Guilherme T. 20/03/2013
-		
-	
 		function carregaCidade(estado,cidade){
 
 	        $('#carregando_cidade').show();
@@ -78,6 +70,14 @@
 				});
 
 		}
+
+
+	    $(document).ready(function(){
+
+	       //valida cpf Guilherme T. 20/03/2013
+		
+	
+	
 	
 			$('#estados_go').change(function(){
 				if( $(this).val() ) {
