@@ -47,7 +47,7 @@
 
 	}
 		function carregaCidade(estado,cidade){
-			if(cidade){
+			if(cidade > 0 ){
           $("#cidade_div_html").remove();
 
 	       
