@@ -36,7 +36,9 @@ class TemaController {
            $corpo = "{temas:[";
            
            foreach($curso->temas as $t){
-               $corpo = $corpo . $t->to_json() . ",";
+               if ($t->esta_ativo()){
+                   $corpo = $corpo . $t->to_json() . ",";
+               }
            }
 
            $corpo = preg_replace('/,$/','',$corpo) . "]}";
@@ -63,6 +65,7 @@ class TemaController {
         
     try{
         $this->tema->maxbytes =  $this->tema->maxbytes * 1024;
+        $this->tema->ativo = true;
         if($this->usuario->souProfessorEditor() && $this->tema->save() ){
             $this->json = '{success:true,data:' . $this->tema->to_json() . '}';            
 
@@ -146,13 +149,18 @@ class TemaController {
         $topico_id = $this->topico->id;
         $this->usuario =  Usuario::find($response->s['USER']->id);
 
-       if($this->usuario->souProfessorEditor() && !Topico::exists(array('conditions' => " forum = $tema_id"))){
-          $this->tema = Tema::find($this->tema->id);
-          $this->tema->delete();
-          $this->json = '{success:true}'; 
+       if($this->usuario->souProfessorEditor() ){
+           $this->tema = Tema::find($this->tema->id);
+           if(!Topico::exists(array('conditions' => " forum = $tema_id"))){
+               $this->tema->delete();
+           }else{
+               $this->tema->ativo = false;
+               $this->tema->save();
+           }
+           $this->json = '{success:true}'; 
        }else{
 
-          $this->json = "{success:false,errors:{'dump':'Erro ao tentar remover. Tema possui tópicos.'} }";  
+          $this->json = "{success:false,errors:{'dump':'Você não tem permissão para excluir este tema.'} }";  
        }     
     }
 }
