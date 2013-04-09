@@ -51,7 +51,7 @@
 	$.ajax({
 		type:"POST",
 		dataType: "json",
-		url:"<?php $CFG->wwwroot ?>theme/powerdomus/formAjax.php",
+		url:"<?php $CFG->wwwroot ?>/theme/powerdomus/formAjax.php",
 		data: {email: Txtemail},
 		cache: false,  				
 		success: function(data){  		
@@ -78,7 +78,7 @@
 	$.ajax({
 		type:"POST",
 		dataType: "json",
-		url:"<?php $CFG->wwwroot ?>theme/powerdomus/formAjax.php",
+		url:"<?php $CFG->wwwroot ?>/theme/powerdomus/formAjax.php",
 		data: {email: Txtemail},
 		cache: false,  				
 		success: function(data){  		
@@ -334,7 +334,7 @@ if($('#cidades_go').val() == ""){
 		$.ajax({
 			type:"POST",
 			dataType: "json",
-			url:"<?php $CFG->wwwroot ?>theme/powerdomus/formAjax.php",
+			url:"<?php $CFG->wwwroot ?>/theme/powerdomus/formAjax.php",
 			data: {email: strEmail},
 			cache: false,  				
 			success: function(data){  		
