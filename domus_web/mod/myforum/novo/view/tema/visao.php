@@ -79,6 +79,8 @@
 .photo_scenery_16{background-image:url(../images/16/photo_scenery.png) !important; }   
 .document_16{background-image:url(../images/16/document.png) !important; }   
 .film_16{background-image:url(../images/16/film.png) !important; }   
+.copy_16{background-image:url(../images/16/copy.png) !important; }   
+.signpost_16{background-image:url(../images/16/signpost.png) !important; }   
 
 
 .search-item {
@@ -304,6 +306,9 @@ function initializeDropZone(g) {
                                                 }},
                                                 {text:'Excluir tema selecionado', style:'font-size:11px',iconCls:'delete2_16', handler:function(){
                                                     facadeTema.excluir(temaSelecionado);    
+                                                } },
+                                                {text:'Copiar tema para outro curso', style:'font-size:11px',iconCls:'copy_16', handler:function(){
+                                                    facadeTema.mostrarJanelaCursos(temaSelecionado);
                                                 } }
                                             ],
                                             handler:function(){
@@ -359,7 +364,7 @@ function initializeDropZone(g) {
                                     reserveScrollOffset: true,
                                     bbar:[{ text:'Adicionar novo tópico',
                                             iconCls:'add2_16',
-                                            hidden:<?php echo($controlador->usuario->souProfessorEditor()?'false':'true') ?>,
+                                            hidden:false,
                                             xtype:'splitbutton',
                                             menu:[
                                                     {text:'Alterar tópico selecionado', 
@@ -423,8 +428,20 @@ function initializeDropZone(g) {
                 bbar:[{
                         xtype:'button',
                         iconCls:'index_16',
-                        text:'Arquivo'
-                }],
+                        text:'Arquivo',handler: function(){
+                        
+                                window.open('<?php echo $CFG->wwwroot ?>/lib/editor/fckeditor/editor/filemanagern/browse.php?type=images','Arquivos','channelmode=no, directories=no, location=no, menubar=no,resizable=no, toolbar=no',false)
+                        }
+                        
+                },{
+                        xtype:'button',
+                        iconCls:'signpost_16',
+                        text:'Mapa Domus',handler: function(){
+                                window.open('<?php echo $CFG->wwwroot ?>/mapa_r','Mapa Domus','channelmode=no, directories=no, location=no, menubar=no,resizable=no, toolbar=no',false)
+                        }
+                        
+                }
+                ],
                 items:[{ 
                         actived:true,
                         title:'Tema',
@@ -433,7 +450,7 @@ function initializeDropZone(g) {
                         layout:'fit',
                         iconCls:'blackboard_16',
                         html:'',
-                        bbar:['->',{iconCls:'edit_16',text:'Alterar tema', handler: function(){
+                        bbar:['->',{iconCls:'edit_16',text:'Alterar tema', hidden:<?php echo($controlador->usuario->souProfessorEditor()?'false':'true') ?>,handler: function(){
                                 facadeTema.alterar(temaSelecionado); 
                         }}]
                         

@@ -1,6 +1,13 @@
 <script>
+    /**
+     * Responsável por tratar toda visão do POst (Discussão)
+     */
 function FacadePost(){
     
+    /**
+     * Excluir determinado post
+     * Passa o nome do post e o id 
+     */
     this.excluir = function (postNome,postId){
          Ext.MessageBox.confirm("Confirmação", 'Você deseja excluir este post?', function(btn){
              postExcluir = postId;
@@ -44,9 +51,17 @@ function FacadePost(){
          });
     };
     
+    /**
+    * Retorna o campo de upload do arquvio
+     */
     this.campoAttachment = function(){
       return Ext.getCmp('arquivoUpload');
     }
+    
+    /**
+     * Apresenta a janela para alterar ou adicionar um comentário
+     * Caso o postId seja passado, então ele irá alterar o post, caso contrário ele irá criar um 
+     */
     
     this.alterarOuCriar = function (postId){
               var url = '<?php echo MainController::$caminho ?>?controller=post&action=inserir_visao&topico[id]=' + topicoSelecionado.id
@@ -68,6 +83,9 @@ function FacadePost(){
         };
         
         
+        /**
+        * Apresenta a janela para responder um comentário
+         */
     this.responder = function (postId){
               var url = '<?php echo MainController::$caminho ?>?controller=post&action=responder_visao&topico[id]=' + topicoSelecionado.id + '&post[id]=' + postId
               var title = 'Responder Comentário';
@@ -84,6 +102,9 @@ function FacadePost(){
         };
         
         //Store conceitoDataView
+        /**
+         * Carrega os dados dos posts relacioandos ao tópico selecionado
+         */
       this.store = new Ext.data.JsonStore({
         url: '<?php echo MainController::$caminho ?>',
         root: 'posts',
@@ -110,11 +131,17 @@ function FacadePost(){
         fields: ['id', 'updated_at','userid','message','subject','primeiroNome','ultimoNome','citacaoPrimeiroNome','citacaoUltimoNome','citacaoUpdated_at','citacaoMessage','citacaoId','anexo','nome_anexo']
     });
     
+    /**
+    * Retorna a aba relacionada a discussão
+     */
     this.tab = function(){
         return Ext.getCmp('postTab');
     }
     
     
+    /**
+     * Faz o slide do post atual até o post citado
+     */
     this.irParaPost = function(postId){
             if(typeof postId == 'undefined' && typeof facadePost.postId != 'undefined' ){
                 postId = facadePost.postId;
@@ -133,6 +160,9 @@ function FacadePost(){
     
     
     //DataView conceitos
+    /**
+    * Lista de apresentações dos posts
+     */
     this.dataView = new Ext.DataView({
 				singleSelect: true,
                                 overClass:'x-view-over',

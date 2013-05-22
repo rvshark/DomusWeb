@@ -1,6 +1,13 @@
 <script>
+    /**
+ * Reune todos os javascripts relacionados a anotação
+ */
 function FacadeBibliografia(){
-    
+   
+   /**
+    * Exclui determinada bibliografia
+    * Nome da bibliografia e  seu id são passados como parametro
+    */
     this.excluir = function (bibliografiaNome,bibliografiaId){
          Ext.MessageBox.confirm("Confirmação", 'Você deseja excluir a bibliografia  ?', function(btn){
              bibliografiaExcluir = bibliografiaId;
@@ -32,6 +39,9 @@ function FacadeBibliografia(){
          });
     };
     
+    /**
+    * Retorna o componente da abada bibliografia
+     */
     this.tab = function(){
         return Ext.getCmp('bibliografiaTab');
     }
@@ -54,6 +64,10 @@ function FacadeBibliografia(){
                         windowBibliografia.show();    
         };
         
+        
+       /**
+       * Componente que contem os dados de de bibliografia
+        */ 
         //Store conceitoDataView
       this.store = new Ext.data.JsonStore({
         url: '<?php echo MainController::$caminho ?>',
@@ -88,11 +102,14 @@ function FacadeBibliografia(){
     
     
     
+       /**
+       * Componente que apresenta os dados na aba de bibliografia
+        */ 
     
     //DataView conceitos
     this.dataView = new Ext.DataView({
 				singleSelect: true,
-                                overClass:'x-view-over',
+                                overClass:'x-view-over',    
 				itemSelector: 'div.search-item',
 				emptyText : 'Não há bibliografias relacionados a este tópico.',
                                 autoScroll:true,

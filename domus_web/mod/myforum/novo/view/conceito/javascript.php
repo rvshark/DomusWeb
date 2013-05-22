@@ -1,6 +1,13 @@
 <script>
+    /**
+     * Controla as responsabilidades da visão do conceito
+     */
 function FacadeConceito(){
     
+    /**
+     * Visão para excluir um conceito
+     * Passa o nome e o id do conceito a ser excluido
+     */
     this.excluirConceito = function(conceitoNome,conceitoId){
          Ext.MessageBox.confirm("Confirmação", 'Você deseja excluir o conceito ' + conceitoNome + " ?", function(btn){
              conceitoExcluir = conceitoId;
@@ -32,10 +39,17 @@ function FacadeConceito(){
          });
     };
     
+    /**
+    * Retorna o componente da aba do conceito
+     */
     this.tab = function(){
         return Ext.getCmp('conceitoTab');
     }
     
+    
+    /**
+     * Altera ou cria um conceito
+     */
     this.alterarOuCriarConceito = function (conceitoId){
               var url = '<?php echo MainController::$caminho ?>?controller=conceito&action=inserir_visao&topico[id]=' + topicoSelecionado.id
               var title = 'Adicionar conceito';
@@ -55,6 +69,10 @@ function FacadeConceito(){
                         windowConceito.show();    
         };
         
+        
+        /**
+        * Carrega os dados relacionados aos conceitos relativos a um tópico
+         */
         //Store conceitoDataView
       this.store = new Ext.data.JsonStore({
         url: '<?php echo MainController::$caminho ?>',
@@ -95,6 +113,9 @@ function FacadeConceito(){
     
     
     //DataView conceitos
+    /**
+    * Componente para apresentar os conceitos na aba conceito
+     */
     this.conceitosDataView = new Ext.DataView({
 				singleSelect: true,
                                 overClass:'x-view-over',

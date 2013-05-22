@@ -1,9 +1,15 @@
 <script>
+/**
+ * Reune todos os javascripts relacionados a anotação
+ */
+
 function FacadeAnotacao(){
     
    
     
-    
+    /**
+     * Salva o bloco de anotações
+     */
     this.alterar = function (text){
         
         temaId = temaSelecionado.id;

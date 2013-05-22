@@ -1,3 +1,3 @@
 <?php
-    echo $controlador->json;
+    echo $controlador->json; 
 ?>
