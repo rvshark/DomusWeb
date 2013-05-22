@@ -5,7 +5,7 @@
  */
 /**
  * Description of TemaController
- *
+ * Classe responsável por administrar o Tema. Myforum
  * @author Luiz Loja
  */
 class TemaController {
@@ -16,18 +16,56 @@ class TemaController {
     public $json;
     public $usuario;
     
+    /**
+     * Carrega o curso e o tema
+     */
     public function __construct() {
         $this->curso = new Curso();
         $this->tema = new Tema();
     }
     
-    
+    /**
+     * Apresenta a visão princial
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function visao($response){
             $curso_modulo = CursoModulo::find($response->r['id']);
             $this->curso = $curso_modulo->curso;    
             $this->usuario = Usuario::find($response->s['USER']->id);
     }
      
+    
+    /**
+     * Apresenta a arvore do curso para poder migrar um determinado tema
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
+    public function arvore_curso($response){
+        $corpo = "[{text:'Cursos',cls:'folder', expanded:false , children:[ ";
+        $modulos = CursoModulo::find('all',array('module' => 22));
+        foreach($modulos as $modulo){
+            $nome = $modulo->curso->shortname;
+            $id = $modulo->curso->id;
+            $corpo .="{text:'$nome',leaf:true,  id:'$id' , checked:false },";         
+        }
+        $corpo = preg_replace('/,$/','',$corpo) . "]}]";            
+        $this->json  = $corpo;
+    }
+    
+    
+    /**
+     * Lista todos os temas de um determinado curso
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
+    
     public function listar($response){
           
           $curso = Curso::find($this->curso->id);
@@ -48,13 +86,20 @@ class TemaController {
     
     
     public function formulario($response){
-        
     }
     
     public function tema_individual(){
         $this->tema = Tema::find($this->tema->id);
     }
      
+    
+    /**
+     * Insere um novo tema
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function inserir($response){
         //$this->tema->userid=$response->s['USER']->id;
     $this->usuario =  Usuario::find($response->s['USER']->id);
@@ -90,6 +135,31 @@ class TemaController {
 
     }
     
+    
+    /**
+     * Copia um tema para um novo curso
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
+    public function copiar_tema($response){
+        $this->tema = Tema::find($this->tema->id);
+        
+        foreach(split(",", $response->r['cursos']['ids']) as $curso_id){
+            $curso = Curso::find($curso_id);
+            $this->tema->copiarTemaParaCurso($curso);
+
+        }
+    }
+    
+    /**
+     * Apresenta a tela de visão para inserção do curso
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function inserir_visao($response){
         
         
@@ -97,7 +167,13 @@ class TemaController {
 
     
     
-    
+    /**
+     * Apresenta a tela de alteração de um determinado tema
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function alterar_visao($response){
         $this->tema = Tema::find($this->tema->id);
         
@@ -109,10 +185,18 @@ class TemaController {
         
     }
 
+    /**
+     * Altera um tema
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function alterar($response){
         $tema_antigo = Tema::find($this->tema->id);
         $this->usuario =  Usuario::find($response->s['USER']->id);
 
+        //Verifica se a introdução do tema está vazia
      if(preg_match('/^( *(&nbsp;)* *(<.?br *.?>)* *)*$/',$response->r['tema']['intro']) != 0){
             $response->r['tema']['intro'] = null;
         }    
@@ -143,7 +227,14 @@ class TemaController {
     }
     
   
-    
+    /**
+     * Remove um tema. Caso o tema tenha posts ele ficará desativado
+     * Temas desativados não aparecem na visão principal
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function deletar($response){
         $tema_id = $this->tema->id;
         $topico_id = $this->topico->id;

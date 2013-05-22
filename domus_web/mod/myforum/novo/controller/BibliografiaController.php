@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Classe responsável por tratar todas as responsabilidades relacionadas a bibliografia
+ */
 class BibliografiaController {
     
     public $topico ;
@@ -7,11 +9,20 @@ class BibliografiaController {
     public $bibliografia_json ;
     public $json;
     
+    /**
+     * carrega o tópico e a bibliografia
+     */
     public function __construct() {
         $this->topico = new Topico();
         $this->bibliografia = new Bibliografia();
     }
-     
+     /**
+     * Lista todas as bibliografias relacionadas a determinado tópico
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function listar($response){
                
           $topico = Topico::find($this->topico->id);
@@ -36,10 +47,20 @@ class BibliografiaController {
     }
     
     
+    
     public function formulario($response){
         
     }
-     
+    
+    
+    /**
+     * Insere uma nova bibliografia
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
+    
     public function inserir($response){
         $this->bibliografia->userid=$response->s['USER']->id;
         if(preg_match('/^( *(&nbsp;)* *(<.?br *.?>)* *)*$/',$this->bibliografia->text) != 0){
@@ -65,6 +86,14 @@ class BibliografiaController {
 
     }
     
+    
+    /**
+     * Apresenta o formulário de inserção da bibliografia
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function inserir_visao($response){
         
         
@@ -72,7 +101,14 @@ class BibliografiaController {
 
     
     
-    
+    /**
+     * Carrega uma determinada bibliografia para apresentar no formulário de alteração
+     * 
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function alterar_visao($response){
         $this->bibliografia = Bibliografia::find($this->bibliografia->id);
         
@@ -82,6 +118,13 @@ class BibliografiaController {
         
     }
 
+    /**
+     * Altera a bibliografia selecionada
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function alterar($response){
         $bibliografia_antigo = Bibliografia::find($this->bibliografia->id);
 
@@ -103,6 +146,14 @@ class BibliografiaController {
         
     }
     
+    /**
+     * Relacionada a bibliografia relacionada a um novo tópico
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
+    
     public function relacionar_novo_topico($response){
         $bibliografia_topico = new BibliografiaTopico();
         $bibliografia_id = $this->bibliografia->id;
@@ -120,6 +171,14 @@ class BibliografiaController {
         
         
     }
+    
+    /**
+     * Deleta uma determinada bibliografia
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     
     public function deletar($response){
         $bibliografia_id = $this->bibliografia->id;

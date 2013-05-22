@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Classe responsável por gerenciar os tópicos
+ */
    
 class TopicoController {
     
@@ -10,6 +12,9 @@ class TopicoController {
     public $json;
     public $usuario;
     
+    /**
+     * Carrega post, tema, tópico, curso necessários para invocação dos métodos
+     */
     public function __construct() {
         $this->post = new Post();
         $this->tema = new Tema();
@@ -17,6 +22,13 @@ class TopicoController {
         $this->curso = new Curso();
     }
      
+    /**
+     * Lista os tópicos relacionados com determinado tema
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function listar($response){
         
           $tema = Tema::find($this->tema->id);
@@ -31,6 +43,12 @@ class TopicoController {
     }
     
     
+    /**
+     * Monta a arvore de galerias para relacionar os recursos com o tema 
+     * @param type $modulo o módulo 
+     * @param type $topico o tópico relacionado
+     * @return string retorna o json  correspondente 
+     */    
     public function montar_arvore($modulo, $topico){
 
 
@@ -113,6 +131,17 @@ class TopicoController {
     }
     
     
+    
+    
+   /**
+    * Método que ajuda a montar as pastas que possuem elemento de marcação
+    * @param type $titulo : o título da pasta
+    * @param type $tipo : qual o tipo o arquivo
+    * @param type $icon : qual o caminho do icone que representa o artigo
+    * @param type $arquivos: um array com os arquivos relacionados a determinada pasta
+    * @return string retorna o json correspondente a pasta que será apresentada 
+    * para o usuário selecionar os recursos a serem relacionados ao tópico
+    */
      public function montar_pasta_checked($titulo,$tipo,$icon,$arquivos,$recurso_id){
         $corpo = "";
         
@@ -133,7 +162,14 @@ class TopicoController {
         return $corpo;
     }  
     
-    
+    /**
+     * Monta a arvore apresenta na aba recursos
+     * Esta aba vai listar todos os recursos relacionados com o tema selecionado
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function arvore_recursos_didaticos($response){ 
         $this->topico = Topico::find($this->topico->id);
         $topico = $this->topico;
@@ -206,6 +242,15 @@ class TopicoController {
         $this->json =  $corpo;
     }
     
+    
+   /**
+    * Método para ajudar a montar a árvore de recursos
+    * @param type $titulo : o título da pasta
+    * @param type $tipo : qual o tipo o arquivo
+    * @param type $icon : qual o caminho do icone que representa o artigo
+    * @param type $arquivos: um array com os arquivos relacionados a determinada pasta
+    * @return string retorna o json correspondente a esta pasta da arvore
+    */
     public function montar_pasta($titulo,$tipo,$icon,$arquivos){
         $corpo = "";
         
@@ -229,7 +274,13 @@ class TopicoController {
     
     
      
-    
+    /**
+     * Inicia a montagem da árvore que lista os recursos que estão nas galerias
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function arvore_galeria($response){
         $this->topico = Topico::find($this->topico->id);
         
@@ -258,6 +309,13 @@ class TopicoController {
     }
 
     
+    /**
+     * Relaciona os recursos selecionados com o tópico selecionado
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function gravar_galeria($response){
         $this->topico = Topico::find($this->topico->id);
         $topico_id = $this->topico->id;
@@ -286,6 +344,14 @@ class TopicoController {
         }
     }
 
+    
+    /**
+     * Insere um novo tópico
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function inserir($response){
         $this->topico->userid=$response->s['USER']->id;
         $this->topico->forum=$this->tema->id;
@@ -331,15 +397,30 @@ class TopicoController {
 
     }
     
-     
+    /**
+     * Apresenta o formulário de inserção para a visão
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */ 
     public function inserir_visao($response){
         
         
     }
     
+    
+    /**
+     * Altera determinado tópico
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function alterar($response){
     	$topico_antigo = Topico::find($this->topico->id);
     	$topico_antigo->name = $this->topico->name;
+        $topico_antigo->primeiro_post->subject = $this->topico->name;
     	$topico_antigo->primeiro_post->message = $this->post->message;
         $this->usuario =  Usuario::find($response->s['USER']->id);
     	
@@ -371,6 +452,13 @@ class TopicoController {
     }
 
     
+    /**
+     * Apresenta o formulário de visão para alterar o tópico
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function alterar_visao($response){
     	
     	$this->topico = Topico::find($this->topico->id);
@@ -383,6 +471,14 @@ class TopicoController {
     	
     }    
     
+    
+    /**
+     * Remove deteterminado tópico
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function deletar($response){
         $this->usuario =  Usuario::find($response->s['USER']->id);
 

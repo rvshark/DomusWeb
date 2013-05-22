@@ -1,4 +1,7 @@
 <?php
+/**
+ * Classe responsável por administrar o conceito
+ */
 
 class ConceitoController {
     
@@ -7,11 +10,22 @@ class ConceitoController {
     public $conceito_json ;
     public $json;
     
+    /**
+     * Carrega o tópico e o conceito que serão gerenciados através dos parametros
+     */
     public function __construct() {
         $this->topico = new Topico();
         $this->conceito = new Conceito();
     }
      
+    /**
+     * Lista um determinado conceito relacionada a um tópico
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
+    
     public function listar($response){
                
           $topico = Topico::find($this->topico->id);
@@ -39,6 +53,13 @@ class ConceitoController {
         
     }
      
+    /**
+     * Insere um determinado conceito em um tópico
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function inserir($response){
         $this->conceito->userid=$response->s['USER']->id;
         
@@ -61,13 +82,27 @@ class ConceitoController {
 
     }
     
+    
+    /**
+     * Apresenta o formulário de visão para inserir um novo conceito
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function inserir_visao($response){
         
         
     }
 
     
-    
+    /**
+     * Apresenta o formulário de alteração de um determinado conceito
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     
     public function alterar_visao($response){
         $this->conceito = Conceito::find($this->conceito->id);
@@ -79,6 +114,14 @@ class ConceitoController {
         
     }
 
+    /**
+     * Altera determinado conceito
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
+    
     public function alterar($response){
         $conceito_antigo = Conceito::find($this->conceito->id);
         try{
@@ -94,6 +137,14 @@ class ConceitoController {
         
     }
     
+    
+    /**
+     * Relaciona o conceito a um novo tópico
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function relacionar_novo_topico($response){
         $conceito_topico = new ConceitoTopico();
         $conceito_id = $this->conceito->id;
@@ -111,6 +162,14 @@ class ConceitoController {
         
         
     }
+    
+    /**
+     * Remove um conceito
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     
     public function deletar($response){
         $conceito_id = $this->conceito->id;

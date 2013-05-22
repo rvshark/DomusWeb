@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Classe responsável por gerenciar as responsabilidades de Discussões
+ */
 class PostController {
     
     public $topico ;
@@ -7,11 +9,22 @@ class PostController {
     public $post_json ;
     public $json;
     
+    /**
+     * Carrega o post e o tópico 
+     */
     public function __construct() {
         $this->topico = new Topico();
         $this->post = new Post();
     }
      
+    /**
+     * Responde citando determinado post. Este método é invocado clicando no link responder
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
+    
       public function responder($response){
         $post_citado = Post::find($this->post->id);
         
@@ -35,6 +48,14 @@ class PostController {
         }            
           
       }
+      
+      /**
+     * Apresenta o formulário para resposta de um post
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
       
 public function responder_visao($response){
         $this->post = Post::find($this->post->id);
@@ -89,6 +110,14 @@ public function responder_visao($response){
         
     }
      
+    
+    /**
+     * Insere um novo post
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function inserir($response){
         $this->post->userid=$response->s['USER']->id;
         $this->post->discussion = $this->topico->id;
@@ -120,6 +149,14 @@ public function responder_visao($response){
 
     }
     
+    
+    /**
+     * Apresenta o formulário de inserir um novo post
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function inserir_visao($response){
         
         
@@ -127,7 +164,13 @@ public function responder_visao($response){
 
     
     
-    
+    /**
+     * Apresenta o formulário de visão para alterar um determinado post
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function alterar_visao($response){
         $this->post = Post::find($this->post->id);
         $this->post_json = "[";
@@ -138,6 +181,14 @@ public function responder_visao($response){
         
     }
 
+    
+    /**
+     * Altera um post
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function alterar($response){
         $post_antigo = Post::find($this->post->id);
         
@@ -181,7 +232,13 @@ public function responder_visao($response){
     }
     
  
-    
+    /**
+     * Remove um determinado post
+     * @param type $response é o response com os parametros vindos da url e sessão
+     * $response->s : equivale a sessão
+     * $response->user : ao usuário 
+     *  $response->r : equivale ao response, tanto do get como do post
+     */
     public function deletar($response){
         $this->post = Post::find($this->post->id);
        if($post_antigo->userid == $response->user->id){

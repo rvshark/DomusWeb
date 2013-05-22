@@ -31,15 +31,28 @@
  * Description of MainController
  *
  * @author Luiz Loja
+ * É a classe de controle geral responsável por receber todas as solicitações
+ * Ela deve receber um controlador e uma ação.
+ * Este controlador é o ponto de entrada para todas as requisções do fórum
+ * Parametros
+ *      controller : é o controlador que será acionado para executar a ação
+ *      action: é a ação que será executada. O nome da ação é igual ao método
+ *      que será acionado na classe controller. Por exemplo, se a o controller TemaController
+ *      e a ação inserir forem passados para o MainController então o método inserir
+ *      será invocado na classe TemaController 
+ *      
  */
 class MainController {
     
+    //Caminho do main controller
     static $caminho = "../controller/MainController.php";
     
    
     static function acionarMetodo($response,$CFG){
     
         
+        //Faz um mapa relacionando o nome da classe controller com o seu respectivo
+        //controlador
          $mapa = array(
                 'topico' => 'TopicoController',
                 'conceito' => 'ConceitoController',
@@ -75,6 +88,7 @@ class MainController {
         
         
         $action = $response['action'];
+        //Cria um response que será passado como parametro para o método que será invocado
         $r->r =  $response;
         $r->s =  $_SESSION;
         $r->user =  $_SESSION['USER'];
@@ -91,20 +105,24 @@ class MainController {
         
         
         
-       
+       //Invoca a ação do controlador através de reflection
        $controladorClass->getMethod($action)->invoke($controlador,$r);
        
+       //Adiciona o log da ação executada
        add_to_log($r->s['curso_myforum'], "myforum", "$objetoControlador-$action ", preg_replace('/^.*MainController.php/','MainController.php',$_SERVER ['REQUEST_URI']), $objetoControlador);  
             
+       //Invoca a visão correspondente ao método
        include "../view/$controler_name/$action.php";
             
         }catch(Exception $e){
+            //Se ocorrer alguma exceção ela será apresentada 
             echo $e->getMessage();
         }    
        # objetoControlador 'listar';
     }
     
-    
+    //Este método é responsável por preencher os atributos da classe através de
+    //reflection
     static function preencher($atributo,$pro,$response, $controlador){
 
 
@@ -130,11 +148,13 @@ class MainController {
     
 }
   header("Content-Type: text/html; charset=utf-8"); 
+  //Transforma o post e o get em um response.
    $response = null;
    if($_POST){
        $response = $_POST;
    }else{
        $response = $_GET;
    }
+   //Aciona o método do MainController para invocar os métodos passados como parametro
    MainController::acionarMetodo($response,$CFG);
 ?>
