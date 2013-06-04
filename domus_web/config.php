@@ -33,9 +33,9 @@ $CFG->dirroot   = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web';
 $CFG->libdir    = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web\lib';
 $CFG->downdir   = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web\download';
 $CFG->dataroot  = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web\moodledata';
-*/
-require_once("$CFG->dirroot\util\dBug.php");
 
+require_once("$CFG->dirroot\util\dBug.php");
+*/
 
 
 /** Desenvolvimento 2   
@@ -49,7 +49,7 @@ require_once("$CFG->dirroot/util/dBug.php");  */
 
 
 $CFG->versao_domus = 'Domus - Procel Edifica 2012';
-$CFG->versao_domus_teste = 'Domus Procel Edifica 2013'; 
+$CFG->versao_domus_teste = 'Domus - Procel Edifica 2013';
 
 $CFG->admin     = 'admin';
 $CFG->maxbytes  = 500097152;
