@@ -334,7 +334,7 @@ if($('#cidades_go').val() == ""){
 		$.ajax({
 			type:"POST",
 			dataType: "json",
-			url:"<?php $CFG->wwwroot ?>/theme/powerdomus/formAjax.php",
+			url:"<?php $CFG->wwwroot ?>theme/powerdomus/formAjax.php",
 			data: {email: strEmail},
 			cache: false,  				
 			success: function(data){  		
@@ -554,19 +554,6 @@ submitForm();
 	<ul>
 	<li><a href="javascript:void(0)" onclick="historico();">Histórico de versões</a></li>
 	<li><a href="javascript:void(0)" onclick="Acao('download','domus.exe');"><?php echo $CFG->versao_domus_teste ?></a></li>
-	<li><a href="#">Vídeos Demonstrativos</a>
-	<ul>	
-		<li><a href="javascript:void(0)" onclick="ShowVideo('lpE7K768D3A','Trailer de Vídeo-Aula');">Trailer de Vídeo-Aula</a></li>
-		<li><a href="javascript:void(0)" onclick="ShowVideo('UGvx_OBCZpI','Visão geral do Domus');">Visão geral do Domus</a></li>
-	<li><a href="javascript:void(0)" onclick="ShowVideo('3zox9ivMbFM','Desenho de edificação');">Desenho de edificação</a></li>
-	<li><a href="javascript:void(0)" onclick="ShowVideo('brGLxqh-BCo','Importando dxf');">Importando dxf</a></li>
-	<li><a href="javascript:void(0)" onclick="ShowVideo('lKCbc2JVwuw','Importando idf');">Importando idf</a></li>
-	<li><a href="javascript:void(0)" onclick="ShowVideo('XiqrEkfaiJI','Configuração de climatização');">Configuração de climatização</a></li>
-		<li><a href="javascript:void(0)" onclick="ShowVideo('Uac08MbIy_4','Método prescritivo');">Método prescritivo</a></li>
-			<li><a href="javascript:void(0)" onclick="ShowVideo('KJmLkfeltYU','Método da simulação');">Método da simulação</a></li>
-	
-	</ul>
-	</li>
 	
 	<li>
 		<a href="javascript:void(0)" onclick="arquivo_climatico();">Instalador de Climas (411 cidades)</a>
@@ -604,7 +591,19 @@ submitForm();
 		
 		</li>
 
+	<li><a href="#">Vídeos</a>
+		<ul>
+			<li><a href="javascript:void(0)" onclick="ShowVideo('lpE7K768D3A','Trailer de Vídeo-Aula');">Trailer de Vídeo-Aula</a></li>
+			<li><a href="javascript:void(0)" onclick="ShowVideo('UGvx_OBCZpI','Visão geral do Domus');">Visão geral do Domus</a></li>
+		<li><a href="javascript:void(0)" onclick="ShowVideo('3zox9ivMbFM','Desenho de edificação');">Desenho de edificação</a></li>
+		<li><a href="javascript:void(0)" onclick="ShowVideo('brGLxqh-BCo','Importando dxf');">Importando dxf</a></li>
+		<li><a href="javascript:void(0)" onclick="ShowVideo('lKCbc2JVwuw','Importando idf');">Importando idf</a></li>
+		<li><a href="javascript:void(0)" onclick="ShowVideo('XiqrEkfaiJI','Configuração de climatização');">Configuração de climatização</a></li>
+			<li><a href="javascript:void(0)" onclick="ShowVideo('Uac08MbIy_4','Método prescritivo');">Método prescritivo</a></li>
+				<li><a href="javascript:void(0)" onclick="ShowVideo('KJmLkfeltYU','Método da simulação');">Método da simulação</a></li>
 
+		</ul>
+		</li>
 	
 	
 	<li style="width:150px; height:28px; padding: 3px 0 0 0">
