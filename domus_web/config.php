@@ -2,10 +2,10 @@
 
 unset($CFG);
 $CFG->dbtype    = 'mysql';
-$CFG->dbhost    = 'localhost';
-$CFG->dbname    = 'moodle';
-$CFG->dbuser    = 'root';
-$CFG->dbpass    = '';
+$CFG->dbhost    = 'mysql.pro.pucpr.br';
+$CFG->dbname    = 'moodle_homo';
+$CFG->dbuser    = 'md_domus';
+$CFG->dbpass    = 'CDE#2013';
 $CFG->dbpersist =  false;
 $CFG->prefix    = 'mdl_';
 
@@ -18,21 +18,21 @@ $CFG->downdir   = '/home/www/html/domus_web/';
 $CFG->dataroot  = '/home/www/moodledata';
 */
 
-/** Homologação  
+// Homologação  
 $CFG->dbname    = 'moodle_homo';
 $CFG->wwwroot   = 'http://domus.pucpr.br/homo';
 $CFG->www       = 'http://domus.pucpr.br/homo';
-$CFG->dirroot   = '/home/www/homo';
-$CFG->downdir   = '/home/www/homo/download/';
-$CFG->dataroot  = '/home/www/moodledata_homo';*/
+$CFG->dirroot   = '/var/www/homo';
+$CFG->downdir   = '/var/www/homo/download/';
+$CFG->dataroot  = '/var/www/moodledata_homo';
 
 /** Desenvolvimento 1    */
-$CFG->wwwroot   = 'http://server01:81';
-$CFG->www       = 'http://server01:81';
-$CFG->dirroot   = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web';
-$CFG->libdir    = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web\lib';
-$CFG->downdir   = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web\download';
-$CFG->dataroot  = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web\moodledata';
+#$CFG->wwwroot   = 'http://server01:81';
+#$CFG->www       = 'http://server01:81';
+#$CFG->dirroot   = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web';
+#$CFG->libdir    = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web\lib';
+#$CFG->downdir   = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web\download';
+#$CFG->dataroot  = 'C:\inetpub\wwwroot\Dropbox\Projetos\php\domus_web\moodledata';
 require_once("$CFG->dirroot\util\dBug.php");
 
 
