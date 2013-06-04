@@ -51,6 +51,9 @@ getajaxmenu:function($, setting){ //function to fetch external page containing t
 buildmenu:function($, setting){
 	var smoothmenu=ddsmoothmenu
 	var $mainmenu=$("#"+setting.mainmenuid+">ul") //reference main menu UL
+	if(!$mainmenu || !$mainmenu.parent() || !$mainmenu.parent().get(0)){
+			return;
+		}
 	$mainmenu.parent().get(0).className=setting.classname || "ddsmoothmenu"
 	var $headers=$mainmenu.find("ul").parent()
 	$headers.hover(
