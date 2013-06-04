@@ -25,7 +25,7 @@ class block_menu_curso extends block_base{
 			return $this->content;
 		}
 		//Descomente para ativar o menu do hersilio --Jhonatan
-		//$this->content->text = $this->cursos_domus->ImprimirMenu();
+		$this->content->text = $this->cursos_domus->ImprimirMenu();
 		return $this->content;
 	}
 
