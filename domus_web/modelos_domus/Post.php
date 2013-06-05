@@ -24,6 +24,8 @@ class Post extends ActiveRecord\Model{
         if ($this->ja_fui_citado() ){
              return false;
          }
+         
+         
     }
     
     public function caminhoArquivos(){
@@ -45,6 +47,10 @@ class Post extends ActiveRecord\Model{
         
     }
     
+    /**
+     * Carrega o arquivo que está sendo enviado pelo usuário
+     * @global type $CFG
+     */
     public function carregar_arquivo_do_upload(){
         global $CFG;
         require_once($CFG->dirroot.'/lib/uploadlib.php');
@@ -62,11 +68,20 @@ class Post extends ActiveRecord\Model{
     }
     
     
+    /**
+     * Verifica se o post já foi citado
+     * @return type true caso o post tenha sido citado, false, caso contrário
+     */
     public function ja_fui_citado(){
         $post_id = $this->id;
         return Post::exists(array('conditions' => "parent = $post_id"));
     }
     
+    
+    public function ainda_posso_ser_alterado(){
+        $post_id = $this->id;
+        return Post::exists(array('conditions' => "id = $post_id and (updated_at + interval 5 minute) < now() "));
+    }
     
 }
 ?>
