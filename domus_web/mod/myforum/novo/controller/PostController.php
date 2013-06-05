@@ -241,22 +241,23 @@ public function responder_visao($response){
      */
     public function deletar($response){
         $this->post = Post::find($this->post->id);
-       if($post_antigo->userid == $response->user->id){
+        
+       if($this->post->userid != $response->user->id){
+            $this->json = "{success:false,errors:{'dump':'Você não é o autor deste comentário. Portanto não pode alterá-lo.' }}";            
+            
+       }else if ($this->post->ja_fui_citado()) {
+           $this->json = "{success:false,errors:{'dump':'Este comentário já foi citado, portanto não pode ser removido.' }}";            
+       
+       }else if ($this->post->ainda_posso_ser_alterado()) {
+           $this->json = "{success:false,errors:{'dump':'Este comentário já não pode ser removido.'}}";            
+       }else{
             if($this->post->delete()){
                 $this->json = '{success:true}';
             }else{
                 $this->json = '{success:false}';
             }   
-       }else{
-           $this->json = "{success:false,errors:{'dump':'Você não é o autor deste comentário. Portanto não pode alterá-lo.'}}";            
        } 
         
-        
-        
-        
-
-        
-        $this->json = '{success:true}';
     }
 }
 ?>
