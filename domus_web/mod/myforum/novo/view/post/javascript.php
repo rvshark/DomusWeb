@@ -34,6 +34,7 @@ function FacadePost(){
                                        buttons: Ext.MessageBox.OK,
                                        icon: Ext.MessageBox.ERROR
                                    });                                 
+                                   facadePost.tab().body.unmask();
                              }  
 
                            }
