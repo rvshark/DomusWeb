@@ -2473,7 +2473,7 @@ function get_html_lang($dir = false) {
  */
 function skip_main_destination() {
 
-global $CFG;
+global $CFG,$USER;
 
 	$link_out = "<a href=javascript:void(0) onclick=ShowVideo('lpE7K768D3A','Trailer08032013');>Trailer de vídeo-aula</a>";
 
@@ -2483,9 +2483,15 @@ global $CFG;
 	$nome_principal=$CFG->wwwroot."/";
 	if($server == $nome_principal){
     $ss_out=$html_out;
+     $link_conosco = "Fale conosco : <a href='mailto:domus.ead@pucpr.br'>domus.ead@pucpr.br</a>";
+     if(empty($user->realuser)){
+	   $css_top_conosco=450px;
+      }else{
+	    $css_top_conosco=800px;
+     }
 	}
 		 return '<span id="maincontent"><div id="linkTrailer">'.$ss_out.'</div>
-		<div id="faleconosco">Fale conosco : <a href="mailto:domus.ead@pucpr.br">domus.ead@pucpr.br</a></div></span>';
+		<div id="faleconosco" style="margin-top:'.$css_top_conosco.'">'.$link_conosco.'</div></span>';
 
    
 }
