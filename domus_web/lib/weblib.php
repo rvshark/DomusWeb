@@ -2485,13 +2485,13 @@ global $CFG,$USER;
     $ss_out=$html_out;
      $link_conosco = "Fale conosco : <a href='mailto:domus.ead@pucpr.br'>domus.ead@pucpr.br</a>";
      if(empty($user->realuser)){
-	   $css_top_conosco=450px;
+	   $css_top_conosco=450;
       }else{
-	    $css_top_conosco=800px;
+	    $css_top_conosco=800;
      }
 	}
 		 return '<span id="maincontent"><div id="linkTrailer">'.$ss_out.'</div>
-		<div id="faleconosco" style="margin-top:'.$css_top_conosco.'">'.$link_conosco.'</div></span>';
+		<div id="faleconosco" style="margin-top:'.$css_top_conosco.'px;">'.$link_conosco.'</div></span>';
 
    
 }
