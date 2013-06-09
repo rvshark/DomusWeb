@@ -2484,7 +2484,7 @@ global $CFG,$USER;
 	if($server == $nome_principal){
     $ss_out=$html_out;
      $link_conosco = "Fale conosco : <a href='mailto:domus.ead@pucpr.br'>domus.ead@pucpr.br</a>";
-     if(isset($SESSION->justloggedin)){
+     if(!empty($USER->username)){
 	   $css_top_conosco=800;
       }else{
 	    $css_top_conosco=648;
