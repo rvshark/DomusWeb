@@ -2485,7 +2485,7 @@ global $CFG,$USER;
     $ss_out=$html_out;
      $link_conosco = "Fale conosco : <a href='mailto:domus.ead@pucpr.br'>domus.ead@pucpr.br</a>";
      if(empty($user->realuser)){
-	   $css_top_conosco=450;
+	   $css_top_conosco=648;
       }else{
 	    $css_top_conosco=800;
      }
