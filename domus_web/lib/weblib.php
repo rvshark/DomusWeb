@@ -2491,7 +2491,7 @@ global $CFG,$USER;
      }
 	}
 		 return '<span id="maincontent"><div id="linkTrailer">'.$ss_out.'</div>
-		<div id="faleconosco" style="margin-top:'.$css_top_conosco.'px;">'.$link_conosco.'</div></span>';
+		<div id="faleconosco" style="margin-top:'.$css_top_conosco.'px;">'.$USER->username.' e '.$link_conosco.'</div></span>';
 
    
 }
